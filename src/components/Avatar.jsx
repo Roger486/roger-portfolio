@@ -28,9 +28,9 @@ export default function Avatar() {
       ? maxSize - ((maxSize - minSize) * currentScrollY) / 200
       : minSize;
 
-  const showName = currentScrollY >= 75;
+  const showSeparateNames  = currentScrollY >= 75 && currentScrollY < 150;
 
-  const showLastName = currentScrollY >= 150;
+  const showCombinedName  = currentScrollY >= 150;
 
   return (
     <div className="fixed top-4 flex items-center pl-3">
@@ -48,20 +48,21 @@ export default function Avatar() {
           className="w-full h-full object-cover"
         />
       </div>
-      {showName && (
-        <span
-          className="text-lg font-semibold text-gray-900 transition-opacity duration-300 ml-2"
-          style={{ opacity: mounted ? 1 : 0 }}
-        >
-          Roger
-        </span>
+      {/* Mostrar los dos nombres en líneas separadas */}
+      {showSeparateNames && (
+        <div className="ml-2 flex flex-col font-semibold text-gray-900 transition-opacity duration-300">
+          <span style={{ opacity: mounted ? 1 : 0 }}>Roger</span>
+          <span style={{ opacity: mounted ? 1 : 0 }}>Navarro</span>
+        </div>
       )}
-      {showLastName && (
+
+      {/* Mostrar nombre completo en una línea */}
+      {showCombinedName && (
         <span
-          className="text-lg font-semibold text-gray-900 transition-opacity duration-300 ml-1"
+          className="ml-2 font-semibold text-gray-900 transition-opacity duration-300"
           style={{ opacity: mounted ? 1 : 0 }}
         >
-          Navarro
+          Roger Navarro
         </span>
       )}
     </div>
