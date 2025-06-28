@@ -20,7 +20,7 @@ export default function Sidebar() {
   }, []);
 
     // Mostrar versión compacta si scroll es mayor a 100
-  const showCompactTopbar = scrollY > 100;
+  const showCompactTopbar = scrollY > 60;
 
   return (
     <aside
