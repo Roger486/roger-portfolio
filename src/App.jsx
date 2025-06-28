@@ -1,10 +1,14 @@
 import Avatar from "./components/Avatar"
 import Sidebar from "./components/Sidebar"
+import Topbar from "./components/Topbar"
 
 function App() {
   return (
     <>
-      <Avatar />
+      <div className="flex">
+        <Avatar />
+        <Topbar />
+      </div>
       <Sidebar />
       <h1 className="text-3xl font-bold underline ml-64">
         Roger's portfolio in React 19 with Tailwind CSS v4

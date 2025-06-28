@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react';
 
 export default function Sidebar() {
-  const [topPosition, setTopPosition] = useState(250); // posición inicial (80px para espacio avatar)
+  const [topPosition, setTopPosition] = useState(250); // posición inicial para espacio avatar
 
   useEffect(() => {
+    // Establecemos topPosition correcto al montar el componente
+    const scrollY = window.scrollY;
+    setTopPosition(Math.max(250 - scrollY, 60));
+
+    // Función para actualizar topPosition en scroll
     const onScroll = () => {
       const scrollY = window.scrollY;
-      // Calculamos la nueva posición top: resta scroll pero no menos de 0
-      const newTop = Math.max(250 - scrollY, 0);
-      setTopPosition(newTop);
+      setTopPosition(Math.max(250 - scrollY, 60));
     };
 
     window.addEventListener('scroll', onScroll);
@@ -17,10 +20,10 @@ export default function Sidebar() {
 
   return (
     <aside
-      className="fixed left-0 h-screen w-64 bg-gray-100 dark:bg-gray-800 p-6 transition-top duration-300"
+      className="fixed left-0 h-screen w-64 bg-gray-100 dark:bg-gray-800 p-6"
       style={{ top: `${topPosition}px`, transitionProperty: 'top' }}
     >
-      <nav className="mt-10 flex flex-col gap-4 text-gray-800 dark:text-gray-200 font-semibold">
+      <nav className="mt-5 flex flex-col gap-4 text-gray-800 dark:text-gray-200 font-semibold">
         <a href="#about" className="hover:text-blue-500">About</a>
         <a href="#skills" className="hover:text-blue-500">Skills</a>
         <a href="#projects" className="hover:text-blue-500">Projects</a>
