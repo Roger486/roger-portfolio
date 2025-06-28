@@ -9,7 +9,7 @@ export default function Topbar() {
       <span className="ml-auto flex gap-3">
         {/* Contact button */}
         <button
-          className="border-2 border-white text-white px-3 py-1 rounded-4xl"
+          className="border-2 border-white text-white px-3 py-1 rounded-full cursor-pointer"
           aria-label="Contact me"
           title="Contact me"
         >
@@ -17,6 +17,7 @@ export default function Topbar() {
         </button>
         {/* Gitbub profile link */}
         <a
+          className="py-1"
           href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -35,6 +36,7 @@ export default function Topbar() {
         </a>
         {/* Linkedin profile link */}
         <a
+          className="py-1"
           href={linkedinLink}
           target="_blank"
           rel="noopener noreferrer"
