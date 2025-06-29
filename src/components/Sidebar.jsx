@@ -24,7 +24,7 @@ export default function Sidebar() {
 
   return (
     <aside
-      className="fixed left-0 h-screen w-64 bg-gray-800 p-6"
+      className="fixed left-0 h-screen w-64 bg-gray-400 p-6"
       style={{ top: `${topPosition}px`, transitionProperty: 'top' }}
     >
       <nav className="mt-5 flex flex-col gap-4 text-gray-200 font-semibold">

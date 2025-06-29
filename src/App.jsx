@@ -1,191 +1,31 @@
-import Avatar from "./components/Avatar"
-import Sidebar from "./components/Sidebar"
-import Topbar from "./components/Topbar"
+import Avatar from "./components/Avatar";
+import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
+import Topbar from "./components/Topbar";
+import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 function App() {
   return (
     <>
-      <div className="flex">
-        <Avatar />
-        <Topbar />
-      </div>
+      <Avatar />
+      <Topbar />
       <Sidebar />
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
-      <h1 className="text-3xl font-bold underline ml-64">
-        Roger's portfolio in React 19 with Tailwind CSS v4
-      </h1>
+
+      <main className="ml-64 pt-14">
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
