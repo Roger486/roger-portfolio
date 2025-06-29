@@ -7,7 +7,7 @@ export default function CompactTopbar() {
     <section className="flex items-center justify-center gap-3 mt-10">
         {/* Contact button */}
         <button
-          className=" flex border-2 border-white text-white px-3 py-1 rounded-full text-xs cursor-pointer"
+          className=" flex border-2 px-3 py-1 rounded-full text-xs cursor-pointer"
           aria-label="Contact me"
           title="Contact me"
         >

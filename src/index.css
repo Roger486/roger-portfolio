@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.bg-640 {
+  background-image: url('/src/assets/bg-dark-640.png');
+}
+
+@media (min-width: 641px) {
+  .bg-responsive {
+    background-image: url('/src/assets/bg-dark-1280.png');
+  }
+}
+
+@media (min-width: 1281px) {
+  .bg-responsive {
+    background-image: url('/src/assets/bg-dark-1920.png');
+  }
+}
