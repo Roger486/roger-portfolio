@@ -24,10 +24,10 @@ export default function Sidebar() {
 
   return (
     <aside
-      className="fixed left-0 h-screen w-64  p-6 opacity-50"
+      className="fixed left-0 h-screen w-64 p-6"
       style={{ top: `${topPosition}px`, transitionProperty: 'top' }}
     >
-      <nav className="mt-5 flex flex-col gap-4 text-black font-bold">
+      <nav className="mt-5 flex flex-col gap-4 text-black font-semibold">
         <a href="#about" className="hover:text-blue-500">About</a>
         <a href="#skills" className="hover:text-blue-500">Skills</a>
         <a href="#projects" className="hover:text-blue-500">Projects</a>
