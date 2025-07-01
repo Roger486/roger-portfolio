@@ -12,5 +12,27 @@
     "paragraph1": "I am passionate about web development and have reinvented myself in this field. I love creating digital experiences that are functional, intuitive, and truly add value to users. To achieve this, I have built a strong foundation in technologies such as HTML, CSS, JavaScript, SQL, MongoDB, PHP, and Java, as well as frameworks like Angular, React, and Laravel. Throughout my training and personal projects, I have developed complete web applications, with special attention to user experience and optimization, applying UI/UX principles. One of my favorite projects was developing a Laravel API for accommodation bookings, which you can check out on my GitHub.",
     "paragraph2": "I'm not specialized in any one stack yet because I enjoy exploring everything web development offers and I'm eager to learn. I might find my focus in the future, but for now, I prefer to keep an open mind about any technology or knowledge since there's so much to discover and use in the world of development.",
     "paragraph3": "Before dedicating myself to development, I worked in customer service and process analysis, which helped me better understand the real needs of users and bring an analytical approach to my projects. Now, I am seeking my first professional challenge in web development, eager to contribute what I know, keep learning, and grow in a collaborative environment where continuous improvement is part of everyday work."
+  },
+  "skills": {
+    "react-js": {
+      "name": "React - JavaScript",
+      "description": "This website (my portfolio) was built by me using React 19 with Tailwind v4.",
+      "project": "Personal project"
+    }
+  },
+  "laravel-php": {
+    "name": "Laravel - PHP",
+    "description": "Check out my final Web Development degree project for accommodation reservations and its Laravel API.",
+    "project": "Final Web Development Degree Project"
+  },
+  "angular-js": {
+    "name": "Angular - JavaScript",
+    "description": "Enjoy a coffee with this web app making calls to an external API.",
+    "project": "Server-side Web Development project"
+  },
+  "java-javafx": {
+    "name": "Java - JavaFX",
+    "description": "Bet on this interactive horse racing game.",
+    "project": "Advanced Programming project"
   }
 }

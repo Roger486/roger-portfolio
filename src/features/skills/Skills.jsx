@@ -1,29 +1,30 @@
-import { FaReact } from "react-icons/fa";
 import SkillCard from "./SkillCard";
-
+import { skills } from "../../data/skill-list";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function Skills() {
-  const skill = {
-    name: "React - JavaScript",
-    description: "Esta página web (mi portfolio) web está hecha por mí en React 19 con Tailwind v4.",
-    icon: FaReact,
-    color: "#00d8FF",
-    backgroundColor: "#222222"
-  };
+  const { t } = useLanguage()
+
+  const skillElements = skills.map( skill => {
+    // guardamos la key de traducción de la skill de esta iteración
+    const skillKey = `skills.${skill.key}`;
+    // recorremos el array y gracias a la key añadimos al objeto skill las traducciones
+    const SkillWithTranslatedTexts = {
+      ...skill,
+      name: t(`${skillKey}.name`),
+      description: t(`${skillKey}.description`),
+      project: t(`${skillKey}.project`)
+    }
+
+    return <SkillCard key={skill.key} skill={SkillWithTranslatedTexts} />
+  });
 
   return (
     <section id="skills" className="min-h-screen p-8">
       <h2 className="text-3xl font-bold mb-4">Skills</h2>
-      <SkillCard skill={skill} />
-
-      <br />
-      <ul className="list-disc list-inside">
-        <li>HTML5, CSS3, JavaScript</li>
-        <li>React, React Hooks, Vite</li>
-        <li>Tailwind CSS</li>
-        <li>Git y GitHub</li>
-        <li>Node.js y Express (básico)</li>
-      </ul>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {skillElements}
+      </div>
     </section>
   );
 }
