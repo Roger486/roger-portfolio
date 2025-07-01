@@ -1,17 +1,20 @@
-export default function CompactTopbar() {
+import { useLanguage } from "../context/LanguageContext";
+
+export default function ContactElements() {
   const linkedinLink =
     "https://www.linkedin.com/in/roger-navarro-desarrollador/";
   const githubLink = "https://github.com/Roger486";
+  const {t} = useLanguage();
 
   return (
-    <section className="flex items-center justify-center gap-3 mt-10">
+    <section className="flex items-center gap-3">
         {/* Contact button */}
         <button
           className=" flex border-2 px-3 py-1 rounded-full text-xs cursor-pointer"
           aria-label="Contact me"
           title="Contact me"
         >
-          Contact me
+          {t("contact_me")}
         </button>
         <div className="flex gap-2">
         {/* Gitbub profile link */}

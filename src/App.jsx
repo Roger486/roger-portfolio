@@ -15,7 +15,7 @@ function App() {
       <Topbar />
       <Sidebar />
 
-      <main className="ml-64 pt-14">
+      <main className="ml-64 pt14">
         <About />
         <Skills />
         <Projects />

@@ -1,0 +1,16 @@
+{
+  "contact_me": "Contáctame",
+  "side_bar": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "greeting": "Hola soy Roger",
+    "paragraph1": "Soy un apasionado del desarrollo web que ha cambiado de carrera para seguir su verdadera vocación. Me encanta crear experiencias digitales que sean funcionales, intuitivas y que realmente aporten valor a los usuarios. Para lograrlo, he construido una base sólida en tecnologías como HTML, CSS, JavaScript, SQL, MongoDB, PHP y Java, además de frameworks como Angular, React y Laravel. Durante mi formación y proyectos personales, he creado aplicaciones web completas, poniendo especial atención en la experiencia del usuario y la optimización, aplicando principios de UI/UX. Uno de mis proyectos favoritos fue desarrollar una API en Laravel para reservas de alojamientos, que puedes ver en mi GitHub.",
+    "paragraph2": "Actualmente no estoy especializado en ningún stack, ya que disfruto explorando todo lo que el desarrollo web tiene para ofrecer y aprendo con avidez. No descarto que en el futuro encuentre mi área de especialización, pero por ahora prefiero mantener una mente abierta a cualquier tecnología o conocimiento, porque el mundo del desarrollo me ofrece mucho para descubrir y aprovechar.",
+    "paragraph3": "Antes de dedicarme al desarrollo, trabajé en atención al cliente y análisis de procesos, lo que me ayudó a entender mejor las necesidades reales de los usuarios y a aportar un enfoque analítico a mis proyectos. Ahora, busco mi primer reto profesional en desarrollo web, con ganas de aportar lo que sé, seguir aprendiendo y crecer en un entorno colaborativo donde la mejora continua sea parte del día a día."
+  }
+}
