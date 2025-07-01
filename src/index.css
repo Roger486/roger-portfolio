@@ -15,3 +15,21 @@
     background-image: url('/src/assets/bg-dark-1920.png');
   }
 }
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+p {
+  @apply font-nunito
+}
+
+button, h3, h4, a {
+  @apply font-inter
+}
+
+h1, h2 {
+  @apply font-montserrat
+}
