@@ -14,25 +14,8 @@
     "paragraph3": "Antes de dedicarme al desarrollo, trabajé en atención al cliente y análisis de procesos, lo que me ayudó a entender mejor las necesidades reales de los usuarios y a aportar un enfoque analítico a mis proyectos. Ahora, busco mi primer reto profesional en desarrollo web, con ganas de aportar lo que sé, seguir aprendiendo y crecer en un entorno colaborativo donde la mejora continua sea parte del día a día."
   },
   "skills": {
-    "react-js": {
-      "name": "React - JavaScript",
-      "description": "Esta página web (mi portfolio) web está hecha por mí en React 19 con Tailwind v4.",
-      "project": "Proyecto personal"
-    },
-    "laravel-php": {
-      "name": "Laravel - PHP",
-      "description": "Comprueba mi proyecto de fin de FP de reservas de alojamientos y su API en Laravel.",
-      "project": "Proyecto final FP Desarrollo Web"
-    },
-    "angular-js": {
-      "name": "Angular - JavaScript",
-      "description": "Tómate un café en esta aplicación web con llamadas a API externa.",
-      "project": "Trabajo desarrollo web entorno servidor"
-    },
-    "java-javafx": {
-      "name": "Java - JavaFX",
-      "description": "Apuesta en este juego interactivo de carreras de caballos.",
-      "project": "Trabajo programación avanzada"
-    }
+    "title": "Habilidades",
+    "title-hard": "Capacidades técnicas",
+    "title-soft": "Capacidades personales"
   }
 }

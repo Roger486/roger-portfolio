@@ -14,25 +14,8 @@
     "paragraph3": "Before dedicating myself to development, I worked in customer service and process analysis, which helped me better understand the real needs of users and bring an analytical approach to my projects. Now, I am seeking my first professional challenge in web development, eager to contribute what I know, keep learning, and grow in a collaborative environment where continuous improvement is part of everyday work."
   },
   "skills": {
-    "react-js": {
-      "name": "React - JavaScript",
-      "description": "This website (my portfolio) was built by me using React 19 with Tailwind v4.",
-      "project": "Personal project"
-    }
-  },
-  "laravel-php": {
-    "name": "Laravel - PHP",
-    "description": "Check out my final Web Development degree project for accommodation reservations and its Laravel API.",
-    "project": "Final Web Development Degree Project"
-  },
-  "angular-js": {
-    "name": "Angular - JavaScript",
-    "description": "Enjoy a coffee with this web app making calls to an external API.",
-    "project": "Server-side Web Development project"
-  },
-  "java-javafx": {
-    "name": "Java - JavaFX",
-    "description": "Bet on this interactive horse racing game.",
-    "project": "Advanced Programming project"
+    "title": "Skills",
+    "title-hard": "Hard Skills",
+    "title-soft": "Soft Skills"
   }
 }
