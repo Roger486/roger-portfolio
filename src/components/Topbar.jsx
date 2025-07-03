@@ -8,7 +8,7 @@ export default function Topbar() {
   const { t } = useLanguage();
 
   return (
-    <header className="bg-amber-500 h-14 w-[calc(100%-16rem)] ml-64 flex items-center px-4">
+    <header className="h-14 w-[calc(100%-16rem)] ml-64 flex items-center px-4">
       <p className="mr-4 font-semibold">Roger Navarro</p>
       <div className="ml-auto flex">
         <ContactElements />

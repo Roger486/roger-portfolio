@@ -12,7 +12,7 @@ export default function About() {
         <div>
           <h2 className="text-3xl font-bold pt-40 mb-12">{t("about.title")}</h2>
           <p className="text-xl font-semibold mb-8">{t("about.greeting")}</p>
-          <div className="p-6 bg-white/50 border-1">
+          <div className="p-6 bg-white/50 border-2 border-blue-400 rounded-lg">
             <p className="mb-6">{t("about.paragraph1")}</p>
             <p className="mb-6">{t("about.paragraph2")}</p>
             <p>{t("about.paragraph3")}</p>

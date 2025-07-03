@@ -31,16 +31,16 @@ export default function Sidebar() {
       style={{ top: `${topPosition}px`, transitionProperty: "top" }}
     >
       <nav className="mt-5 flex flex-col gap-4 text-black font-semibold">
-        <a href="#about" className="hover:text-blue-500">
+        <a href="#about" className="hover:text-blue-400">
           {t("side_bar.about")}
         </a>
-        <a href="#skills" className="hover:text-blue-500">
+        <a href="#skills" className="hover:text-blue-400">
           {t("side_bar.skills")}
         </a>
-        <a href="#projects" className="hover:text-blue-500">
+        <a href="#projects" className="hover:text-blue-400">
           {t("side_bar.projects")}
         </a>
-        <a href="#experience" className="hover:text-blue-500">
+        <a href="#experience" className="hover:text-blue-400">
           {t("side_bar.experience")}
         </a>
       </nav>
