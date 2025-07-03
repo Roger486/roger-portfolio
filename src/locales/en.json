@@ -16,6 +16,32 @@
   "skills": {
     "title": "Skills",
     "title-hard": "Hard Skills",
-    "title-soft": "Soft Skills"
+    "title-soft": "Soft Skills",
+    "soft-skills": {
+      "active-listening": {
+        "name": "Active listening",
+        "description": "Thanks to my previous experience, I developed a high level of active listening and empathy that I apply in projects and collaborative environments."
+      },
+      "communication": {
+        "name": "Communication",
+        "description": "Communication and assertiveness have been key to achieving good results in the projects and challenges I have faced."
+      },
+      "stress-management": {
+        "name": "Stress management",
+        "description": "As a claims specialist, managing stress and maintaining a steady pace has always been key to success in my work."
+      },
+      "problem-solving": {
+        "name": "Problem solving",
+        "description": "This skill was essential for analyzing my company's processes and proposing effective solutions."
+      },
+      "teamwork": {
+        "name": "Teamwork",
+        "description": "Coordinating and redirecting colleagues' work on a daily basis has been crucial for the company's continuous improvement."
+      },
+      "adaptability": {
+        "name": "Adaptability",
+        "description": "Working in a newly created customer service team without defined processes, and later in one with different simultaneous telephone services, sharpened my adaptability."
+      }
+    }
   }
 }

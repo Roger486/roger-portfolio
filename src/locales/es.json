@@ -16,6 +16,32 @@
   "skills": {
     "title": "Habilidades",
     "title-hard": "Capacidades técnicas",
-    "title-soft": "Capacidades personales"
+    "title-soft": "Capacidades personales",
+    "soft-skills": {
+      "active-listening": {
+        "name": "Escucha activa",
+        "description": "Gracias a mi experiencia previa, desarrollé un alto nivel de escucha activa y empatía que aplico en los proyectos y entornos colaborativos."
+      },
+      "communication": {
+        "name": "Comunicación",
+        "description": "La comunicación y la asertividad han sido claves para obtener buenos resultados en los proyectos y retos que he afrontado."
+      },
+      "stress-management": {
+        "name": "Gestión del estrés",
+        "description": "Como agente especializado en reclamaciones, gestionar el estrés y mantener un buen ritmo siempre ha sido clave para el éxito en mi trabajo."
+      },
+      "problem-solving": {
+        "name": "Resolución de problemas",
+        "description": "Esta capacidad fue esencial para analizar los procesos de mi empresa y proponer soluciones eficaces."
+      },
+      "teamwork": {
+        "name": "Trabajo en equipo",
+        "description": "Coordinar y reconducir el trabajo de mis compañeros día a día ha sido una labor clave para la mejora continua de la empresa."
+      },
+      "adaptability": {
+        "name": "Adaptabilidad",
+        "description": "Haber trabajado en un servicio de atención recién creado, sin procesos definidos, y después en uno con distintos servicios telefónicos simultáneos agudizó mi capacidad de adaptación."
+      }
+    }
   }
 }

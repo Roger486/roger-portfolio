@@ -10,7 +10,6 @@ export const hardSkills = [
     icon: FaLaravel,
     color: "white",
     backgroundColor: "#f55247",
-    type: "hard"
   },
   {
     key: "react-js",
@@ -18,7 +17,6 @@ export const hardSkills = [
     icon: FaReact,
     color: "#00d8FF",
     backgroundColor: "#222222",
-    type: "hard"
   },
   {
     key: "angular-js",
@@ -26,7 +24,6 @@ export const hardSkills = [
     icon: FaAngular,
     color: "#c3002f",
     backgroundColor: "#eaeaea",
-    type: "hard"
   },
   {
     key: "java-javafx",
@@ -34,7 +31,6 @@ export const hardSkills = [
     icon: FaJava,
     color: "#5382a1",
     backgroundColor: "white",
-    type: "hard"
   },
   {
     key: "nodejs - JavaScript",
@@ -42,7 +38,6 @@ export const hardSkills = [
     icon: RiNodejsFill,
     color: "#6cc24a",
     backgroundColor: "white",
-    type: "hard"
   },
   {
     key: "raspi-server",
@@ -50,7 +45,6 @@ export const hardSkills = [
     icon: FaRaspberryPi,
     color: "#c7053d",
     backgroundColor: "white",
-    type: "hard"
   },
   {
     key: "docker",
@@ -58,7 +52,6 @@ export const hardSkills = [
     icon: FaDocker,
     color: "#1D63ED",
     backgroundColor: "white",
-    type: "hard"
   },
   {
     key: "git-github",
@@ -66,7 +59,6 @@ export const hardSkills = [
     icon: FaGithub,
     color: "#333333",
     backgroundColor: "white",
-    type: "hard"
   },
   {
     key: "sql",
@@ -74,7 +66,6 @@ export const hardSkills = [
     icon: SiMysql,
     color: "#00758f",
     backgroundColor: "#f29111",
-    type: "hard"
   },
   {
     key: "mongo",
@@ -82,7 +73,6 @@ export const hardSkills = [
     icon: SiMongodb,
     color: "#00ed64",
     backgroundColor: "#001e2b",
-    type: "hard"
   },
   {
     key: "agile",
@@ -90,6 +80,5 @@ export const hardSkills = [
     icon: DiScrum,
     color: "#3B82F6",
     backgroundColor: "#FDBA74",
-    type: "hard"
   },
 ]

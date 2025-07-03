@@ -2,7 +2,7 @@ export default function HardSkillCard({ skill }) {
 
   return (
     <div className="
-      border-2 border-blue-800 bg-gray-100/50 rounded-lg p-2 shadow-md
+      border-2 border-blue-400 bg-gray-100/50 rounded-lg p-2 shadow-md
       flex flex-col justify-center
       transition duration-300
       hover:bg-gray-100 hover:shadow-xl"
