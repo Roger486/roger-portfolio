@@ -1,6 +1,5 @@
 import { IoClose, IoMenu } from "react-icons/io5";
 import ContactElements from "./ContactElements";
-import { useState } from "react";
 
 export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
 
@@ -23,7 +22,7 @@ export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
           </div>
         </div>
 
-        <p className="font-bold text-2xl lg:text-base">Roger Navarro</p>
+        <p className="font-bold text-xl lg:text-base">Roger Navarro</p>
         <div className="ml-auto flex">
           <ContactElements />
         </div>

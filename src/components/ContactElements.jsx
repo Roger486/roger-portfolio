@@ -10,7 +10,7 @@ export default function ContactElements() {
     <section className="flex items-center gap-3">
         {/* Contact button */}
         <button
-          className=" flex border-2 px-3 py-1 rounded-full text-xs cursor-pointer"
+          className="border-2 px-3 py-1 rounded-full text-xs cursor-pointer hidden sm:flex"
           aria-label="Contact me"
           title="Contact me"
         >

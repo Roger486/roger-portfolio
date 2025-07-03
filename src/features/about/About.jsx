@@ -6,7 +6,11 @@ export default function About() {
   return (
     <section id="about" className="min-h-screen p-8">
       <div
-        className=" bg-no-repeat bg-top-right bg-[length:400px]"
+        className="    bg-no-repeat 
+    bg-[length:200px] 
+    sm:bg-[length:400px] 
+    bg-[top_50px_right] 
+    sm:bg-top-right"
         style={{ backgroundImage: "url('/src/assets/bg-about.png')" }}
       >
         <div>
