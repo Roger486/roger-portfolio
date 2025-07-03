@@ -33,7 +33,7 @@ export default function Avatar() {
   const showCombinedName  = currentScrollY >= 150;
 
   return (
-    <div className="fixed top-4 flex items-center pl-3">
+    <div className="fixed top-4 items-center pl-3 hidden lg:flex">
       <div
         className="rounded-full overflow-hidden"
         style={{
