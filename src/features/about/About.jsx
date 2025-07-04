@@ -1,4 +1,5 @@
 import { useLanguage } from "../../context/LanguageContext";
+import bgAboutImg from "/src/assets/bg-about.png"; // import images as objects so the production build get them correctly
 
 export default function About() {
   const { t } = useLanguage();
@@ -11,7 +12,7 @@ export default function About() {
     sm:bg-[length:400px] 
     bg-[top_50px_right] 
     sm:bg-top-right"
-        style={{ backgroundImage: "url('/src/assets/bg-about.png')" }}
+        style={{ backgroundImage: `url(${bgAboutImg})` }}
       >
         <div>
           <h2 className="text-3xl font-bold pt-40 mb-12">{t("about.title")}</h2>

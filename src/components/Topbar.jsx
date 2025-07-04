@@ -1,5 +1,6 @@
 import { IoClose, IoMenu } from "react-icons/io5";
 import ContactElements from "./ContactElements";
+import avatarImg from "/src/assets/avatar.jpg"; // import images as objects so the production build get them correctly
 
 export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
 
@@ -15,7 +16,7 @@ export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
           </button>
           <div className="w-10 h-10 rounded-full overflow-hidden">
             <img
-              src="/src/assets/avatar.jpg"
+              src={avatarImg}
               alt="Roger Navarro"
               className="w-full h-full object-cover"
             />

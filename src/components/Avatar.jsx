@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import avatarImg from "/src/assets/avatar.jpg"; // import images as objects so the production build get them correctly
 
 export default function Avatar() {
   const [scrollY, setScrollY] = useState(null);
@@ -43,7 +44,7 @@ export default function Avatar() {
         }}
       >
         <img
-          src="/src/assets/avatar.jpg"
+          src={avatarImg}
           alt="Roger Navarro"
           className="w-full h-full object-cover"
         />
