@@ -1,8 +1,8 @@
-import { BiCodeAlt, BiWindowAlt } from "react-icons/bi";
+import { BiWindowAlt } from "react-icons/bi";
 import { DiScrum } from "react-icons/di";
 import { FaAngular, FaDocker, FaGithub, FaJava, FaLaravel, FaRaspberryPi, FaReact } from "react-icons/fa";
 import { RiNodejsFill } from "react-icons/ri";
-import { SiHtml5, SiJavascript, SiMongodb, SiMysql, SiPhp, SiTailwindcss } from "react-icons/si";
+import { SiHtml5, SiJavascript, SiMongodb, SiMysql, SiPhp, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 export const hardSkills = [
   {
@@ -46,6 +46,13 @@ export const hardSkills = [
     icon: SiJavascript,
     color: "#000000",
     backgroundColor: "#F7DF1E",
+  },
+  {
+    key: "typescript",
+    name: "TypeScript",
+    icon: SiTypescript,
+    color: "#FFFFFF",
+    backgroundColor: "#3178C6",
   },
   {
     key: "php",
