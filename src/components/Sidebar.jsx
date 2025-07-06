@@ -48,7 +48,7 @@ export default function Sidebar({ isMenuOpen, onClose }) {
     };
   }, [isMenuOpen]);
 
-  // Mostrar versión compacta si scroll es mayor a 100
+  // Mostrar los contact elements si scroll es mayor a 190
   const showContactElements = topPosition < 190;
 
   const topStyle = isMenuOpen ? { top: "1rem" } : { top: `${topPosition}px` };
@@ -58,13 +58,13 @@ export default function Sidebar({ isMenuOpen, onClose }) {
       className={`
           fixed left-0 h-screen p-6 transition-all duration-300
           ${isMenuOpen
-            ? "bg-gray-50 w-full relative z-10 text-2xl flex justify-center text-center items-center lg:hidden"
+            ? "bg-gray-50 w-full relative z-10 text-xl flex justify-center text-center mt-10 lg:hidden"
             : "hidden"}
           lg:block lg:w-64
         `}
       style={topStyle}
     >
-      <nav className={`mt-5 flex flex-col text-black font-semibold ${isMenuOpen ? "gap-8" : "gap-4"}`}>
+      <nav className={`mt-5 flex flex-col text-black font-semibold ${isMenuOpen ? "gap-6" : "gap-4"}`}>
         <a href="#about" onClick={onClose} className="hover:text-blue-400">
           {t("side_bar.about")}
         </a>
@@ -79,7 +79,7 @@ export default function Sidebar({ isMenuOpen, onClose }) {
         </a>
       </nav>
       <div className="fixed bottom-24 left-0 w-64 flex justify-center">
-        {showContactElements && !isMenuOpen && <ContactElements />}
+        {(showContactElements || isMenuOpen) && <ContactElements />}
       </div>
       <div className="fixed bottom-10 left-0 w-64 flex justify-center">
         <LanguageSwitcher />

@@ -1,6 +1,6 @@
 import { useLanguage } from "../context/LanguageContext";
 
-export default function ContactElements() {
+export default function ContactElements({ buttonClassName = "flex" }) {
   const linkedinLink =
     "https://www.linkedin.com/in/roger-navarro-desarrollador/";
   const githubLink = "https://github.com/Roger486";
@@ -10,7 +10,7 @@ export default function ContactElements() {
     <section className="flex items-center gap-3">
         {/* Contact button */}
         <button
-          className="border-2 px-3 py-1 rounded-full text-xs cursor-pointer hidden sm:flex"
+          className={`border-2 px-3 py-1 rounded-full text-xs cursor-pointer ${buttonClassName}`}
           aria-label="Contact me"
           title="Contact me"
         >

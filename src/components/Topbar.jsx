@@ -24,8 +24,8 @@ export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
         </div>
 
         <p className="font-bold text-xl lg:text-base">Roger Navarro</p>
-        <div className="ml-auto flex">
-          <ContactElements />
+        <div className="ml-auto">
+          <ContactElements buttonClassName="hidden sm:flex"/>
         </div>
       </header>
   );
