@@ -3,13 +3,14 @@ export const projects = [
     key: 'hostcontrol',
     roles: ['Backend Developer', 'Database Design', 'Technical & API Documentation'],
     mainSkillsKeys : ['laravel', 'php', 'api-rest', 'mvc'],
-    secondarySkillsKeys: ['raspi-web-server', 'git', 'github', 'docker',],
+    secondarySkillsKeys: ['raspi-web-server', 'git', 'github', 'docker', 'agile'],
     repoUrls: [
-      {url: 'https://github.com/Roger486/HostControl', label: 'Main Repo'}
+      {url: 'https://github.com/Roger486/HostControl', label: 'Main Repo'},
+      {url: 'https://github.com/Roger486/HostControl/tree/main/backend', label: 'API Repo'},
     ],
     demoUrls: [
-      { url: 'https://hostcontrol-vicentedev.rogerdev.xyz/', label: 'Frontend' },
-      { url: 'https://hostcontrol-api.rogerdev.xyz/api/', label: 'API' }
+      { url: 'https://hostcontrol-vicentedev.rogerdev.xyz/', label: 'API' },
+      { url: 'https://hostcontrol-api.rogerdev.xyz/api/accommodations', label: 'Frontend' }
     ],
     images: [
       { key: 'home', src: '/assets/projects/hostcontrol/home.png' }
