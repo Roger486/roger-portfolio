@@ -1,6 +1,7 @@
 export const projects = [
   {
     key: 'hostcontrol',
+    name: 'HostControl',
     roles: ['Backend Developer', 'Database Design', 'Technical & API Documentation'],
     mainSkillsKeys : ['laravel', 'php', 'api-rest', 'mvc'],
     secondarySkillsKeys: ['raspi-web-server', 'git', 'github', 'docker', 'agile'],
@@ -9,16 +10,22 @@ export const projects = [
       {url: 'https://github.com/Roger486/HostControl/tree/main/backend', label: 'API Repo'},
     ],
     demoUrls: [
-      { url: 'https://hostcontrol-vicentedev.rogerdev.xyz/', label: 'API' },
-      { url: 'https://hostcontrol-api.rogerdev.xyz/api/accommodations', label: 'Frontend' }
+      { url: 'https://hostcontrol-api.rogerdev.xyz/api/accommodations', label: 'API' },
+      { url: 'https://hostcontrol-vicentedev.rogerdev.xyz/', label: 'Frontend' }
     ],
+    thumbnail: '/projects/hostcontrol/hostcontrol-thumb.jpg',
     images: [
-      { key: 'home', src: '/assets/projects/hostcontrol/home.png' }
+      { key: 'stack', src: '/projects/hostcontrol/hostcontrol-stack.jpg' },
+      { key: 'relational', src: '/projects/hostcontrol/hostcontrol-relational.jpg' },
+      { key: 'postman', src: '/projects/hostcontrol/hostcontrol-postman.jpg' },
+      { key: 'home', src: '/projects/hostcontrol/hostcontrol-home.jpg' },
+      { key: 'panel', src: '/projects/hostcontrol/hostcontrol-panel.jpg' },
     ],
     featured: true
   },
   {
     key: 'raspi-server',
+    name: 'Raspberry Pi Web Server',
     roles: ['Deployment Automation', 'Infrastructure Scripting', 'Technical Documentation'],
     mainSkillsKeys : ['raspi-web-server', 'docker', 'bash'],
     secondarySkillsKeys: ['git', 'github'],
@@ -34,6 +41,7 @@ export const projects = [
   },
   {
     key: 'coffee-haven',
+    name: 'Coffee Haven',
     roles: ['Frontend Developer'],
     mainSkillsKeys : ['angular', 'typescript', 'htmlcss'],
     secondarySkillsKeys: ['docker', 'raspi-web-server', 'git', 'github'],
@@ -51,6 +59,7 @@ export const projects = [
   },
   {
     key: 'roger-portfolio',
+    name: 'Personal Portfolio',
     roles: ['Frontend Developer'],
     mainSkillsKeys : ['react', 'javascript', 'tailwind', 'htmlcss'],
     secondarySkillsKeys: ['docker', 'raspi-web-server', 'git', 'github'],
