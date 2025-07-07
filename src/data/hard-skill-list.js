@@ -1,8 +1,8 @@
 import { BiWindowAlt } from "react-icons/bi";
 import { DiScrum } from "react-icons/di";
-import { FaAngular, FaDocker, FaGithub, FaJava, FaLaravel, FaRaspberryPi, FaReact } from "react-icons/fa";
+import { FaAngular, FaDocker, FaGitAlt, FaGithub, FaJava, FaLaravel, FaProjectDiagram, FaRaspberryPi, FaReact } from "react-icons/fa";
 import { RiNodejsFill } from "react-icons/ri";
-import { SiHtml5, SiJavascript, SiMongodb, SiMysql, SiPhp, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiGnubash, SiHtml5, SiJavascript, SiMongodb, SiMysql, SiPhp, SiPostman, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 export const hardSkills = [
   {
@@ -83,7 +83,21 @@ export const hardSkills = [
     backgroundColor: "white",
   },
   {
-    key: "raspi-server",
+    key: "api-rest",
+    name: "API REST",
+    icon: SiPostman,
+    color: "#FFFFFF",
+    backgroundColor: "#FF6C37",
+  },
+  {
+    key: "mvc",
+    name: "MVC",
+    icon: FaProjectDiagram,
+    color: "#FFFFFF",
+    backgroundColor: "#512BD4",
+  },
+  {
+    key: "raspi-web-server",
     name: "Raspberry Pi web server",
     icon: FaRaspberryPi,
     color: "#c7053d",
@@ -97,8 +111,15 @@ export const hardSkills = [
     backgroundColor: "white",
   },
   {
-    key: "git-github",
-    name: "Git - GitHub",
+    key: "git",
+    name: "Git",
+    icon: FaGitAlt,
+    color: "#F05032",
+    backgroundColor: "white",
+  },
+  {
+    key: "github",
+    name: "GitHub",
     icon: FaGithub,
     color: "#333333",
     backgroundColor: "white",
@@ -116,6 +137,13 @@ export const hardSkills = [
     icon: SiMongodb,
     color: "#00ed64",
     backgroundColor: "#001e2b",
+  },
+  {
+    key: "bash",
+    name: "Bash",
+    icon: SiGnubash,
+    color: "#4EAA25",
+    backgroundColor: "#FFFFFF",
   },
   {
     key: "agile",
