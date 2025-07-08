@@ -58,7 +58,7 @@ export const projects = [
     ],
     thumbnail: '/projects/coffee-haven/coffee-haven-thumb.jpg',
     images: [
-      { key: 'home', src: '/assets/projects/coffee-haven/home.jpg' }
+      { key: 'home', src: '/projects/coffee-haven/home.jpg' }
     ],
     featured: false
   },
@@ -76,7 +76,7 @@ export const projects = [
     ],
     thumbnail: '/projects/roger-portfolio/roger-portfolio-thumb.jpg',
     images: [
-      { key: 'home', src: '/assets/projects/roger-portfolio/home.jpg' }
+      { key: 'home', src: '/projects/roger-portfolio/home.jpg' }
     ],
     featured: false
   },
