@@ -97,8 +97,8 @@ export const hardSkills = [
     backgroundColor: "#512BD4",
   },
   {
-    key: "raspi-web-server",
-    name: "Raspberry Pi web server",
+    key: "raspi",
+    name: "Raspberry Pi",
     icon: FaRaspberryPi,
     color: "#c7053d",
     backgroundColor: "white",

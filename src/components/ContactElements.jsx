@@ -11,10 +11,10 @@ export default function ContactElements({ buttonClassName = "flex" }) {
         {/* Contact button */}
         <button
           className={`border-2 px-3 py-1 rounded-full text-xs cursor-pointer ${buttonClassName}`}
-          aria-label="Contact me"
-          title="Contact me"
+          aria-label={t("contact-me")}
+          title={t("contact-me")}
         >
-          {t("contact_me")}
+          {t("contact-me")}
         </button>
         <div className="flex gap-2">
         {/* Gitbub profile link */}

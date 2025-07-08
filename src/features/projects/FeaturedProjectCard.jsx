@@ -30,15 +30,17 @@ export default function FeaturedProjectCard({ project }) {
         "
     >
       {/* Thumbnail + CTA */}
-      <div className="col-span-3 md:mr-3">
+      <div className="col-span-3 p-2 md:mr-3">
+        <h3 className="text-2xl font-bold mb-4 md:hidden">{project.name}</h3>
         <div className="flex justify-center mb-4">
           <img
             src={project.thumbnail}
             alt="Thumbnail"
             className="
-                rounded border border-black/20 shadow
-                hover:scale-105 transition duration-300
-              "
+              rounded border border-black/20 shadow
+              transition duration-300
+              hover:scale-105 cursor-pointer
+            "
           />
         </div>
 
@@ -57,7 +59,7 @@ export default function FeaturedProjectCard({ project }) {
 
       {/* Title + text + roles + skills */}
       <div className="col-span-5 md:border-l-2 border-blue-400 pl-3">
-        <h3 className="text-2xl font-bold mb-4">{project.name}</h3>
+        <h3 className="text-2xl font-bold mb-4 hidden md:block">{project.name}</h3>
         <h4 className="font-semibold mb-2">Project description:</h4>
         <p className="text-sm mb-2">
           Project description. To be implemented on the es.json and en.json

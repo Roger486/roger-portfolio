@@ -66,16 +66,16 @@ export default function Sidebar({ isMenuOpen, onClose }) {
     >
       <nav className={`mt-5 flex flex-col text-black font-semibold ${isMenuOpen ? "gap-6" : "gap-4"}`}>
         <a href="#about" onClick={onClose} className="hover:text-blue-400">
-          {t("side_bar.about")}
+          {t("side-bar.about")}
         </a>
         <a href="#skills" onClick={onClose} className="hover:text-blue-400">
-          {t("side_bar.skills")}
+          {t("side-bar.skills")}
         </a>
         <a href="#projects" onClick={onClose} className="hover:text-blue-400">
-          {t("side_bar.projects")}
+          {t("side-bar.projects")}
         </a>
         <a href="#experience" onClick={onClose} className="hover:text-blue-400">
-          {t("side_bar.experience")}
+          {t("side-bar.experience")}
         </a>
       </nav>
       <div className="fixed bottom-24 left-0 w-64 flex justify-center">

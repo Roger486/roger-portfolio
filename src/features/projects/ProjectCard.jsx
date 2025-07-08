@@ -28,13 +28,15 @@ export default function ProjectCard({ project }) {
         ">
       {/* Thumbnail + CTA + Roles */}
       <div className="flex flex-col gap-3 mr-3 h-full justify-between">
+        <h3 className="mb-3 text-center text-lg font-bold xl:hidden">{project.name}</h3>
         <div>
           <img
             src={project.thumbnail}
             alt="Thumbnail"
             className="
             rounded border border-black/20 shadow
-            hover:scale-105 transition duration-300
+            transition duration-300
+            hover:scale-105 cursor-pointer
           "
           />
         </div>
@@ -52,11 +54,11 @@ export default function ProjectCard({ project }) {
           </div>
       </div>
 
-      {/* Title + Description + Skills */}
+      {/*Description + Skills */}
       <div className="flex flex-col h-full justify-between">
         <div>
-          <h3 className="mb-3">{project.name}</h3>
-          <p className="mb-4">Project description. To be implemented on the es.json and en.json files.</p>
+          <h3 className="mb-3 text-center font-bold text-lg hidden xl:block">{project.name}</h3>
+          <p className="mb-4 text-sm">Project description. To be implemented on the es.json and en.json files.</p>
         </div>
         <div>
           <h4 className="text-xs">Related skills:</h4>
