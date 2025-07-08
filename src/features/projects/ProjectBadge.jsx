@@ -36,38 +36,3 @@ export default function ProjectBadge({ name, type = "default" }) {
     </span>
   );
 }
-/*
-const mainSkillElements = project.mainSkillsKeys.map((skillKey) => {
-  const foundSkill = hardSkills.find((hardSkill) => hardSkill.key === skillKey);
-  const skillName = foundSkill ? foundSkill.name : skillKey;
-  const skillBackgroundColor = foundSkill
-    ? foundSkill.backgroundColor
-    : "#000000";
-  const skillColor = foundSkill ? foundSkill.color : "#FFFFFF";
-  return (
-    <span
-      key={skillKey}
-      className="text-sm rounded px-2 border"
-      style={{
-        color: skillColor,
-        backgroundColor: skillBackgroundColor,
-      }}
-    >
-      {skillName}
-    </span>
-  );
-});
-
-const secondarySkillElements = project.secondarySkillsKeys.map((skillKey) => {
-  const foundSkill = hardSkills.find((hardSkill) => hardSkill.key === skillKey);
-  const skillName = foundSkill ? foundSkill.name : skillKey;
-  return (
-    <span
-      key={skillKey}
-      className="text-sm bg-gray-100 border border-black/50 rounded px-2"
-    >
-      {skillName}
-    </span>
-  );
-});
-*/

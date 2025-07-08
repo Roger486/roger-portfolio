@@ -14,7 +14,7 @@ export default function ExternalLinkButton({ url, label, destination = "default"
           rel="noopener noreferrer"
           className={`
             flex gap-1 items-center
-            text-sm rounded px-3 py-1 min-w-15
+            text-sm rounded p-1 min-w-15
             border border-black/20
             transition duration-300
             hover:bg-blue-400

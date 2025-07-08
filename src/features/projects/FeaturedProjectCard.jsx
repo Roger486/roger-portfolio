@@ -1,4 +1,3 @@
-import { hardSkills } from "../../data/hard-skill-list";
 import ExternalLinkButton from "./ExternalLinkButton";
 import ProjectBadge from "./ProjectBadge";
 
@@ -32,7 +31,7 @@ export default function FeaturedProjectCard({ project }) {
     >
       {/* Thumbnail + CTA */}
       <div className="col-span-3 md:mr-3">
-        <div className="mb-4">
+        <div className="flex justify-center mb-4">
           <img
             src={project.thumbnail}
             alt="Thumbnail"

@@ -16,7 +16,7 @@ export default function Projects() {
     <section className="min-h-screen p-8">
       <h2 className="text-3xl font-bold mb-8">Proyectos</h2>
       <div className="flex flex-col gap-4 mb-4">{featuredProjectElements}</div>
-      <div className="flex flex-col gap-4 mb-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* {normalProjectElements} */}
         <ProjectCard key={1} project={projects[0]} />
         <ProjectCard key={2} project={projects[0]} />
