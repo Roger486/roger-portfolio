@@ -1,5 +1,6 @@
 import { FaGithub, FaLink } from "react-icons/fa";
 import { hardSkills } from "../../data/hard-skill-list";
+import ExternalLinkButton from "./ExternalLinkButton";
 
 export default function FeaturedProjectCard({ project }) {
   const demoUrlElements = project.demoUrls.map((demo) => {
@@ -22,22 +23,7 @@ export default function FeaturedProjectCard({ project }) {
   });
 
   const repoUrlElements = project.repoUrls.map((repo) => {
-    return (
-      <a
-        key={repo.url}
-        href={repo.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
-          flex gap-1 items-center
-          text-sm border rounded px-3 py-1 min-w-15 border-black/20
-          transition duration-300
-          hover:bg-blue-400 hover:text-white
-        "
-      >
-        <FaGithub size={"1.1rem"} /> {repo.label}
-      </a>
-    );
+    return <ExternalLinkButton key={repo.url} url={repo.url} label={repo.label} destination={repo.destination} />;
   });
 
   const roleElements = project.roles.map((role) => {
