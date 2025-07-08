@@ -6,8 +6,8 @@ export const projects = [
     mainSkillsKeys : ['laravel', 'php', 'api-rest', 'mvc'],
     secondarySkillsKeys: ['raspi-web-server', 'git', 'github', 'docker', 'agile'],
     repoUrls: [
-      {url: 'https://github.com/Roger486/HostControl', label: 'Main Repo'},
       {url: 'https://github.com/Roger486/HostControl/tree/main/backend', label: 'API Repo'},
+      {url: 'https://github.com/Roger486/HostControl', label: 'Main Repo'}
     ],
     demoUrls: [
       { url: 'https://hostcontrol-api.rogerdev.xyz/api/accommodations', label: 'API' },
