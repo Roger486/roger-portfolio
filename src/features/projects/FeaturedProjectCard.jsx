@@ -1,25 +1,10 @@
-import { FaGithub, FaLink } from "react-icons/fa";
 import { hardSkills } from "../../data/hard-skill-list";
 import ExternalLinkButton from "./ExternalLinkButton";
+import ProjectBadge from "./ProjectBadge";
 
 export default function FeaturedProjectCard({ project }) {
   const demoUrlElements = project.demoUrls.map((demo) => {
-    return (
-      <a
-        key={demo.url}
-        href={demo.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
-          flex gap-1 items-center
-          text-sm rounded px-3 py-1 min-w-15 text-white bg-blue-700
-          transition duration-300
-          hover:bg-blue-400
-        "
-      >
-        <FaLink /> {demo.label}
-      </a>
-    );
+    return <ExternalLinkButton key={demo.url} url={demo.url} label={demo.label} destination={demo.destination} />;
   });
 
   const repoUrlElements = project.repoUrls.map((repo) => {
@@ -27,52 +12,15 @@ export default function FeaturedProjectCard({ project }) {
   });
 
   const roleElements = project.roles.map((role) => {
-    return (
-      <span
-        key={role}
-        className="text-sm text-white border  bg-blue-400 rounded px-2"
-      >
-        {role}
-      </span>
-    );
+    return <ProjectBadge key={role} name={role} type="role" />;
   });
 
   const mainSkillElements = project.mainSkillsKeys.map((skillKey) => {
-    const foundSkill = hardSkills.find(
-      (hardSkill) => hardSkill.key === skillKey
-    );
-    const skillName = foundSkill ? foundSkill.name : skillKey;
-    const skillBackgroundColor = foundSkill
-      ? foundSkill.backgroundColor
-      : "#000000";
-    const skillColor = foundSkill ? foundSkill.color : "#FFFFFF";
-    return (
-      <span
-        key={skillKey}
-        className="text-sm rounded px-2 border"
-        style={{
-          color: skillColor,
-          backgroundColor: skillBackgroundColor,
-        }}
-      >
-        {skillName}
-      </span>
-    );
+    return <ProjectBadge key={skillKey} name={skillKey} type="main-skill" />;
   });
 
   const secondarySkillElements = project.secondarySkillsKeys.map((skillKey) => {
-    const foundSkill = hardSkills.find(
-      (hardSkill) => hardSkill.key === skillKey
-    );
-    const skillName = foundSkill ? foundSkill.name : skillKey;
-    return (
-      <span
-        key={skillKey}
-        className="text-sm bg-gray-100 border border-black/50 rounded px-2"
-      >
-        {skillName}
-      </span>
-    );
+    return <ProjectBadge key={skillKey} name={skillKey} type="secondary-skill" />;
   });
 
   return (

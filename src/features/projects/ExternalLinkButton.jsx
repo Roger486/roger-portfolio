@@ -1,11 +1,11 @@
 import { FaGithub, FaLink } from "react-icons/fa";
 
 export default function ExternalLinkButton({ url, label, destination = "default"}) {
-      const iconList = [
+      const buttonStyleList = [
         {destination: "default", iconElement: <FaLink />, styleClasses: "text-white bg-blue-700"}, 
         {destination: "github", iconElement: <FaGithub />, styleClasses: "hover:text-white"}
       ]
-      const iconStyle = iconList.find((iconInfo) => iconInfo.destination === destination) || iconList[0];
+      const buttonStyle = buttonStyleList.find((buttonStyleInfo) => buttonStyleInfo.destination === destination) || buttonStyleList[0];
 
       return (
         <a
@@ -18,10 +18,10 @@ export default function ExternalLinkButton({ url, label, destination = "default"
             border border-black/20
             transition duration-300
             hover:bg-blue-400
-            ${iconStyle.styleClasses}
+            ${buttonStyle.styleClasses}
           `}
         >
-          {iconStyle.iconElement} {label}
+          {buttonStyle.iconElement} {label}
         </a>
       );
 }
