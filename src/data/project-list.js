@@ -58,7 +58,10 @@ export const projects = [
     ],
     thumbnail: '/projects/coffee-haven/coffee-haven-thumb.jpg',
     images: [
-      { key: 'home', src: '/projects/coffee-haven/home.jpg' }
+      { key: 'home', src: '/projects/coffee-haven/coffee-haven-home.jpg' },
+      { key: 'form', src: '/projects/coffee-haven/coffee-haven-form.jpg' },
+      { key: 'panel', src: '/projects/coffee-haven/coffee-haven-panel.jpg' },
+      { key: 'detail', src: '/projects/coffee-haven/coffee-haven-detail.jpg' }
     ],
     featured: false
   },
@@ -76,7 +79,8 @@ export const projects = [
     ],
     thumbnail: '/projects/roger-portfolio/roger-portfolio-thumb.jpg',
     images: [
-      { key: 'home', src: '/projects/roger-portfolio/home.jpg' }
+      { key: 'home', src: '/projects/roger-portfolio/roger-portfolio-home.jpg' },
+      { key: 'responsive', src: '/projects/roger-portfolio/roger-portfolio-responsive.jpg' }
     ],
     featured: false
   },
