@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ContactElements from "./ContactElements";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../context/LanguageContext";
+import { lockBodyScroll, unlockBodyScroll } from "../helpers/lockbodyscroll";
 
 export default function Sidebar({ isMenuOpen, onClose }) {
   const [topPosition, setTopPosition] = useState(250); // posición inicial para espacio avatar
@@ -29,10 +30,10 @@ export default function Sidebar({ isMenuOpen, onClose }) {
     const updateOverflow = () => {
       const isMobile = window.innerWidth < 1024;
       if (isMenuOpen && isMobile) {
-        document.body.style.overflow = "hidden";
+        lockBodyScroll();
         window.scrollTo(0, 0);
       } else {
-        document.body.style.overflow = "";
+        unlockBodyScroll();
         onClose();
       }
     };

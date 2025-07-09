@@ -1,10 +1,24 @@
 import { ImCross } from "react-icons/im";
 import { useLanguage } from "../../context/LanguageContext";
+import { useEffect } from "react";
+import { lockBodyScroll, unlockBodyScroll } from "../../helpers/lockbodyscroll";
 
 export default function ProjectModal({ project, onClose }) {
-  if (!project) return null;
   const { t } = useLanguage();
 
+
+  const isOpen = Boolean(project);
+
+  useEffect(() => {
+    if (isOpen) lockBodyScroll();
+    return () => unlockBodyScroll();
+  }, [isOpen]);
+
+  // never put a return before a useEffect
+  if (!isOpen) return null;
+
+
+  
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
       <div className="bg-white p-6 rounded-lg max-w-2xl w-full relative">
@@ -19,7 +33,7 @@ export default function ProjectModal({ project, onClose }) {
         <p className="text-gray-900 mb-4">
           {t(`projects.project-descriptions.${project.key}.long`)}
         </p>
-                <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 mb-4">
           {t(`projects.project-descriptions.${project.key}.extra`)}
         </p>
       </div>
