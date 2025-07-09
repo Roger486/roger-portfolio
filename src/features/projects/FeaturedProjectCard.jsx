@@ -2,7 +2,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import ExternalLinkButton from "./ExternalLinkButton";
 import ProjectBadge from "./ProjectBadge";
 
-export default function FeaturedProjectCard({ project }) {
+export default function FeaturedProjectCard({ project, onClick }) {
   const { t } = useLanguage();
 
   const demoUrlElements = project.demoUrls.map((demo) => {
@@ -60,6 +60,7 @@ export default function FeaturedProjectCard({ project }) {
               transition duration-300
               hover:scale-105 cursor-pointer
             "
+            onClick={onClick}
           />
         </div>
 

@@ -1,18 +1,41 @@
+import { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import { projects } from "../../data/project-list";
 import FeaturedProjectCard from "./FeaturedProjectCard";
 import ProjectCard from "./ProjectCard";
+import ProjectModal from "./ProjectModal";
 
 export default function Projects() {
   const { t } = useLanguage();
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
 
   const featuredProjectElements = projects
     .filter((project) => project.featured)
-    .map((project) => <FeaturedProjectCard key={project.key} project={project} />)
+    .map((project) => (
+      <FeaturedProjectCard
+        key={project.key}
+        project={project}
+        onClick={() => handleOpenModal(project)}
+      />
+    ));
 
   const normalProjectElements = projects
     .filter((project) => !project.featured)
-    .map((project) => <ProjectCard key={project.key} project={project} />)
+    .map((project) => (
+      <ProjectCard
+        key={project.key}
+        project={project}
+        onClick={() => handleOpenModal(project)}
+      />
+    ));
 
   return (
     <section className="min-h-screen p-8">
@@ -21,6 +44,8 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {normalProjectElements}
       </div>
+
+      <ProjectModal project={selectedProject} onClose={handleCloseModal} />
     </section>
   );
 }
