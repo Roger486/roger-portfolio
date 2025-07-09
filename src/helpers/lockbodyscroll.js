@@ -13,3 +13,7 @@ export function unlockBodyScroll() {
     document.body.style.overflow = "";
   }
 }
+
+export function isBodyScrollLocked() {
+  return scrollLockedCount > 0;
+}

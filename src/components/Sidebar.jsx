@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ContactElements from "./ContactElements";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../context/LanguageContext";
-import { lockBodyScroll, unlockBodyScroll } from "../helpers/lockbodyscroll";
+import { isBodyScrollLocked, lockBodyScroll, unlockBodyScroll } from "../helpers/lockbodyscroll";
 
 export default function Sidebar({ isMenuOpen, onClose }) {
   const [topPosition, setTopPosition] = useState(250); // posición inicial para espacio avatar
@@ -26,14 +26,21 @@ export default function Sidebar({ isMenuOpen, onClose }) {
 
     /**
      * bloque encargado de bloquear el scroll vertical cuando el menu hamburguesa está abierto
+     * También tiene en cuenta si alguien más necesita el scroll bloqueado (p.e. un modal)
+     * a través de isBodyScrollLocked()
      */
     const updateOverflow = () => {
       const isMobile = window.innerWidth < 1024;
+
       if (isMenuOpen && isMobile) {
         lockBodyScroll();
         window.scrollTo(0, 0);
-      } else {
-        unlockBodyScroll();
+      }
+
+      if (isMenuOpen && !isMobile) {
+        if (!isBodyScrollLocked()) {
+          unlockBodyScroll();
+        }
         onClose();
       }
     };
@@ -58,14 +65,20 @@ export default function Sidebar({ isMenuOpen, onClose }) {
     <aside
       className={`
           fixed left-0 h-screen p-6 transition-all duration-300
-          ${isMenuOpen
-            ? "bg-gray-50 w-full relative z-10 text-xl flex justify-center text-center mt-10 lg:hidden"
-            : "hidden"}
+          ${
+            isMenuOpen
+              ? "bg-gray-50 w-full relative z-10 text-xl flex justify-center text-center mt-10 lg:hidden"
+              : "hidden"
+          }
           lg:block lg:w-64
         `}
       style={topStyle}
     >
-      <nav className={`mt-5 flex flex-col text-black font-semibold ${isMenuOpen ? "gap-6" : "gap-4"}`}>
+      <nav
+        className={`mt-5 flex flex-col text-black font-semibold ${
+          isMenuOpen ? "gap-6" : "gap-4"
+        }`}
+      >
         <a href="#about" onClick={onClose} className="hover:text-blue-400">
           {t("side-bar.about")}
         </a>
