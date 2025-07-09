@@ -43,5 +43,37 @@
         "description": "Haber trabajado en un servicio de atención recién creado, sin procesos definidos, y después en uno con distintos servicios telefónicos simultáneos agudizó mi capacidad de adaptación."
       }
     }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "demo-urls": "URLs de demostración",
+    "repo-urls": "Repositorios",
+    "roles": "Roles",
+    "main-skills": "Habilidades principales",
+    "secondary-skills": "Habilidades secundarias",
+    "related-skills": "Habilidades relacionadas",
+    "description-title": "Descripción del proyecto",
+    "project-descriptions": {
+      "hostcontrol": {
+        "short": "TFG del ciclo DAW: desarrollé la API, la base de datos y parte clave de la documentación técnica de una plataforma de gestión de alojamientos.",
+        "long": "HostControl es una plataforma web desarrollada como Trabajo de Fin de Grado (TFG) del ciclo de DAW. El objetivo del proyecto era crear un sistema completo de gestión para complejos turísticos como campings, casas rurales o bungalows, permitiendo controlar alojamientos, reservas, servicios adicionales y administración interna desde un único panel. Mi rol principal fue el desarrollo de toda la lógica de back-end: diseñé y programé la API RESTful con Laravel, estructuré la base de datos relacional en MariaDB y elaboré gran parte de la documentación técnica del sistema. También implementé el sistema de autenticación con Laravel Sanctum, validaciones complejas, soporte multidioma desde la API y control de logs. Además, el despliegue del sistema se realizó en Google Cloud utilizando Terraform, Ansible y Cloud Build, aunque esta parte la lideró otro compañero del equipo.",
+        "extra": "Después de finalizar el proyecto académico, realicé por mi cuenta un despliegue completo en una Raspberry Pi 5 utilizando Docker y Nginx como proxy inverso. Automatizé las actualizaciones mediante scripts personalizados que comprueban si hay cambios en el repositorio, y en caso afirmativo, aplican los cambios, eliminan y recrean los contenedores. El resultado es una aplicación profesional, escalable y bien documentada, lista para ser presentada en un entorno real o productivo."
+      },
+      "raspi-server": {
+        "short": "Servidor personal basado en Raspberry Pi 5 donde despliego y actualizo mis proyectos web usando Docker, Nginx y scripts Bash personalizados.",
+        "long": "Este proyecto es una guía y configuración real de un servidor personal basado en Raspberry Pi 5, creado para desplegar y gestionar mis propios proyectos web. El servidor utiliza Docker y Nginx como proxy inverso, con una estructura organizada por tipo de proyecto (frontend, backend, fullstack). Se configuró con autenticación SSH por clave, UFW y rutas de despliegue estandarizadas. Aunque nació como soporte para mostrar el proyecto HostControl, el sistema también aloja múltiples proyectos bajo subdominios personalizados, utilizando túneles Cloudflare y buenas prácticas de administración segura.",
+        "extra": "Desarrollé una serie de scripts Bash reutilizables que automatizan el despliegue de proyectos Dockerizados. Estos scripts detectan actualizaciones en los repositorios, construyen nuevas imágenes, eliminan contenedores antiguos y lanzan nuevos, todo con políticas de reinicio configuradas. Además, utilicé Cloudflare Tunnel para exponer los servicios de forma segura y configuré un servicio systemd que garantiza el arranque automático y la recuperación en caso de fallo. Todo el sistema es modular, replicable y evoluciona con cada nuevo proyecto que añado a mi entorno."
+      },
+      "coffee-haven": {
+        "short": "Aplicación web en Angular desarrollada como práctica académica para la asignatura de desarrollo en entorno cliente del ciclo DAW.",
+        "long": "CoffeeHaven es una aplicación construida con Angular como parte de una práctica del módulo de Desarrollo Web en Entorno Cliente del ciclo de FP DAW. Simula una tienda de café online en la que los usuarios pueden explorar productos, navegar entre páginas, autenticarse y realizar pedidos. La aplicación sigue una arquitectura moderna basada en componentes, servicios, rutas protegidas y modelos, e incluye un sistema de despliegue Dockerizado con Nginx para entornos de producción o demostración.",
+        "extra": "Este proyecto, aunque modesto, me permitió introducirme en Angular y comprender su estructura basada en módulos, servicios y rutas. También experimenté con la configuración de guardas de rutas y la separación lógica en carpetas. Como añadido, preparé un entorno de despliegue con Docker y Nginx configurado para servir aplicaciones SPA, lo cual me permitió integrarlo fácilmente en mi servidor personal."
+      },
+      "roger-portfolio": {
+        "short": "Portfolio web personal desarrollado en React y Tailwind CSS para presentar mis proyectos, habilidades y formación como desarrollador web.",
+        "long": "Este portfolio fue desarrollado desde cero con React y Tailwind CSS para mostrar mis proyectos académicos y personales, habilidades técnicas y blandas, así como mi experiencia previa. La estructura está dividida en secciones claras como Sobre mí, Habilidades, Proyectos, Experiencia y Contacto. Incluye soporte multidioma mediante un contexto personalizado que gestiona los textos dinámicos en español e inglés, sin depender de librerías externas.",
+        "extra": "El diseño del portfolio está basado en componentes reutilizables y una interfaz limpia gracias al uso de Tailwind CSS. La gestión del estado se realiza con hooks de React como useState y useEffect, y los datos de proyectos se organizan en archivos JavaScript externos para facilitar su mantenimiento. Todo el sistema refleja tanto mi perfil técnico como mi interés por la accesibilidad, la estructura clara y la experiencia de usuario."
+      }
+    }
   }
 }

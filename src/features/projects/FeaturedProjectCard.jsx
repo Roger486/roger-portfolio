@@ -1,13 +1,30 @@
+import { useLanguage } from "../../context/LanguageContext";
 import ExternalLinkButton from "./ExternalLinkButton";
 import ProjectBadge from "./ProjectBadge";
 
 export default function FeaturedProjectCard({ project }) {
+  const { t } = useLanguage();
+
   const demoUrlElements = project.demoUrls.map((demo) => {
-    return <ExternalLinkButton key={demo.url} url={demo.url} label={demo.label} destination={demo.destination} />;
+    return (
+      <ExternalLinkButton
+        key={demo.url}
+        url={demo.url}
+        label={demo.label}
+        destination={demo.destination}
+      />
+    );
   });
 
   const repoUrlElements = project.repoUrls.map((repo) => {
-    return <ExternalLinkButton key={repo.url} url={repo.url} label={repo.label} destination={repo.destination} />;
+    return (
+      <ExternalLinkButton
+        key={repo.url}
+        url={repo.url}
+        label={repo.label}
+        destination={repo.destination}
+      />
+    );
   });
 
   const roleElements = project.roles.map((role) => {
@@ -19,7 +36,9 @@ export default function FeaturedProjectCard({ project }) {
   });
 
   const secondarySkillElements = project.secondarySkillsKeys.map((skillKey) => {
-    return <ProjectBadge key={skillKey} name={skillKey} type="secondary-skill" />;
+    return (
+      <ProjectBadge key={skillKey} name={skillKey} type="secondary-skill" />
+    );
   });
 
   return (
@@ -45,33 +64,53 @@ export default function FeaturedProjectCard({ project }) {
         </div>
 
         <div>
-          <h4>Demo URLs:</h4>
-          <div className="mb-4 flex gap-1 justify-center text-center">
-            {demoUrlElements}
-          </div>
+          {demoUrlElements.length > 0 && (
+            <div className="mb-4">
+              <h4 className="text-sm">{t("projects.demo-urls")}:</h4>
+              <div className="flex gap-1 justify-center text-center">
+                {demoUrlElements}
+              </div>
+            </div>
+          )}
 
-          <h4>Repo URLs:</h4>
-          <div className="flex gap-1 justify-center text-center">
-            {repoUrlElements}
-          </div>
+          {repoUrlElements.length > 0 && (
+            <div>
+              <h4 className="text-sm">{t("projects.repo-urls")}:</h4>
+              <div className="flex gap-1 justify-center text-center">
+                {repoUrlElements}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
-      {/* Title + text + roles + skills */}
-      <div className="col-span-5 md:border-l-2 border-blue-400 pl-3">
-        <h3 className="text-2xl font-bold mb-4 hidden md:block">{project.name}</h3>
-        <h4 className="font-semibold mb-2">Project description:</h4>
-        <p className="text-sm mb-2">
-          Project description. To be implemented on the es.json and en.json
-          files.
-        </p>
-        <h4 className="mt-4 font-semibold">Roles:</h4>
-        <div className="flex flex-wrap gap-1">{roleElements}</div>
+      {/* text + roles + skills */}
+      <div
+        className="col-span-5
+        md:border-l-2 border-blue-400 pl-3
+        flex flex-col h-full justify-between
+        "
+      >
         <div>
-          <h4 className="mt-4 font-semibold">Main Skills:</h4>
-          <div className="flex flex-wrap gap-2">{mainSkillElements}</div>
-          <h4 className="mt-4 font-semibold">Secondary Skills:</h4>
-          <div className="flex flex-wrap gap-2">{secondarySkillElements}</div>
+          <h3 className="text-2xl font-bold mb-4 hidden md:block">
+            {project.name}
+          </h3>
+          <h4 className="font-semibold mb-2">
+            {t("projects.description-title")}:
+          </h4>
+          <p className="mb-2">
+            {t(`projects.project-descriptions.${project.key}.short`)}:
+          </p>
+        </div>
+        <div className="mb-2">
+          <h4 className="mt-4 mb-1 font-semibold">{t("projects.roles")}:</h4>
+          <div className="flex flex-wrap gap-1 justify-center">{roleElements}</div>
+          <div>
+            <h4 className="mt-4 mb-1 font-semibold">{t("projects.main-skills")}:</h4>
+            <div className="flex flex-wrap gap-2 justify-center">{mainSkillElements}</div>
+            <h4 className="mt-4 mb-1 font-semibold">{t("projects.secondary-skills")}:</h4>
+            <div className="flex flex-wrap gap-2 justify-center">{secondarySkillElements}</div>
+          </div>
         </div>
       </div>
     </div>

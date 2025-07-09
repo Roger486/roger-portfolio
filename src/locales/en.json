@@ -43,5 +43,37 @@
         "description": "Working in a newly created customer service team without defined processes, and later in one with different simultaneous telephone services, sharpened my adaptability."
       }
     }
+  },
+  "projects": {
+    "title": "Projects",
+    "demo-urls": "Demo URLs",
+    "repo-urls": "Repositories",
+    "roles": "Roles",
+    "main-skills": "Main skills",
+    "secondary-skills": "Secondary skills",
+    "related-skills": "Related skills",
+    "description-title": "Project description",
+    "project-descriptions": {
+      "hostcontrol": {
+        "short": "Final project for the DAW program: I developed the API, database, and a large part of the technical documentation for an accommodation management platform.",
+        "long": "HostControl is a web platform developed as the Final Project (TFG) for the DAW vocational program. The goal was to create a complete management system for tourist accommodations like campsites, rural houses or bungalows, allowing full control over bookings, services, and internal operations from a single admin panel. My main role was building the entire backend: I designed and programmed the RESTful API with Laravel, created the relational database in MariaDB, and wrote most of the technical documentation. I also implemented authentication with Laravel Sanctum, advanced validations, multi-language support via API, and log tracking. The system was deployed on Google Cloud using Terraform, Ansible and Cloud Build, with infrastructure handled by another teammate.",
+        "extra": "After completing the academic project, I deployed it myself on a Raspberry Pi 5 using Docker and Nginx as a reverse proxy. I wrote custom Bash scripts to detect changes in the repository, pull updates, rebuild and relaunch containers automatically. The result is a professional, scalable, and well-documented application ready to be shown in real environments."
+      },
+      "raspi-server": {
+        "short": "Personal server based on Raspberry Pi 5 where I deploy and update my web projects using Docker, Nginx, and custom Bash scripts.",
+        "long": "This project is a real setup and guide for managing a personal server based on Raspberry Pi 5, built to host and deploy my own web projects. The server uses Docker and Nginx as a reverse proxy, with a folder structure organized by project type (frontend, backend, fullstack). It was configured with SSH key authentication, UFW firewall, and standardized deployment paths. Although it started as a way to host the HostControl project, it now runs multiple projects under custom subdomains using Cloudflare Tunnel and safe administration practices.",
+        "extra": "I developed reusable Bash scripts that automate the deployment of Dockerized projects. These scripts check for repository updates, build new images, remove old containers, and launch new ones with restart policies. I also used Cloudflare Tunnel to expose services securely and set up a systemd service to ensure automatic startup and recovery. The whole system is modular, repeatable, and grows as I add more projects to my environment."
+      },
+      "coffee-haven": {
+        "short": "Angular web app built as an academic project for the Client-Side Development subject of the DAW program.",
+        "long": "CoffeeHaven is an Angular application created for a practical assignment in the Client-Side Web Development module of the DAW vocational course. It simulates an online coffee shop where users can browse products, navigate between pages, authenticate, and place orders. The app follows a modern structure based on components, services, protected routes, and models. It also includes a Docker + Nginx deployment setup for running it as a production-like SPA.",
+        "extra": "Although modest, this project helped me get started with Angular and understand its module-based structure, services, and routing system. I also experimented with route guards and logical folder separation. As an extra step, I prepared a Docker + Nginx environment to serve it as a single-page application and integrate it easily into my personal server."
+      },
+      "roger-portfolio": {
+        "short": "Personal portfolio website built with React and Tailwind CSS to showcase my projects, skills, and training as a web developer.",
+        "long": "This portfolio was built from scratch using React and Tailwind CSS to display my academic and personal projects, technical and soft skills, and general background. It is divided into clear sections like About Me, Skills, Projects, Experience, and Contact. It supports multiple languages using a custom React context to switch between Spanish and English without third-party libraries.",
+        "extra": "The portfolio uses reusable components and a clean interface thanks to Tailwind CSS. State management is handled with React hooks like useState and useEffect. The project data is stored in external JavaScript files for easy updates. The result reflects both my technical profile and my focus on accessibility, clarity, and user experience."
+      }
+    }
   }
 }
