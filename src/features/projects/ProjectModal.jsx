@@ -18,8 +18,15 @@ export default function ProjectModal({ project, onClose }) {
   const modalRoot = document.getElementById("project-modal-root");
 
   const modalContent = (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-      <div className="bg-white p-6 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+    <div
+      className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+      onClick={onClose}
+    >
+      <div
+        className="bg-white p-6 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+        // This avoids the onClick={onClose} on parent div to be triggered when cliking inside the modal
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           className="absolute top-4 right-4 text-gray-400 hover:text-red-400"
           onClick={onClose}

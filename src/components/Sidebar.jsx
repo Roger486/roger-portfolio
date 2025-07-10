@@ -34,7 +34,6 @@ export default function Sidebar({ isMenuOpen, onClose }) {
 
       if (isMenuOpen && isMobile) {
         lockBodyScroll();
-        window.scrollTo(0, 0);
       }
 
       if (isMenuOpen && !isMobile) {
@@ -52,7 +51,7 @@ export default function Sidebar({ isMenuOpen, onClose }) {
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", updateOverflow);
-      document.body.style.overflow = "";
+      unlockBodyScroll();
     };
   }, [isMenuOpen]);
 
@@ -67,7 +66,7 @@ export default function Sidebar({ isMenuOpen, onClose }) {
           fixed left-0 h-screen p-6 transition-all duration-300
           ${
             isMenuOpen
-              ? "bg-gray-50 w-full relative z-10 text-xl flex justify-center text-center mt-10 lg:hidden"
+              ? "bg-gray-50 w-full text-xl flex justify-center text-center mt-10 lg:hidden"
               : "hidden"
           }
           lg:block lg:w-64
