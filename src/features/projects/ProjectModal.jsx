@@ -29,7 +29,7 @@ export default function ProjectModal({ project, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          className="absolute top-4 right-4 text-gray-400 hover:text-red-400"
+          className="absolute top-4 right-4 text-gray-400 hover:text-red-700"
           onClick={onClose}
         >
           <ImCross />
