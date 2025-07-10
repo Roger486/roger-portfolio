@@ -13,13 +13,33 @@ export const projects = [
       { url: 'https://hostcontrol-api.rogerdev.xyz/api/accommodations', label: 'API', destination: 'default' },
       { url: 'https://hostcontrol-vicentedev.rogerdev.xyz/', label: 'Frontend', destination: 'default' }
     ],
-    thumbnail: '/projects/hostcontrol/hostcontrol-thumb.jpg',
     images: [
-      { key: 'stack', src: '/projects/hostcontrol/hostcontrol-stack.jpg' },
-      { key: 'relational', src: '/projects/hostcontrol/hostcontrol-relational.jpg' },
-      { key: 'postman', src: '/projects/hostcontrol/hostcontrol-postman.jpg' },
-      { key: 'home', src: '/projects/hostcontrol/hostcontrol-home.jpg' },
-      { key: 'panel', src: '/projects/hostcontrol/hostcontrol-panel.jpg' },
+      {
+        key: 'img-001',
+        descriptionKey: 'hostcontrol-stack',
+        src: '/projects/hostcontrol/hostcontrol-stack.jpg',
+        thumb: '/projects/hostcontrol/hostcontrol-stack-thumb.jpg'
+      },
+      {
+        key: 'img-002',
+        descriptionKey: 'hostcontrol-relational',
+        src: '/projects/hostcontrol/hostcontrol-relational.jpg'
+      },
+      {
+        key: 'img-003',
+        descriptionKey: 'hostcontrol-postman',
+        src: '/projects/hostcontrol/hostcontrol-postman.jpg'
+      },
+      {
+        key: 'img-004',
+        descriptionKey: 'hostcontrol-home',
+        src: '/projects/hostcontrol/hostcontrol-home.jpg'
+      },
+      {
+        key: 'img-005',
+        descriptionKey: 'hostcontrol-panel',
+        src: '/projects/hostcontrol/hostcontrol-panel.jpg'
+      }
     ],
     featured: true
   },
@@ -31,15 +51,30 @@ export const projects = [
     secondarySkillsKeys: ['git', 'github'],
     repoUrls: [
       { url: 'https://github.com/Roger486/raspi-server', label: 'Main Repo', destination: 'github' }
-
     ],
     demoUrls: [],
-    thumbnail: '/projects/raspi-server/raspi-server-thumb.jpg',
     images: [
-      { key: 'cover', src: '/projects/raspi-server/raspi-server-cover.jpg' },
-      { key: 'hardware', src: '/projects/raspi-server/raspi-server-hardware.jpg' },
-      { key: 'code', src: '/projects/raspi-server/raspi-server-code.jpg' },
-      { key: 'script-running', src: '/projects/raspi-server/raspi-server-script-running.jpg' }
+      {
+        key: 'img-001',
+        descriptionKey: 'raspi-server-cover',
+        src: '/projects/raspi-server/raspi-server-cover.jpg',
+        thumb: '/projects/raspi-server/raspi-server-cover-thumb.jpg'
+      },
+      {
+        key: 'img-002',
+        descriptionKey: 'raspi-server-hardware',
+        src: '/projects/raspi-server/raspi-server-hardware.jpg'
+      },
+      {
+        key: 'img-003',
+        descriptionKey: 'raspi-server-code',
+        src: '/projects/raspi-server/raspi-server-code.jpg'
+      },
+      {
+        key: 'img-004',
+        descriptionKey: 'raspi-server-script-running',
+        src: '/projects/raspi-server/raspi-server-script-running.jpg'
+      }
     ],
     featured: false
   },
@@ -51,17 +86,32 @@ export const projects = [
     secondarySkillsKeys: ['git', 'github', 'docker', 'raspi'],
     repoUrls: [
       { url: 'https://github.com/Roger486/CoffeeHaven-Angular', label: 'Main Repo', destination: 'github' }
-
     ],
     demoUrls: [
       { url: 'https://coffee-haven.rogerdev.xyz/', label: 'Frontend', destination: 'default' }
     ],
-    thumbnail: '/projects/coffee-haven/coffee-haven-thumb.jpg',
     images: [
-      { key: 'home', src: '/projects/coffee-haven/coffee-haven-home.jpg' },
-      { key: 'form', src: '/projects/coffee-haven/coffee-haven-form.jpg' },
-      { key: 'panel', src: '/projects/coffee-haven/coffee-haven-panel.jpg' },
-      { key: 'detail', src: '/projects/coffee-haven/coffee-haven-detail.jpg' }
+      {
+        key: 'img-001',
+        descriptionKey: 'coffee-haven-home',
+        src: '/projects/coffee-haven/coffee-haven-home.jpg',
+        thumb: '/projects/coffee-haven/coffee-haven-home-thumb.jpg'
+      },
+      {
+        key: 'img-002',
+        descriptionKey: 'coffee-haven-form',
+        src: '/projects/coffee-haven/coffee-haven-form.jpg'
+      },
+      {
+        key: 'img-003',
+        descriptionKey: 'coffee-haven-panel',
+        src: '/projects/coffee-haven/coffee-haven-panel.jpg'
+      },
+      {
+        key: 'img-004',
+        descriptionKey: 'coffee-haven-detail',
+        src: '/projects/coffee-haven/coffee-haven-detail.jpg'
+      }
     ],
     featured: false
   },
@@ -77,11 +127,19 @@ export const projects = [
     demoUrls: [
       { url: 'https://roger-portfolio.rogerdev.xyz/', label: 'Frontend', destination: 'default' }
     ],
-    thumbnail: '/projects/roger-portfolio/roger-portfolio-thumb.jpg',
     images: [
-      { key: 'home', src: '/projects/roger-portfolio/roger-portfolio-home.jpg' },
-      { key: 'responsive', src: '/projects/roger-portfolio/roger-portfolio-responsive.jpg' }
+      {
+        key: 'img-001',
+        descriptionKey: 'roger-portfolio-home',
+        src: '/projects/roger-portfolio/roger-portfolio-home.jpg',
+        thumb: '/projects/roger-portfolio/roger-portfolio-home-thumb.jpg'
+      },
+      {
+        key: 'img-002',
+        descriptionKey: 'roger-portfolio-responsive',
+        src: '/projects/roger-portfolio/roger-portfolio-responsive.jpg'
+      }
     ],
     featured: false
-  },
+  }
 ];

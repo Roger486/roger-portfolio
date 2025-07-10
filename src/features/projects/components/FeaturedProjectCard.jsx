@@ -6,6 +6,9 @@ import ProjectBadge from "./ProjectBadge";
 export default function FeaturedProjectCard({ project, onClick }) {
   const { t } = useLanguage();
 
+  const mainImage = project.images.find((image) => image.key === "img-001");
+  const mainThumbnail = mainImage.thumb;
+
   const demoUrlElements = project.demoUrls.map((demo) => {
     return (
       <ExternalLinkButton
@@ -54,7 +57,7 @@ export default function FeaturedProjectCard({ project, onClick }) {
         <h3 className="text-2xl font-bold mb-4 md:hidden">{project.name}</h3>
         <div className="flex justify-center mb-4">
           <img
-            src={project.thumbnail}
+            src={mainThumbnail}
             alt="Thumbnail"
             className="
               rounded border border-black/20 shadow
