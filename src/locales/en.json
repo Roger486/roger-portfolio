@@ -17,6 +17,7 @@
     "title": "Skills",
     "title-hard": "Hard Skills",
     "title-soft": "Soft Skills",
+    "gallery-thumbnails-label": "Project thumbnails",
     "soft-skills": {
       "active-listening": {
         "name": "Active listening",
@@ -75,6 +76,23 @@
         "long": "This portfolio was built from scratch using React and Tailwind CSS to display my academic and personal projects, technical and soft skills, and general background. It is divided into clear sections like About Me, Skills, Projects, Experience, and Contact. It supports multiple languages using a custom React context to switch between Spanish and English without third-party libraries.",
         "extra": "The portfolio uses reusable components and a clean interface thanks to Tailwind CSS. State management is handled with React hooks like useState and useEffect. The project data is stored in external JavaScript files for easy updates. The result reflects both my technical profile and my focus on accessibility, clarity, and user experience."
       }
+    },
+    "image-descriptions": {
+      "hostcontrol-stack": "Technical diagram of the technology stack used in HostControl",
+      "hostcontrol-relational": "Relational diagram of the HostControl database",
+      "hostcontrol-postman": "Screenshot of an HTTP response from the HostControl API in Postman",
+      "hostcontrol-home": "Screenshot of the HostControl frontend homepage",
+      "hostcontrol-panel": "Screenshot of the admin control panel in HostControl",
+      "raspi-server-cover": "Cover image of the Raspberry Pi 5-based web server",
+      "raspi-server-hardware": "Photo of the Raspberry Pi with its case open",
+      "raspi-server-code": "Screenshot of a Bash script used in the Raspberry Pi server",
+      "raspi-server-script-running": "Bash script running on the Raspberry Pi server",
+      "coffee-haven-home": "Screenshot of the Coffee Haven homepage",
+      "coffee-haven-form": "Form to add new coffees in Coffee Haven",
+      "coffee-haven-panel": "Control panel in Coffee Haven used to manage orders",
+      "coffee-haven-detail": "Detail page for one of the coffees in Coffee Haven",
+      "roger-portfolio-home": "Screenshot of the personal portfolio homepage",
+      "roger-portfolio-responsive": "Screenshots of the skills section and mobile menu, showing responsive design"
     }
   }
 }
