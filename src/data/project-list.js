@@ -23,22 +23,26 @@ export const projects = [
       {
         key: 'img-002',
         descriptionKey: 'hostcontrol-relational',
-        src: '/projects/hostcontrol/hostcontrol-relational.jpg'
+        src: '/projects/hostcontrol/hostcontrol-relational.jpg',
+        thumb: '/projects/hostcontrol/hostcontrol-relational-thumb.jpg'
       },
       {
         key: 'img-003',
         descriptionKey: 'hostcontrol-postman',
-        src: '/projects/hostcontrol/hostcontrol-postman.jpg'
+        src: '/projects/hostcontrol/hostcontrol-postman.jpg',
+        thumb: '/projects/hostcontrol/hostcontrol-postman-thumb.jpg'
       },
       {
         key: 'img-004',
         descriptionKey: 'hostcontrol-home',
-        src: '/projects/hostcontrol/hostcontrol-home.jpg'
+        src: '/projects/hostcontrol/hostcontrol-home.jpg',
+        thumb: '/projects/hostcontrol/hostcontrol-home-thumb.jpg'
       },
       {
         key: 'img-005',
         descriptionKey: 'hostcontrol-panel',
-        src: '/projects/hostcontrol/hostcontrol-panel.jpg'
+        src: '/projects/hostcontrol/hostcontrol-panel.jpg',
+        thumb: '/projects/hostcontrol/hostcontrol-panel-thumb.jpg'
       }
     ],
     featured: true
@@ -63,17 +67,20 @@ export const projects = [
       {
         key: 'img-002',
         descriptionKey: 'raspi-server-hardware',
-        src: '/projects/raspi-server/raspi-server-hardware.jpg'
+        src: '/projects/raspi-server/raspi-server-hardware.jpg',
+        thumb: '/projects/raspi-server/raspi-server-hardware-thumb.jpg'
       },
       {
         key: 'img-003',
         descriptionKey: 'raspi-server-code',
-        src: '/projects/raspi-server/raspi-server-code.jpg'
+        src: '/projects/raspi-server/raspi-server-code.jpg',
+        thumb: '/projects/raspi-server/raspi-server-code-thumb.jpg'
       },
       {
         key: 'img-004',
         descriptionKey: 'raspi-server-script-running',
-        src: '/projects/raspi-server/raspi-server-script-running.jpg'
+        src: '/projects/raspi-server/raspi-server-script-running.jpg',
+        thumb: '/projects/raspi-server/raspi-server-script-running-thumb.jpg'
       }
     ],
     featured: false
@@ -100,17 +107,20 @@ export const projects = [
       {
         key: 'img-002',
         descriptionKey: 'coffee-haven-form',
-        src: '/projects/coffee-haven/coffee-haven-form.jpg'
+        src: '/projects/coffee-haven/coffee-haven-form.jpg',
+        thumb: '/projects/coffee-haven/coffee-haven-form-thumb.jpg'
       },
       {
         key: 'img-003',
         descriptionKey: 'coffee-haven-panel',
-        src: '/projects/coffee-haven/coffee-haven-panel.jpg'
+        src: '/projects/coffee-haven/coffee-haven-panel.jpg',
+        thumb: '/projects/coffee-haven/coffee-haven-panel-thumb.jpg'
       },
       {
         key: 'img-004',
         descriptionKey: 'coffee-haven-detail',
-        src: '/projects/coffee-haven/coffee-haven-detail.jpg'
+        src: '/projects/coffee-haven/coffee-haven-detail.jpg',
+        thumb: '/projects/coffee-haven/coffee-haven-detail-thumb.jpg'
       }
     ],
     featured: false
@@ -137,7 +147,8 @@ export const projects = [
       {
         key: 'img-002',
         descriptionKey: 'roger-portfolio-responsive',
-        src: '/projects/roger-portfolio/roger-portfolio-responsive.jpg'
+        src: '/projects/roger-portfolio/roger-portfolio-responsive.jpg',
+        thumb: '/projects/roger-portfolio/roger-portfolio-responsive-thumb.jpg'
       }
     ],
     featured: false

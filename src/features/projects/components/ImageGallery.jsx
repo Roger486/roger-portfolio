@@ -12,7 +12,7 @@ export default function ImageGallery({ images }) {
     return (
       <img
         key={image.key}
-        src={image.src}
+        src={image.thumb}
         alt="Thumbnail"
         className="
             w-20 max-h-20 sm:w-24 sm:max-h-24 xl:w-32 xl:max-h-32 aspect-square
