@@ -46,6 +46,7 @@
   },
   "projects": {
     "title": "Projects",
+    "viewDetails": "View project details",
     "demo-urls": "Demo URLs",
     "repo-urls": "Repositories",
     "roles": "Roles",

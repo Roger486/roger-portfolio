@@ -1,8 +1,9 @@
 import { useLanguage } from "../../context/LanguageContext";
 import ExternalLinkButton from "./ExternalLinkButton";
+import OpenModalButton from "./OpenModalButton";
 import ProjectBadge from "./ProjectBadge";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, onClick }) {
   const { t } = useLanguage();
 
   const demoUrlElements = project.demoUrls.map((demo) => {
@@ -61,6 +62,14 @@ export default function ProjectCard({ project }) {
             transition duration-300
             hover:scale-105 cursor-pointer
           "
+            onClick={onClick}
+          />
+        </div>
+
+        <div className="mb-4 flex justify-center">
+          <OpenModalButton
+            label={t("projects.viewDetails")}
+            onClick={onClick}
           />
         </div>
 

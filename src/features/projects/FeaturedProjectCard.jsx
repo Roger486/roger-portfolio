@@ -1,5 +1,6 @@
 import { useLanguage } from "../../context/LanguageContext";
 import ExternalLinkButton from "./ExternalLinkButton";
+import OpenModalButton from "./OpenModalButton";
 import ProjectBadge from "./ProjectBadge";
 
 export default function FeaturedProjectCard({ project, onClick }) {
@@ -46,7 +47,7 @@ export default function FeaturedProjectCard({ project, onClick }) {
       className="
         grid grid-cols-1 md:grid-cols-8 p-4
         border-2 rounded-xl bg-white border-blue-400 shadow-md
-        "
+      "
     >
       {/* Thumbnail + CTA */}
       <div className="col-span-3 p-2 md:mr-3">
@@ -62,6 +63,10 @@ export default function FeaturedProjectCard({ project, onClick }) {
             "
             onClick={onClick}
           />
+        </div>
+
+        <div className="mb-4 flex justify-center">
+          <OpenModalButton label={t("projects.viewDetails")} onClick={onClick} />
         </div>
 
         <div>
@@ -105,12 +110,22 @@ export default function FeaturedProjectCard({ project, onClick }) {
         </div>
         <div className="mb-2">
           <h4 className="mt-4 mb-1 font-semibold">{t("projects.roles")}:</h4>
-          <div className="flex flex-wrap gap-1 justify-center">{roleElements}</div>
+          <div className="flex flex-wrap gap-1 justify-center">
+            {roleElements}
+          </div>
           <div>
-            <h4 className="mt-4 mb-1 font-semibold">{t("projects.main-skills")}:</h4>
-            <div className="flex flex-wrap gap-2 justify-center">{mainSkillElements}</div>
-            <h4 className="mt-4 mb-1 font-semibold">{t("projects.secondary-skills")}:</h4>
-            <div className="flex flex-wrap gap-2 justify-center">{secondarySkillElements}</div>
+            <h4 className="mt-4 mb-1 font-semibold">
+              {t("projects.main-skills")}:
+            </h4>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {mainSkillElements}
+            </div>
+            <h4 className="mt-4 mb-1 font-semibold">
+              {t("projects.secondary-skills")}:
+            </h4>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {secondarySkillElements}
+            </div>
           </div>
         </div>
       </div>
