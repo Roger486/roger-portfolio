@@ -1,4 +1,4 @@
-import { hardSkills } from "../../data/hard-skill-list";
+import { hardSkills } from "../../../data/hard-skill-list";
 
 export default function ProjectBadge({ name, type = "default" }) {
   let color = "#FFFFFF";

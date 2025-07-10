@@ -1,4 +1,4 @@
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../../context/LanguageContext";
 import ExternalLinkButton from "./ExternalLinkButton";
 import OpenModalButton from "./OpenModalButton";
 import ProjectBadge from "./ProjectBadge";

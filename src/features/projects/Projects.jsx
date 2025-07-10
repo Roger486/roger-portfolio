@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import { projects } from "../../data/project-list";
-import FeaturedProjectCard from "./FeaturedProjectCard";
-import ProjectCard from "./ProjectCard";
+import FeaturedProjectCard from "./components/FeaturedProjectCard";
+import ProjectCard from "./components/ProjectCard";
 import ProjectModal from "./ProjectModal";
 
 export default function Projects() {
