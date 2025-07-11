@@ -55,10 +55,7 @@ export default function ImageGallery({ images }) {
       {/* Modal fullscreen */}
       {fullscreenOpen && (
         <FullscreenImageModal
-          src={images[currentImageIndex].src}
-          alt={t(
-            `projects.image-descriptions.${images[currentImageIndex].descriptionKey}`
-          )}
+          image={images[currentImageIndex]}
           onClose={() => setFullscreenOpen(false)}
         />
       )}
