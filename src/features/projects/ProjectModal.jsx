@@ -16,7 +16,7 @@ export default function ProjectModal({ project, onClose }) {
 
   if (!isOpen) return null;
 
-  const modalRoot = document.getElementById("project-modal-root");
+  const modalRoot = document.getElementById("modal-root");
 
   const modalContent = (
     <div

@@ -11,7 +11,7 @@ export default function FullscreenImageModal({
   imageListLength,
 }) {
   const { t } = useLanguage();
-  const modalRoot = document.getElementById("project-modal-root"); // the same used for the ProjectModal
+  const modalRoot = document.getElementById("modal-root"); // the same used for the ProjectModal
 
   return createPortal(
     <div
