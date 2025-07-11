@@ -57,6 +57,9 @@ export default function ImageGallery({ images }) {
         <FullscreenImageModal
           image={images[currentImageIndex]}
           onClose={() => setFullscreenOpen(false)}
+          currentImageIndex={currentImageIndex}
+          onImageIndexChange={setCurrentImageIndex}
+          imageListLength={images.length}
         />
       )}
     </div>
