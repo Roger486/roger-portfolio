@@ -28,6 +28,7 @@ export default function ProjectModal({ project, onClose }) {
         // This avoids the onClick={onClose} on parent div to be triggered when cliking inside this div
         onClick={(e) => e.stopPropagation()}
       >
+        {/* close button */}
         <button
           className="absolute top-4 right-4 text-gray-400 hover:text-red-700"
           onClick={onClose}
@@ -35,6 +36,7 @@ export default function ProjectModal({ project, onClose }) {
           <ImCross />
         </button>
 
+        {/* div with with the modal content */}
         <div className="mt-4">
           <ImageGallery images={project.images} />
 

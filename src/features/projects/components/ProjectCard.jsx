@@ -1,4 +1,5 @@
 import { useLanguage } from "../../../context/LanguageContext";
+import { renderExternalLinkButtons, renderProjectBadges } from "../../../helpers/renderProjectElements";
 import ExternalLinkButton from "./ExternalLinkButton";
 import OpenModalButton from "./OpenModalButton";
 import ProjectBadge from "./ProjectBadge";
@@ -9,41 +10,13 @@ export default function ProjectCard({ project, onClick }) {
   const mainImage = project.images.find((image) => image.key === "img-001");
   const mainThumbnail = mainImage.thumb;
 
-  const demoUrlElements = project.demoUrls.map((demo) => {
-    return (
-      <ExternalLinkButton
-        key={demo.url}
-        url={demo.url}
-        label={demo.label}
-        destination={demo.destination}
-      />
-    );
-  });
+  const demoUrlElements = renderExternalLinkButtons(project.demoUrls);
+  const repoUrlElements = renderExternalLinkButtons(project.repoUrls);
 
-  const repoUrlElements = project.repoUrls.map((repo) => {
-    return (
-      <ExternalLinkButton
-        key={repo.url}
-        url={repo.url}
-        label={repo.label}
-        destination={repo.destination}
-      />
-    );
-  });
+  const roleElements = renderProjectBadges(project.roles, "role");
+  const mainSkillElements = renderProjectBadges(project.mainSkillsKeys, "main-skill");
+  const secondarySkillElements = renderProjectBadges(project.secondarySkillsKeys, "secondary-skill");
 
-  const roleElements = project.roles.map((role) => {
-    return <ProjectBadge key={role} name={role} type="role" />;
-  });
-
-  const mainSkillElements = project.mainSkillsKeys.map((skillKey) => {
-    return <ProjectBadge key={skillKey} name={skillKey} type="main-skill" />;
-  });
-
-  const secondarySkillElements = project.secondarySkillsKeys.map((skillKey) => {
-    return (
-      <ProjectBadge key={skillKey} name={skillKey} type="secondary-skill" />
-    );
-  });
   return (
     <div
       className="
