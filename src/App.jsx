@@ -1,5 +1,4 @@
 import About from "./features/about/About";
-import Contact from "./features/contact/Contact";
 import Experience from "./features/experience/Experience";
 import Projects from "./features/projects/Projects";
 import Skills from "./features/skills/Skills";
@@ -13,7 +12,6 @@ function App() {
       <Skills />
       <Projects />
       <Experience />
-      <Contact />
       
     </MainLayout>
   );

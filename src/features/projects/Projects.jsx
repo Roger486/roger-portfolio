@@ -9,11 +9,11 @@ export default function Projects() {
   const { t } = useLanguage();
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const handleOpenModal = (project) => {
+  const handleOpenProjectModal = (project) => {
     setSelectedProject(project);
   };
 
-  const handleCloseModal = () => {
+  const handleCloseProjectModal = () => {
     setSelectedProject(null);
   };
 
@@ -23,7 +23,7 @@ export default function Projects() {
       <FeaturedProjectCard
         key={project.key}
         project={project}
-        onClick={() => handleOpenModal(project)}
+        onClick={() => handleOpenProjectModal(project)}
       />
     ));
 
@@ -33,7 +33,7 @@ export default function Projects() {
       <ProjectCard
         key={project.key}
         project={project}
-        onClick={() => handleOpenModal(project)}
+        onClick={() => handleOpenProjectModal(project)}
       />
     ));
 
@@ -45,7 +45,7 @@ export default function Projects() {
         {normalProjectElements}
       </div>
 
-      <ProjectModal project={selectedProject} onClose={handleCloseModal} />
+      <ProjectModal project={selectedProject} onClose={handleCloseProjectModal} />
     </section>
   );
 }

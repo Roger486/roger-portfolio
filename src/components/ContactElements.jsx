@@ -1,10 +1,22 @@
+import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
+import ContactModal from "../features/contact/ContactModal";
 
 export default function ContactElements({ buttonClassName = "flex" }) {
   const linkedinLink =
     "https://www.linkedin.com/in/roger-navarro-desarrollador/";
   const githubLink = "https://github.com/Roger486";
+
+  const [isFormModalOpen, setIsFormModalOpen] = useState(false);
   const {t} = useLanguage();
+
+    const handleOpenContactModal = (project) => {
+    setIsFormModalOpen(true);
+  };
+
+  const handleCloseContactModal = () => {
+    setIsFormModalOpen(false);
+  };
 
   return (
     <section className="flex items-center gap-3">
@@ -13,6 +25,7 @@ export default function ContactElements({ buttonClassName = "flex" }) {
           className={`border-2 px-3 py-1 rounded-full text-xs cursor-pointer ${buttonClassName}`}
           aria-label={t("contact-me")}
           title={t("contact-me")}
+          onClick={handleOpenContactModal}
         >
           {t("contact-me")}
         </button>
@@ -54,6 +67,7 @@ export default function ContactElements({ buttonClassName = "flex" }) {
             </svg>
           </a>
         </div>
+        {isFormModalOpen && <ContactModal onClose={handleCloseContactModal}/>}
     </section>
   );
 }
