@@ -1,8 +1,6 @@
 import { useLanguage } from "../../../context/LanguageContext";
 import { renderExternalLinkButtons, renderProjectBadges } from "../../../helpers/renderProjectElements";
-import ExternalLinkButton from "./ExternalLinkButton";
 import OpenModalButton from "./OpenModalButton";
-import ProjectBadge from "./ProjectBadge";
 
 export default function ProjectCard({ project, onClick }) {
   const { t } = useLanguage();
