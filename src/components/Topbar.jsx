@@ -1,5 +1,5 @@
 import { IoClose, IoMenu } from "react-icons/io5";
-import ContactElements from "./ContactElements";
+import ContactActions from "./ContactActions";
 import avatarImg from "/src/assets/avatar.jpg"; // import images as objects so the production build get them correctly
 
 export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
@@ -25,7 +25,7 @@ export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
 
         <p className="font-bold text-xl lg:text-base">Roger Navarro</p>
         <div className="ml-auto">
-          <ContactElements buttonClassName="hidden sm:flex"/>
+          <ContactActions buttonClassName="hidden sm:flex"/>
         </div>
       </header>
   );

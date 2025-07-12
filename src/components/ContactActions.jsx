@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import ContactModal from "../features/contact/ContactModal";
 
-export default function ContactElements({ buttonClassName = "flex" }) {
+export default function ContactActions({ buttonClassName = "flex" }) {
   const linkedinLink =
     "https://www.linkedin.com/in/roger-navarro-desarrollador/";
   const githubLink = "https://github.com/Roger486";

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ContactElements from "./ContactElements";
+import ContactActions from "./ContactActions";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../context/LanguageContext";
 import { isBodyScrollLocked, lockBodyScroll, unlockBodyScroll } from "../helpers/lockbodyscroll";
@@ -56,7 +56,7 @@ export default function Sidebar({ isMenuOpen, onClose }) {
   }, [isMenuOpen]);
 
   // Mostrar los contact elements si scroll es mayor a 190
-  const showContactElements = topPosition < 190;
+  const showContactActions = topPosition < 190;
 
   const topStyle = isMenuOpen ? { top: "1rem" } : { top: `${topPosition}px` };
 
@@ -92,7 +92,7 @@ export default function Sidebar({ isMenuOpen, onClose }) {
         </a>
       </nav>
       <div className="fixed bottom-24 left-0 w-64 flex justify-center">
-        {(showContactElements || isMenuOpen) && <ContactElements />}
+        {(showContactActions || isMenuOpen) && <ContactActions />}
       </div>
       <div className="fixed bottom-10 left-0 w-64 flex justify-center">
         <LanguageSwitcher />
