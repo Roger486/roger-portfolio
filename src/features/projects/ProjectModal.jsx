@@ -30,7 +30,7 @@ export default function ProjectModal({ project, onClose }) {
       >
         {/* close button */}
         <button
-          className="absolute top-4 right-4 text-gray-400 hover:text-red-700"
+          className="absolute top-4 right-4 text-gray-400 hover:text-red-700 cursor-pointer"
           onClick={onClose}
         >
           <ImCross />

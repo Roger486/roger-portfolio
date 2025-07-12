@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { ImCross } from "react-icons/im";
 import { lockBodyScroll, unlockBodyScroll } from "../../helpers/lockbodyscroll";
+import ContactForm from "./ContactForm";
 
 export default function ContactModal({ onClose }) {
   useEffect(() => {
@@ -22,14 +23,12 @@ export default function ContactModal({ onClose }) {
 
         {/* close button */}
         <button
-          className="absolute top-4 right-4 text-gray-400 hover:text-red-700"
+          className="absolute top-4 right-4 text-gray-400 hover:text-red-700 cursor-pointer"
           onClick={onClose}
         >
           <ImCross />
         </button>
-
-        <h2 className="text-3xl font-bold mb-4">Contact</h2>
-        <p>This is the contact modal!</p>
+        <ContactForm />
       </div>
     </div>
   );
