@@ -73,6 +73,11 @@
         "short": "Personal portfolio website built with React and Tailwind CSS to showcase my projects, skills, and training as a web developer.",
         "long": "This portfolio was built from scratch using React and Tailwind CSS to display my academic and personal projects, technical and soft skills, and general background. It is divided into clear sections like About Me, Skills, Projects, Experience, and Contact. It supports multiple languages using a custom React context to switch between Spanish and English without third-party libraries.",
         "extra": "The portfolio uses reusable components and a clean interface thanks to Tailwind CSS. State management is handled with React hooks like useState and useEffect. The project data is stored in external JavaScript files for easy updates. The result reflects both my technical profile and my focus on accessibility, clarity, and user experience."
+      },
+      "horse-race-game": {
+        "short": "Desktop application developed as a team using JavaFX, focused on an interactive horse race with betting system, animations, and turn-based game logic.",
+        "long": "Academic group project built in JavaFX, where all three members collaborated across different areas of development: user interface, game logic, data structures, and persistence. The application simulates a horse race based on the Spanish card deck, where human players or bots can place bets and compete until one of the horses reaches the finish line. The system includes bet management, bankruptcy elimination, dynamic leaderboard, and a visually rich experience thanks to animations and the use of FXML scenes.",
+        "extra": "The codebase is structured following the MVC pattern, separating business logic, view controllers, and graphical interfaces. The project also includes UML diagrams, custom CSS styles, and utilities for data serialization and game flow management. It was a full teamwork experience involving planning, development, testing, and final presentation."
       }
     },
     "image-descriptions": {
@@ -90,7 +95,12 @@
       "coffee-haven-panel": "Control panel in Coffee Haven used to manage orders",
       "coffee-haven-detail": "Detail page for one of the coffees in Coffee Haven",
       "roger-portfolio-home": "Screenshot of the personal portfolio homepage",
-      "roger-portfolio-responsive": "Screenshots of the skills section and mobile menu, showing responsive design"
+      "roger-portfolio-responsive": "Screenshots of the skills section and mobile menu, showing responsive design",
+      "horse-race-game-home": "Home screen of the horse betting game",
+      "horse-race-game-setup": "Setting up a new match with human players and bots",
+      "horse-race-game-bets": "Screen where players place their bets on a chosen horse",
+      "horse-race-game-board": "Animated board showing horses racing forward based on cards",
+      "horse-race-game-result": "Final results of the race showing rankings and betting outcomes"
     }
   },
   "contact": {

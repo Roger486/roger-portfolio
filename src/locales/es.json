@@ -73,6 +73,11 @@
         "short": "Portfolio web personal desarrollado en React y Tailwind CSS para presentar mis proyectos, habilidades y formación como desarrollador web.",
         "long": "Este portfolio fue desarrollado desde cero con React y Tailwind CSS para mostrar mis proyectos académicos y personales, habilidades técnicas y blandas, así como mi experiencia previa. La estructura está dividida en secciones claras como Sobre mí, Habilidades, Proyectos, Experiencia y Contacto. Incluye soporte multidioma mediante un contexto personalizado que gestiona los textos dinámicos en español e inglés, sin depender de librerías externas.",
         "extra": "El diseño del portfolio está basado en componentes reutilizables y una interfaz limpia gracias al uso de Tailwind CSS. La gestión del estado se realiza con hooks de React como useState y useEffect, y los datos de proyectos se organizan en archivos JavaScript externos para facilitar su mantenimiento. Todo el sistema refleja tanto mi perfil técnico como mi interés por la accesibilidad, la estructura clara y la experiencia de usuario."
+      },
+      "horse-race-game": {
+        "short": "Aplicación de escritorio desarrollada en equipo con JavaFX, centrada en una carrera de caballos interactiva con sistema de apuestas, animaciones y lógica de juego por turnos.",
+        "long": "Proyecto académico grupal realizado en JavaFX, en el que los tres integrantes colaboramos en las diferentes partes del desarrollo: interfaz gráfica, lógica del juego, estructura de datos y persistencia. La aplicación simula una carrera de caballos basada en cartas de la baraja española, en la que jugadores humanos o bots pueden apostar fichas y competir hasta que uno de los caballos cruce la meta. El sistema incluye gestión de apuestas, eliminación por bancarrota, clasificación dinámica y una experiencia visual enriquecida gracias a la animación y el uso de escenas FXML.",
+        "extra": "El código está organizado siguiendo el patrón MVC, dividiendo la lógica de negocio, los controladores de vista y las interfaces gráficas. Además, el proyecto incluye diagramas UML, estilos CSS propios y utilidades para la serialización de datos y la gestión del flujo del juego. Fue una experiencia completa de trabajo en equipo que incluyó planificación, programación, pruebas y presentación final."
       }
     },
     "image-descriptions": {
@@ -90,7 +95,12 @@
       "coffee-haven-panel": "Panel de control de Coffee Haven utilizado para gestionar pedidos",
       "coffee-haven-detail": "Página de detalles de uno de los cafés en Coffee Haven",
       "roger-portfolio-home": "Captura de la página de inicio del portfolio personal",
-      "roger-portfolio-responsive": "Capturas de la sección de habilidades y del menú en vista móvil, mostrando el diseño responsive"
+      "roger-portfolio-responsive": "Capturas de la sección de habilidades y del menú en vista móvil, mostrando el diseño responsive",
+      "horse-race-game-home": "Pantalla de inicio del juego de apuestas de caballos",
+      "horse-race-game-setup": "Configuración de una nueva partida con jugadores humanos y bots",
+      "horse-race-game-bets": "Pantalla donde los jugadores apuestan fichas por su caballo elegido",
+      "horse-race-game-board": "Tablero animado donde los caballos avanzan según las cartas",
+      "horse-race-game-result": "Resultado final de la carrera con los cambios en clasificación y apuestas"
     }
   },
   "contact": {

@@ -128,7 +128,7 @@ export const hardSkills = [
     key: "sql",
     name: "MySQL - MariaDB",
     icon: SiMysql,
-    color: "#00758f",
+    color: "#FFFFFF",
     backgroundColor: "#f29111",
   },
   {

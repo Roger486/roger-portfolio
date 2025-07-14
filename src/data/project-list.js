@@ -152,5 +152,51 @@ export const projects = [
       }
     ],
     featured: false
+  },
+  {
+    key: 'horse-race-game',
+    name: 'Horse Race Game',
+    roles: ['Fullstack Developer'],
+    mainSkillsKeys: ['java', 'JavaFX', 'mvc', 'sql'],
+    secondarySkillsKeys: ['agile', 'git', 'github'],
+    repoUrls: [
+      { url: 'https://github.com/Roger486/HorseRaceGame', label: 'Main Repo', destination: 'github' }
+    ],
+    demoUrls: [
+      { url: 'https://www.youtube.com/watch?v=TkPmkwNKTX4', label: 'Video', destination: 'youtube' }
+    ],
+    images: [
+      {
+        key: 'img-001',
+        descriptionKey: 'horse-race-game-home',
+        src: '/projects/horse-race-game/horse-race-game-home.jpg',
+        thumb: '/projects/horse-race-game/horse-race-game-home-thumb.jpg'
+      },
+      {
+        key: 'img-002',
+        descriptionKey: 'horse-race-game-setup',
+        src: '/projects/horse-race-game/horse-race-game-setup.jpg',
+        thumb: '/projects/horse-race-game/horse-race-game-setup-thumb.jpg'
+      },
+      {
+        key: 'img-003',
+        descriptionKey: 'horse-race-game-bets',
+        src: '/projects/horse-race-game/horse-race-game-bets.jpg',
+        thumb: '/projects/horse-race-game/horse-race-game-bets-thumb.jpg'
+      },
+      {
+        key: 'img-004',
+        descriptionKey: 'horse-race-game-board',
+        src: '/projects/horse-race-game/horse-race-game-board.jpg',
+        thumb: '/projects/horse-race-game/horse-race-game-board-thumb.jpg'
+      },
+      {
+        key: 'img-005',
+        descriptionKey: 'horse-race-game-result',
+        src: '/projects/horse-race-game/horse-race-game-result.jpg',
+        thumb: '/projects/horse-race-game/horse-race-game-result-thumb.jpg'
+      }
+    ],
+    featured: false
   }
 ];
