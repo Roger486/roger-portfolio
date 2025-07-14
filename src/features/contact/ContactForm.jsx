@@ -35,8 +35,38 @@ export default function ContactForm() {
     }
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
+    if (isAnyFieldWrong()) return;
+
+    try {
+      const response = await sendData();
+
+      setFormData({name: "", email: "", message: ""})
+      console.log(response);
+
+    } catch (err) {
+      console.error(err);
+    }
+    
+  }
+
+  async function sendData() {
+    const url = "https://formspree.io/f/manbwpdp";
+
+    const response = await fetch(url,{
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        }
+      }
+    );
+    
+    if (!response.ok) throw new Error(`Response status: ${response.status}`);
+
+    return await response.json();
   }
 
   function isAnyFieldWrong() {
@@ -44,7 +74,10 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="max-w-xl mx-auto p-4 bg-white rounded shadow space-y-4">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-xl mx-auto p-4 bg-white rounded shadow space-y-4"
+    >
       <h2 className="text-2xl font-bold text-center">Contáctame</h2>
 
       <div>
