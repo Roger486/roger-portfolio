@@ -157,7 +157,7 @@ export const projects = [
     key: 'horse-race-game',
     name: 'Horse Race Game',
     roles: ['Fullstack Developer'],
-    mainSkillsKeys: ['java', 'JavaFX', 'mvc', 'sql'],
+    mainSkillsKeys: ['java', 'javafx', 'mvc', 'sql'],
     secondarySkillsKeys: ['agile', 'git', 'github'],
     repoUrls: [
       { url: 'https://github.com/Roger486/HorseRaceGame', label: 'Main Repo', destination: 'github' }
