@@ -22,11 +22,11 @@ export default function ContactButton({ buttonClassName = "flex" }) {
           transition duration-300
           hover:text-blue-600 hover:shadow-2xl hover:scale-110 hover:bg-blue-50/50
         `}
-        aria-label={t("contact-me")}
-        title={t("contact-me")}
+        aria-label={t("contact.contact-me")}
+        title={t("contact.contact-me")}
         onClick={handleOpenContactModal}
       >
-        {t("contact-me")}
+        {t("contact.contact-me")}
       </button>
       {isFormModalOpen && <ContactModal onClose={handleCloseContactModal} />}
     </div>

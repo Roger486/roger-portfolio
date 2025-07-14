@@ -1,5 +1,4 @@
 {
-  "contact-me": "Contact me",
   "side-bar": {
     "about": "About",
     "skills": "Skills",
@@ -92,6 +91,23 @@
       "coffee-haven-detail": "Detail page for one of the coffees in Coffee Haven",
       "roger-portfolio-home": "Screenshot of the personal portfolio homepage",
       "roger-portfolio-responsive": "Screenshots of the skills section and mobile menu, showing responsive design"
+    }
+  },
+  "contact": {
+    "contact-me": "Contact me",
+    "social-paragraph": "You can check my professional networks and download my résumé here:",
+    "contact-paragraph": "Or if you prefer, write to me directly:",
+    "form": {
+      "send-button": "Send",
+      "cant-send-button": "Check the fields",
+      "name-label": "Name",
+      "email-label": "Email",
+      "message-label": "Message",
+      "name-placeholder": "Your full name",
+      "email-placeholder": "your@email.com",
+      "message-placeholder": "How can I help you?",
+      "succesful-submit-1": "✅ Message sent successfully!",
+      "succesful-submit-2": "📨 I'll get back to you as soon as possible."
     }
   }
 }

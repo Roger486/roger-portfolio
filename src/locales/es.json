@@ -1,5 +1,4 @@
 {
-  "contact-me": "Contáctame",
   "side-bar": {
     "about": "Sobre mí",
     "skills": "Habilidades",
@@ -92,6 +91,23 @@
       "coffee-haven-detail": "Página de detalles de uno de los cafés en Coffee Haven",
       "roger-portfolio-home": "Captura de la página de inicio del portfolio personal",
       "roger-portfolio-responsive": "Capturas de la sección de habilidades y del menú en vista móvil, mostrando el diseño responsive"
+    }
+  },
+  "contact": {
+    "contact-me": "Contáctame",
+    "social-paragraph": "Aquí puedes consultar mis redes profesionales y descargar mi CV:",
+    "contact-paragraph": "O si lo prefieres, escríbeme directamente:",
+    "form": {
+      "send-button": "Enviar",
+      "cant-send-button": "Revisa los campos",
+      "name-label": "Nombre",
+      "email-label": "Correo electrónico",
+      "message-label": "Mensaje",
+      "name-placeholder": "Tu nombre completo",
+      "email-placeholder": "tu@email.com",
+      "message-placeholder": "¿En qué puedo ayudarte?",
+      "succesful-submit-1": "✅ ¡Mensaje enviado correctamente!",
+      "succesful-submit-2": "📨 Te responderé lo antes posible."
     }
   }
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -11,10 +12,12 @@ export default function ContactForm() {
 
   const testMode = false;
 
+  const { t } = useLanguage();
+
   const regEx = {
     name: /^[A-Za-z\s]{3,}$/,
     email: /^\S+@\S+\.\S+$/,
-    message: /^.{10,}$/,
+    message: /^[\s\S]{10,300}$/
   }
 
   function handleFieldChange({ name, value }) {
@@ -93,13 +96,14 @@ export default function ContactForm() {
         ${isAnyFieldWrong() ? "bg-gray-50" : "bg-blue-50"}
       `}
     >
-      <h2 className="text-2xl font-bold text-center">Contáctame</h2>
+      <h2 className="text-2xl font-bold text-center">{t("contact.contact-me")}</h2>
 
       <div>
+        <label htmlFor="name">{t("contact.form.name-label")}</label>
         <input
           type="text"
           name="name"
-          placeholder="John Doe"
+          placeholder={t("contact.form.name-placeholder")}
           value={formData.name}
           className={`
             w-full border border-blue-400 p-2 rounded bg-white focus:outline-blue-500
@@ -111,10 +115,11 @@ export default function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="email">{t("contact.form.email-label")}</label>
         <input
           type="email"
           name="email"
-          placeholder="johndoe@email.com"
+          placeholder={t("contact.form.email-placeholder")}
           value={formData.email}
           className={`
             w-full border border-blue-400 p-2 rounded bg-white focus:outline-blue-500
@@ -126,9 +131,10 @@ export default function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="message">{t("contact.form.message-label")}</label>
         <textarea
           name="message"
-          placeholder="Dear Roger..."
+          placeholder={t("contact.form.message-placeholder")}
           value={formData.message}
           className={`
             w-full border border-blue-400 p-2 rounded bg-white focus:outline-blue-500
@@ -139,14 +145,16 @@ export default function ContactForm() {
         {errors.message && <p className="text-sm text-red-700">{errors.message}</p>}
       </div>
 
-      {isFormSent && (<div className="bg-green-100 p-2">
-        <p className="text-green-800 text-center text-xl">
-          🫡 ¡Mensaje enviado correctamente!
-        </p>
-        <p className="text-green-800 text-center text-sm">
-          📨 Te contestaré lo antes posible.
-        </p>
-      </div>)}
+
+        <div className="bg-green-100 p-2">
+          <p className="text-green-800 text-center text-lg">
+            {t("contact.form.succesful-submit-1")}
+          </p>
+          <p className="text-green-800 text-center text-sm">
+            {t("contact.form.succesful-submit-2")}
+          </p>
+        </div>
+
 
       <button
         type="submit"
@@ -156,7 +164,7 @@ export default function ContactForm() {
           ${isAnyFieldWrong() ? "bg-gray-500/60 cursor-not-allowed" : "hover:bg-blue-400 transition cursor-pointer"}
         `}
       >
-        Enviar
+        {isAnyFieldWrong() ? t("contact.form.cant-send-button") : t("contact.form.send-button")}
       </button>
     </form>
   );

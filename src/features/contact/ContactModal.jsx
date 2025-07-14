@@ -5,12 +5,15 @@ import { lockBodyScroll, unlockBodyScroll } from "../../helpers/lockbodyscroll";
 import ContactForm from "./ContactForm";
 import SocialIconLink from "../../components/contact/SocialIconLink";
 import { socialLinkList } from "../../data/social-link-list";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function ContactModal({ onClose }) {
   useEffect(() => {
     lockBodyScroll();
     return () => unlockBodyScroll();
   }, []);
+
+  const { t } = useLanguage();
 
   const socialIconsLinks = socialLinkList.map((socialLink) => (
       <SocialIconLink key={socialLink.key} platformKey={socialLink.key} displayName={true} />
@@ -30,15 +33,15 @@ export default function ContactModal({ onClose }) {
         </button>
         <div className="flex flex-col gap-5 m-4 p-2">
           <section className="text-sm text-gray-700">
-            <p className="mb-3">
-              Aquí puedes consultar mis redes profesionales y descargar mi CV:
+            <p className="mb-3 text-blue-700">
+              {t("contact.social-paragraph")}
             </p>
             <div className="flex justify-center gap-2">{socialIconsLinks}</div>
           </section>
           <hr className="my-4 border-blue-400" />
           <section className="text-sm text-gray-700">
-            <p className="text-base font-medium mb-4">
-              O si lo prefieres, escríbeme directamente:
+            <p className="font-bold mb-4 text-blue-700">
+              {t("contact.contact-paragraph")}
             </p>
             <ContactForm />
           </section>
