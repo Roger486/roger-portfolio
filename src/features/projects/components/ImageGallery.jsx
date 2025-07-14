@@ -1,6 +1,6 @@
 import { useState } from "react";
-import FullscreenImageModal from "../../../components/FullscreenImageModal";
 import { useLanguage } from "../../../context/LanguageContext";
+import FullscreenImageModal from "../../../components/ui/FullscreenImageModal";
 
 export default function ImageGallery({ images }) {
   const { t } = useLanguage();
