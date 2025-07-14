@@ -33,12 +33,11 @@ export default function ContactForm() {
     });
 
     if (value.trim() === "") {
-      setErrors(prev => ({ ...prev, [name]: "This field is mandatory."}))
+      setErrors(prev => ({ ...prev, [name]: t("contact.form.errors.required")}))
     }
     if (!regEx[name].test(value)) {
-      if (name === "name") setErrors(prev => ({ ...prev, [name]: "This field must be at least 3 characters long and contain only letters and spaces."}))
-      else if (name === "email") setErrors(prev => ({ ...prev, [name]: "Please input a valid email format."}))
-      else if (name === "message") setErrors(prev => ({ ...prev, [name]: "This field must be at least 10 characters long."}))
+      const key = `contact.form.errors.${name}`;
+      setErrors(prev => ({ ...prev, [name]: t(key) }));
     }
   }
 
@@ -111,7 +110,7 @@ export default function ContactForm() {
           `}
           onChange={(e) => handleFieldChange(e.target)}
         />
-        {errors.name && <p className="mt-1 text-sm text-red-700">{errors.name}</p>}
+        {errors.name && <p className="mt-1 text-xs text-red-700">{errors.name}</p>}
       </div>
 
       <div>
@@ -127,7 +126,7 @@ export default function ContactForm() {
           `}
           onChange={(e) => handleFieldChange(e.target)}
         />
-        {errors.email && <p className="mt-1 text-sm text-red-700">{errors.email}</p>}
+        {errors.email && <p className="mt-1 text-xs text-red-700">{errors.email}</p>}
       </div>
 
       <div>
@@ -142,10 +141,10 @@ export default function ContactForm() {
           `}
           onChange={(e) => handleFieldChange(e.target)}
         />
-        {errors.message && <p className="text-sm text-red-700">{errors.message}</p>}
+        {errors.message && <p className="text-xs text-red-700">{errors.message}</p>}
       </div>
-
-
+      
+      {isFormSent && (
         <div className="bg-green-100 p-2">
           <p className="text-green-800 text-center text-lg">
             {t("contact.form.succesful-submit-1")}
@@ -154,7 +153,7 @@ export default function ContactForm() {
             {t("contact.form.succesful-submit-2")}
           </p>
         </div>
-
+      )}
 
       <button
         type="submit"

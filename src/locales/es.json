@@ -107,7 +107,13 @@
       "email-placeholder": "tu@email.com",
       "message-placeholder": "¿En qué puedo ayudarte?",
       "succesful-submit-1": "✅ ¡Mensaje enviado correctamente!",
-      "succesful-submit-2": "📨 Te responderé lo antes posible."
+      "succesful-submit-2": "📨 Te responderé lo antes posible.",
+      "errors": {
+        "required": "Este campo es obligatorio.",
+        "name": "Este campo debe tener al menos 3 letras y solo puede contener letras y espacios.",
+        "email": "Introduce un correo electrónico válido.",
+        "message": "Este campo debe tener al menos 10 caracteres y no más de 300."
+      }
     }
   }
 }
