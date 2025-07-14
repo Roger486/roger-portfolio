@@ -87,9 +87,6 @@ export default function Sidebar({ isMenuOpen, onClose }) {
         <a href="#projects" onClick={onClose} className="hover:text-blue-400">
           {t("side-bar.projects")}
         </a>
-        <a href="#experience" onClick={onClose} className="hover:text-blue-400">
-          {t("side-bar.experience")}
-        </a>
       </nav>
       <div className="fixed bottom-24 left-0 w-64 flex justify-center">
         {(showContactActions || isMenuOpen) && <ContactActions />}
