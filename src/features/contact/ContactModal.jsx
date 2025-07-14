@@ -28,14 +28,14 @@ export default function ContactModal({ onClose }) {
         >
           <ImCross />
         </button>
-        <div className="flex flex-col gap-6 m-4 p-2">
-          <section className="space-y-2 text-sm text-gray-700">
-            <p>
-              Recuerda que puedes contactar conmigo o ver mis proyectos y experiencia a través de las distintas redes:
+        <div className="flex flex-col gap-5 m-4 p-2">
+          <section className="text-sm text-gray-700">
+            <p className="mb-3">
+              Aquí puedes consultar mis redes profesionales y descargar mi CV:
             </p>
             <div className="flex justify-center gap-2">{socialIconsLinks}</div>
           </section>
-          <hr className="my-4 border-gray-300" />
+          <hr className="my-4 border-blue-400" />
           <section className="text-sm text-gray-700">
             <p className="text-base font-medium mb-4">
               O si lo prefieres, escríbeme directamente:

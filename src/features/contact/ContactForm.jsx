@@ -102,7 +102,7 @@ export default function ContactForm() {
           placeholder="John Doe"
           value={formData.name}
           className={`
-            w-full border p-2 rounded bg-white
+            w-full border border-blue-400 p-2 rounded bg-white focus:outline-blue-500
             ${errors.name ? "border-red-700 focus:outline-red-700" : ""}
           `}
           onChange={(e) => handleFieldChange(e.target)}
@@ -117,7 +117,7 @@ export default function ContactForm() {
           placeholder="johndoe@email.com"
           value={formData.email}
           className={`
-            w-full border p-2 rounded bg-white
+            w-full border border-blue-400 p-2 rounded bg-white focus:outline-blue-500
             ${errors.email ? "border-red-700 focus:outline-red-700" : ""}
           `}
           onChange={(e) => handleFieldChange(e.target)}
@@ -131,7 +131,7 @@ export default function ContactForm() {
           placeholder="Dear Roger..."
           value={formData.message}
           className={`
-            w-full border p-2 rounded bg-white
+            w-full border border-blue-400 p-2 rounded bg-white focus:outline-blue-500
             ${errors.message ? "border-red-700 focus:outline-red-700" : ""}
           `}
           onChange={(e) => handleFieldChange(e.target)}

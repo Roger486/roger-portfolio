@@ -14,11 +14,12 @@ export default function SocialIconLink({ platformKey, displayName = false }) {
       href={platform.href}
       target="_blank"
       rel="noopener noreferrer"
+      download={platform.isFile}
       aria-label={platform.label}
       title={platform.label}
       className={`
         inline-flex items-center gap-2
-        transition duration-300 bg-white
+        transition duration-300
         ${displayName && "border px-3 py-0.5 rounded-full shadow-sm text-sm hover:shadow-xl hover:text-blue-600 hover:bg-blue-50/50 hover:scale-110"}
       `}
     >
