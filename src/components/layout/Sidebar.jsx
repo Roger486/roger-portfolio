@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import ContactActions from "./ContactActions";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { useLanguage } from "../context/LanguageContext";
-import { isBodyScrollLocked, lockBodyScroll, unlockBodyScroll } from "../helpers/lockbodyscroll";
+import ContactActions from "../contact/ContactActions";
+import { useLanguage } from "../../context/LanguageContext";
+import { isBodyScrollLocked, lockBodyScroll, unlockBodyScroll } from "../../helpers/lockbodyscroll";
+import LanguageSwitcher from "../ui/LanguageSwitcher";
 
 export default function Sidebar({ isMenuOpen, onClose }) {
   const [topPosition, setTopPosition] = useState(250); // posición inicial para espacio avatar

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useLanguage } from "../context/LanguageContext";
-import ContactModal from "../features/contact/ContactModal";
+import { useLanguage } from "../../context/LanguageContext";
+import ContactModal from "../../features/contact/ContactModal";
 
 export default function ContactActions({ buttonClassName = "flex" }) {
   const linkedinLink =

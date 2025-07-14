@@ -1,6 +1,6 @@
 import { IoClose, IoMenu } from "react-icons/io5";
-import ContactActions from "./ContactActions";
 import avatarImg from "/src/assets/avatar.jpg"; // import images as objects so the production build get them correctly
+import ContactActions from "../contact/ContactActions";
 
 export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
 

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Avatar from "../components/Avatar";
-import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Footer from "../components/layout/Footer";
+import Avatar from "../components/layout/Avatar";
+import Topbar from "../components/layout/Topbar";
+import Sidebar from "../components/layout/Sidebar";
 
 export default function MainLayout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

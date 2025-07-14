@@ -7,6 +7,7 @@ export default function ContactForm() {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const [isFormSent, setIsFormSent] =useState(false);
 
   const regEx = {
     name: /^[A-Za-z\s]{3,}$/,
@@ -43,7 +44,7 @@ export default function ContactForm() {
       const response = await sendData();
 
       setFormData({name: "", email: "", message: ""})
-      console.log(response);
+      setIsFormSent(true);
 
     } catch (err) {
       console.error(err);
@@ -52,17 +53,26 @@ export default function ContactForm() {
   }
 
   async function sendData() {
+    const testMode = true;
     const url = "https://formspree.io/f/manbwpdp";
+    let response;
 
-    const response = await fetch(url,{
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
+    if (testMode) {
+      response = {
+        ok: true,
+        json: async () => ({ message: "fake response" }),
+      };
+    } else {
+      response = await fetch(url,{
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          }
         }
-      }
-    );
+      );
+    }
     
     if (!response.ok) throw new Error(`Response status: ${response.status}`);
 
@@ -76,7 +86,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-xl mx-auto p-4 bg-white rounded shadow space-y-4"
+      className="max-w-xl mx-auto p-4 bg-gray-50 rounded shadow space-y-4"
     >
       <h2 className="text-2xl font-bold text-center">Contáctame</h2>
 
@@ -87,7 +97,7 @@ export default function ContactForm() {
           placeholder="John Doe"
           value={formData.name}
           className={`
-            w-full border p-2 rounded
+            w-full border p-2 rounded bg-white
             ${errors.name ? "border-red-700 focus:outline-red-700" : ""}
           `}
           onChange={(e) => handleFieldChange(e.target)}
@@ -102,7 +112,7 @@ export default function ContactForm() {
           placeholder="johndoe@email.com"
           value={formData.email}
           className={`
-            w-full border p-2 rounded
+            w-full border p-2 rounded bg-white
             ${errors.email ? "border-red-700 focus:outline-red-700" : ""}
           `}
           onChange={(e) => handleFieldChange(e.target)}
@@ -116,13 +126,22 @@ export default function ContactForm() {
           placeholder="Dear Roger..."
           value={formData.message}
           className={`
-            w-full border p-2 rounded
+            w-full border p-2 rounded bg-white
             ${errors.message ? "border-red-700 focus:outline-red-700" : ""}
           `}
           onChange={(e) => handleFieldChange(e.target)}
         />
         {errors.message && <p className="text-sm text-red-700">{errors.message}</p>}
       </div>
+
+      {isFormSent && (<div>
+        <p className="text-green-700 text-center text-xl">
+          🫡 ¡Mensaje enviado correctamente!
+        </p>
+        <p className="text-green-700 text-center text-sm">
+          📨 Te contestaré lo antes posible.
+        </p>
+      </div>)}
 
       <button
         type="submit"
