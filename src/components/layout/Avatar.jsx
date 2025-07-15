@@ -52,7 +52,7 @@ export default function Avatar() {
       {/* Mostrar los dos nombres en líneas separadas */}
       {showSeparateNames && (
         <div className="ml-2 flex flex-col font-semibold text-gray-900 transition-opacity duration-300">
-          <span style={{ opacity: mounted ? 1 : 0 }}>Roger</span>
+          <span className="text-blue-600" style={{ opacity: mounted ? 1 : 0 }}>Roger</span>
           <span style={{ opacity: mounted ? 1 : 0 }}>Navarro</span>
         </div>
       )}
@@ -63,7 +63,7 @@ export default function Avatar() {
           className="ml-2 font-semibold text-gray-900 transition-opacity duration-300"
           style={{ opacity: mounted ? 1 : 0 }}
         >
-          Roger Navarro
+          <span className="text-blue-600">Roger</span> Navarro
         </span>
       )}
     </div>
