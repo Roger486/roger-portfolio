@@ -28,36 +28,26 @@ export default function Sidebar({ isMenuOpen, onClose }) {
       setTopPosition(Math.max(250 - scrollY, 60));
     };
 
-    /**
-     * bloque encargado de bloquear el scroll vertical cuando el menu hamburguesa está abierto
-     * También tiene en cuenta si alguien más necesita el scroll bloqueado (p.e. un modal)
-     * a través de isBodyScrollLocked()
-     */
-    const updateOverflow = () => {
-      const isMobile = window.innerWidth < 1024;
-
-      if (isMenuOpen && isMobile) {
-        lockBodyScroll();
-      }
-
-      if (isMenuOpen && !isMobile) {
-        if (!isBodyScrollLocked()) {
-          unlockBodyScroll();
-        }
-        onClose();
-      }
+    // Cerrar menú directamente al hacer resize
+    const onResize = () => {
+      onClose(); // con esto también desbloqueas el scroll si el menú era quien lo tenía bloqueado
     };
 
-    updateOverflow();
+    // Bloqueo scroll solo si se abre el menú en móvil
+    if (isMenuOpen && window.innerWidth < 1024) {
+      lockBodyScroll();
+    } else {
+      unlockBodyScroll();
+    }
 
     window.addEventListener("scroll", onScroll);
-    window.addEventListener("resize", updateOverflow);
+    window.addEventListener("resize", onResize);
     return () => {
       window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", updateOverflow);
+      window.removeEventListener("resize", onResize);
       unlockBodyScroll();
     };
-  }, [isMenuOpen]);
+  }, [isMenuOpen, onClose]);
 
   // Mostrar los contact elements si scroll es mayor a 190
   const showContactActions = topPosition < 190;
@@ -97,7 +87,8 @@ export default function Sidebar({ isMenuOpen, onClose }) {
         >
           {t("side-bar.skills")}
           <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
-        </a>        <a
+        </a>{" "}
+        <a
           href="#projects"
           onClick={onClose}
           className="relative group text-black font-semibold transition-colors duration-300 hover:text-blue-400"
