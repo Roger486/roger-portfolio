@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import ContactActions from "../contact/ContactActions";
 import { useLanguage } from "../../context/LanguageContext";
-import { isBodyScrollLocked, lockBodyScroll, unlockBodyScroll } from "../../helpers/lockbodyscroll";
+import {
+  isBodyScrollLocked,
+  lockBodyScroll,
+  unlockBodyScroll,
+} from "../../helpers/lockbodyscroll";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 
 export default function Sidebar({ isMenuOpen, onClose }) {
@@ -78,14 +82,28 @@ export default function Sidebar({ isMenuOpen, onClose }) {
           isMenuOpen ? "gap-6" : "gap-4"
         }`}
       >
-        <a href="#about" onClick={onClose} className="hover:text-blue-400">
+        <a
+          href="#about"
+          onClick={onClose}
+          className="relative group text-black font-semibold transition-colors duration-300 hover:text-blue-400"
+        >
           {t("side-bar.about")}
+          <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
         </a>
-        <a href="#skills" onClick={onClose} className="hover:text-blue-400">
+        <a
+          href="#skills"
+          onClick={onClose}
+          className="relative group text-black font-semibold transition-colors duration-300 hover:text-blue-400"
+        >
           {t("side-bar.skills")}
-        </a>
-        <a href="#projects" onClick={onClose} className="hover:text-blue-400">
+          <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
+        </a>        <a
+          href="#projects"
+          onClick={onClose}
+          className="relative group text-black font-semibold transition-colors duration-300 hover:text-blue-400"
+        >
           {t("side-bar.projects")}
+          <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
         </a>
       </nav>
       <div className="fixed bottom-24 left-0 w-64 flex justify-center">
