@@ -67,7 +67,7 @@ export default function Sidebar({ isMenuOpen, onClose }) {
   return (
     <aside
       className={`
-          fixed left-0 h-screen p-6 transition-all duration-300
+          fixed left-0 h-screen p-6 transition-all duration-300 z-50
           ${
             isMenuOpen
               ? "bg-gray-50 w-full text-xl flex justify-center text-center mt-10 lg:hidden"

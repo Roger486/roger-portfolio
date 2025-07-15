@@ -26,17 +26,30 @@
   from {
     opacity: 0;
     transform: translateY(20px);
-    font-weight: bolder;
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    font-weight: lighter;
   }
 }
 
 .fade-in {
   animation: fade-in 1s ease-out both;
+}
+
+@keyframes fade-in-lateral {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-lateral {
+  animation: fade-in-lateral 2s ease-out both;
 }
 
 body {

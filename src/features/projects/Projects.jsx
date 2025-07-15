@@ -4,6 +4,7 @@ import { projects } from "../../data/project-list";
 import FeaturedProjectCard from "./components/FeaturedProjectCard";
 import ProjectCard from "./components/ProjectCard";
 import ProjectModal from "./ProjectModal";
+import SectionTitle from "../../components/ui/SectionTitle";
 
 export default function Projects() {
   const { t } = useLanguage();
@@ -39,13 +40,16 @@ export default function Projects() {
 
   return (
     <section id="projects" className="min-h-screen p-8">
-      <h2 className="text-3xl font-bold mb-8">{t("projects.title")}</h2>
+      <SectionTitle>{t("projects.title")}</SectionTitle>
       <div className="flex flex-col gap-4 mb-4">{featuredProjectElements}</div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {normalProjectElements}
       </div>
 
-      <ProjectModal project={selectedProject} onClose={handleCloseProjectModal} />
+      <ProjectModal
+        project={selectedProject}
+        onClose={handleCloseProjectModal}
+      />
     </section>
   );
 }
