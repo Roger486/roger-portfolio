@@ -8,7 +8,7 @@ import {
 } from "../../helpers/lockbodyscroll";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 
-export default function Sidebar({ isMenuOpen, onClose }) {
+export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
   const [topPosition, setTopPosition] = useState(250); // posición inicial para espacio avatar
   const { t } = useLanguage();
 
@@ -75,7 +75,10 @@ export default function Sidebar({ isMenuOpen, onClose }) {
         <a
           href="#about"
           onClick={onClose}
-          className="relative group text-black font-semibold transition-colors duration-300 hover:text-blue-400"
+          className={`relative px-2 group font-semibold transition-all duration-300 rounded-2xl w-fit
+            hover:text-blue-400 hover:bg-white/0
+            ${activeSection === "about" ? "bg-blue-400/20 font-bold text-blue-700" : ""}
+          `}
         >
           {t("side-bar.about")}
           <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
@@ -83,7 +86,10 @@ export default function Sidebar({ isMenuOpen, onClose }) {
         <a
           href="#skills"
           onClick={onClose}
-          className="relative group text-black font-semibold transition-colors duration-300 hover:text-blue-400"
+          className={`relative px-2 group font-semibold transition-all duration-300 rounded-2xl w-fit
+            hover:text-blue-400 hover:bg-white/0
+            ${activeSection === "skills" ? "bg-blue-400/20 font-bold text-blue-700" : ""}
+          `}
         >
           {t("side-bar.skills")}
           <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
@@ -91,7 +97,10 @@ export default function Sidebar({ isMenuOpen, onClose }) {
         <a
           href="#projects"
           onClick={onClose}
-          className="relative group text-black font-semibold transition-colors duration-300 hover:text-blue-400"
+          className={`relative px-2 group font-semibold transition-all duration-300 rounded-2xl w-fit
+            hover:text-blue-400 hover:bg-white/0
+            ${activeSection === "projects" ? "bg-blue-400/20 font-bold text-blue-700" : ""}
+          `}
         >
           {t("side-bar.projects")}
           <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
