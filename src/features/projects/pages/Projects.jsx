@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { useLanguage } from "../../context/LanguageContext";
-import { projects } from "../../data/project-list";
-import FeaturedProjectCard from "./components/FeaturedProjectCard";
-import ProjectCard from "./components/ProjectCard";
-import ProjectModal from "./ProjectModal";
-import SectionTitle from "../../components/ui/SectionTitle";
-import useInView from "../../hooks/useInView";
+import { useLanguage } from "../../../core/context/LanguageContext";
+import { projects } from "../../../core/data/project-list";
+import FeaturedProjectCard from "../components/FeaturedProjectCard";
+import ProjectCard from "../components/ProjectCard";
+import ProjectModal from "../components/ProjectModal";
+import SectionTitle from "../../../core/components/ui/SectionTitle";
+import useInView from "../../../core/hooks/useInView";
 
 export default function Projects() {
   const { t } = useLanguage();

@@ -1,8 +1,8 @@
 import { IoClose, IoMenu } from "react-icons/io5";
 import avatarImg from "/src/assets/avatar.jpg"; // import images as objects so the production build get them correctly
-import ContactActions from "../contact/ContactActions";
 import { useLanguage } from "../../context/LanguageContext";
 import { Typewriter } from "react-simple-typewriter";
+import ContactActions from "../ui/ContactActions";
 
 export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
   const { t, language } = useLanguage();

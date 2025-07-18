@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
-import en from "../locales/en.json";
-import es from "../locales/es.json";
+import en from "../../locales/en.json";
+import es from "../../locales/es.json";
 
 // objeto que contiene los json con las expresiones en cada idioma
 const translations = { en, es };

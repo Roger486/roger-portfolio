@@ -1,5 +1,5 @@
-import ExternalLinkButton from "../features/projects/components/ExternalLinkButton";
-import ProjectBadge from "../features/projects/components/ProjectBadge";
+import ExternalLinkButton from "../../features/projects/components/ExternalLinkButton";
+import ProjectBadge from "../../features/projects/components/ProjectBadge";
 
 
 /**

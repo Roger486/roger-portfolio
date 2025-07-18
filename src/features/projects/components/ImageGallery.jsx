@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useLanguage } from "../../../context/LanguageContext";
-import FullscreenImageModal from "../../../components/ui/FullscreenImageModal";
+import { useLanguage } from "../../../core/context/LanguageContext";
+import FullScreenProjectImageModal from "./FullScreenProjectImageModal";
 
 export default function ImageGallery({ images }) {
   const { t } = useLanguage();
@@ -54,7 +54,7 @@ export default function ImageGallery({ images }) {
       </div>
       {/* Modal fullscreen */}
       {fullscreenOpen && (
-        <FullscreenImageModal
+        <FullScreenProjectImageModal
           image={images[currentImageIndex]}
           onClose={() => setFullscreenOpen(false)}
           currentImageIndex={currentImageIndex}

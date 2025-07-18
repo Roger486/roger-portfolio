@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { ImCross } from "react-icons/im";
-import { lockBodyScroll, unlockBodyScroll } from "../../helpers/lockbodyscroll";
-import ContactForm from "./ContactForm";
-import SocialIconLink from "../../components/contact/SocialIconLink";
-import { socialLinkList } from "../../data/social-link-list";
-import { useLanguage } from "../../context/LanguageContext";
+import { lockBodyScroll, unlockBodyScroll } from "../../../core/utils/lockbodyscroll";
+import ContactForm from "../components/ContactForm";
+import { socialLinkList } from "../../../core/data/social-link-list";
+import { useLanguage } from "../../../core/context/LanguageContext";
+import SocialIconLink from "../../../core/components/ui/SocialIconLink";
 
 export default function ContactModal({ onClose }) {
   useEffect(() => {

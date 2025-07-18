@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
-import ContactModal from "../../features/contact/ContactModal";
+import ContactModal from "../../../features/contact/components/ContactModal";
 
 export default function ContactButton({ buttonClassName = "flex" }) {
   const { t } = useLanguage();

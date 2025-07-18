@@ -1,7 +1,7 @@
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../../core/context/LanguageContext";
 import bgAboutImg from "/src/assets/bg-about.png"; // import images as objects so the production build get them correctly
-import SectionTitle from "../../components/ui/SectionTitle";
-import useInView from "../../hooks/useInView";
+import SectionTitle from "../../../core/components/ui/SectionTitle";
+import useInView from "../../../core/hooks/useInView";
 
 export default function About() {
   const { t } = useLanguage();

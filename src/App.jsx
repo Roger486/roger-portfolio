@@ -1,7 +1,7 @@
-import About from "./features/about/About";
-import Projects from "./features/projects/Projects";
-import Skills from "./features/skills/Skills";
-import MainLayout from "./layouts/MainLayout";
+import About from "./features/about/pages/About";
+import Projects from "./features/projects/pages/Projects";
+import Skills from "./features/skills/pages/Skills";
+import MainLayout from "./core/layouts/MainLayout";
 
 function App() {
   return (

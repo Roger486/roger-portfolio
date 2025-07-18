@@ -1,9 +1,9 @@
 import { ImCross } from "react-icons/im";
 import { createPortal } from "react-dom";
 import { GrNext, GrPrevious } from "react-icons/gr";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../../core/context/LanguageContext";
 
-export default function FullscreenImageModal({
+export default function FullScreenProjectImageModal({
   image,
   onClose,
   currentImageIndex,

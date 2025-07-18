@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../../core/context/LanguageContext";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({

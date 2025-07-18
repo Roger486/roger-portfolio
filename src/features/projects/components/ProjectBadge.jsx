@@ -1,4 +1,4 @@
-import { hardSkills } from "../../../data/hard-skill-list";
+import { hardSkills } from "../../../core/data/hard-skill-list";
 
 /**
  * A visual badge for a project role or a hard skill.

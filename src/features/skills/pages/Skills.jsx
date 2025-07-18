@@ -1,10 +1,10 @@
-import HardSkillCard from "./HardSkillCard";
-import { hardSkills } from "../../data/hard-skill-list";
-import { softSkills } from "../../data/soft-skill-list";
-import { useLanguage } from "../../context/LanguageContext";
-import SoftSkillCard from "./SoftSkillCard";
-import SectionTitle from "../../components/ui/SectionTitle";
-import useInView from "../../hooks/useInView";
+import HardSkillCard from "../components/HardSkillCard";
+import { hardSkills } from "../../../core/data/hard-skill-list";
+import { softSkills } from "../../../core/data/soft-skill-list";
+import { useLanguage } from "../../../core/context/LanguageContext";
+import SoftSkillCard from "../components/SoftSkillCard";
+import SectionTitle from "../../../core/components/ui/SectionTitle";
+import useInView from "../../../core/hooks/useInView";
 
 export default function Skills() {
   const { t } = useLanguage();

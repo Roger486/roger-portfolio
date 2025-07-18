@@ -1,8 +1,8 @@
 import { ImCross } from "react-icons/im";
-import ImageGallery from "./components/ImageGallery";
-import { useLanguage } from "../../context/LanguageContext";
+import ImageGallery from "./ImageGallery";
+import { useLanguage } from "../../../core/context/LanguageContext";
 import { useEffect } from "react";
-import { lockBodyScroll, unlockBodyScroll } from "../../helpers/lockbodyscroll";
+import { lockBodyScroll, unlockBodyScroll } from "../../../core/utils/lockbodyscroll";
 import { createPortal } from "react-dom";
 
 export default function ProjectModal({ project, onClose }) {

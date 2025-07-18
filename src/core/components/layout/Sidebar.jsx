@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import ContactActions from "../contact/ContactActions";
-import { useLanguage } from "../../context/LanguageContext";
+import ContactActions from "../ui/ContactActions";
 import {
   isBodyScrollLocked,
   lockBodyScroll,
   unlockBodyScroll,
-} from "../../helpers/lockbodyscroll";
+} from "../../utils/lockbodyscroll";
+import { useLanguage } from "../../context/LanguageContext";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 
 export default function Sidebar({ isMenuOpen, onClose, activeSection }) {

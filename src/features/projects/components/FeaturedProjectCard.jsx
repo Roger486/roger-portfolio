@@ -1,5 +1,5 @@
-import { useLanguage } from "../../../context/LanguageContext";
-import { renderExternalLinkButtons, renderProjectBadges } from "../../../helpers/renderProjectElements";
+import { useLanguage } from "../../../core/context/LanguageContext";
+import { renderExternalLinkButtons, renderProjectBadges } from "../../../core/utils/renderProjectElements";
 import OpenModalButton from "./OpenModalButton";
 
 export default function FeaturedProjectCard({ project, onClick }) {
