@@ -7,6 +7,7 @@ export default function HardSkillCategoryCard({ category }) {
   const hardSkillElements = category.skills.map((skill) => {
     return <HardSkillCard key={skill.key} skill={skill} />;
   });
+  const Icon = category.categoryIcon;
 
   return (
     <div 
@@ -15,10 +16,13 @@ export default function HardSkillCategoryCard({ category }) {
         transition duration-300 hover:bg-gray-100/85 hover:shadow-xl
       "
     >
-      <h4 className="text-base font-semibold mb-2 text-blue-600 border-l-4 border-blue-400 pl-3 bg-linear-65 from-gray-400/20 to-blue-400/10 rounded-r-full">
-        {t(`skills.hard-skill-categories.${category.categoryKey}`)}
-      </h4>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-2 p-2">
+      <div className="text-base font-semibold text-blue-600 border-l-4 border-blue-400 bg-linear-65 from-gray-400/20 to-blue-400/10 rounded-r-full flex items-center pl-3 mb-2">
+        {Icon ? <Icon size={"25px"} /> : ""}
+        <h4 className="pl-3 py-1">
+          {t(`skills.hard-skill-categories.${category.categoryKey}`)}
+        </h4>
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-x-1 gap-y-3">
         {hardSkillElements}
       </div>
     </div>

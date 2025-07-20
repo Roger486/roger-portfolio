@@ -10,10 +10,14 @@ import {
 } from "react-icons/si";
 import { BiWindowAlt } from "react-icons/bi";
 import { DiScrum } from "react-icons/di";
+import { HiOutlineCube, HiOutlineDatabase, HiOutlineViewGridAdd, HiServer } from "react-icons/hi";
+import { MdSyncAlt } from "react-icons/md";
+import { HiOutlineServerStack, HiOutlineWrench } from "react-icons/hi2";
 
 export const hardSkills = [
   {
     categoryKey: "frontend",
+    categoryIcon: HiOutlineViewGridAdd,
     skills: [
       {
         key: "react",
@@ -68,6 +72,7 @@ export const hardSkills = [
   },
   {
     categoryKey: "backend",
+    categoryIcon: HiOutlineServerStack,
     skills: [
       {
         key: "php",
@@ -115,6 +120,7 @@ export const hardSkills = [
   },
   {
     categoryKey: "databases",
+    categoryIcon: HiOutlineDatabase,
     skills: [
       {
         key: "sql",
@@ -134,6 +140,7 @@ export const hardSkills = [
   },
   {
     categoryKey: "devops",
+    categoryIcon: MdSyncAlt,
     skills: [
       {
         key: "docker",
@@ -160,6 +167,7 @@ export const hardSkills = [
   },
   {
     categoryKey: "tools",
+    categoryIcon: HiOutlineWrench,
     skills: [
       {
         key: "git",
@@ -179,6 +187,7 @@ export const hardSkills = [
   },
   {
     categoryKey: "architecture",
+    categoryIcon: HiOutlineCube,
     skills: [
       {
         key: "mvc",
