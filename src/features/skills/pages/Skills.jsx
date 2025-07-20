@@ -16,9 +16,9 @@ export default function Skills() {
   const softSkillElements = getSoftSkills();
 
   function getHardSkills() {
-    return hardSkills.map((skill) => {
+    return hardSkills.map(category => category.skills.map((skill) => {
       return <HardSkillCard key={skill.key} skill={skill} />;
-    });
+    })).flat();
   }
 
   function getSoftSkills() {
