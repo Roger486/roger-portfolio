@@ -9,7 +9,7 @@ export default function About() {
   const {ref: textRef, hasBeenVisible: textHasBeenVisible} = useInView(0.1);
 
   return (
-    <section id="about" className="min-h-screen p-8">
+    <section id="about" className="min-h-screen">
       <div
         className="
           bg-no-repeat 

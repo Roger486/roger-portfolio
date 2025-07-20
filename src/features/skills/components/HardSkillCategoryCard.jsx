@@ -16,7 +16,7 @@ export default function HardSkillCategoryCard({ category }) {
         transition duration-300 hover:bg-gray-100/85 hover:shadow-xl
       "
     >
-      <div className="text-base font-semibold text-blue-600 border-l-4 border-blue-400 bg-linear-65 from-gray-400/20 to-blue-400/10 rounded-r-full flex items-center pl-3 mb-2">
+      <div className="text-base font-semibold text-blue-600 border-l-4 border-blue-400 bg-linear-65 from-gray-400/20 to-blue-400/10 rounded-r-full flex items-center pl-3 mt-2 mb-4">
         {Icon ? <Icon size={"25px"} /> : ""}
         <h4 className="pl-3 py-1">
           {t(`skills.hard-skill-categories.${category.categoryKey}`)}

@@ -42,7 +42,7 @@ export default function Projects() {
     ));
 
   return (
-    <section id="projects" className="min-h-screen p-8">
+    <section id="projects" className="min-h-screen">
       <SectionTitle>{t("projects.title")}</SectionTitle>
       <div 
         ref={featuredProjectsGridRef}

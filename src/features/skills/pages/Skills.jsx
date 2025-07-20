@@ -16,12 +16,6 @@ export default function Skills() {
   const hardSkillElements = getHardSkillCategoryCards();
   const softSkillElements = getSoftSkills();
 
-  function getHardSkills() {
-    return hardSkills.map(category => category.skills.map((skill) => {
-      return <HardSkillCard key={skill.key} skill={skill} />;
-    })).flat();
-  }
-
   function getHardSkillCategoryCards() {
     return hardSkills.map(category => <HardSkillCategoryCard key={category.categoryKey} category={category} />)
   }
@@ -42,12 +36,12 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="min-h-screen p-4">
+    <section id="skills" className="min-h-screen">
       <SectionTitle>{t("skills.title")}</SectionTitle>
       <h3
         ref={hardSkillsTitleRef}
         className={`
-          text-xl font-bold mb-4 text-blue-600
+          text-xl font-bold mb-6 text-blue-600
           ${hardSkillsTitleIsVisible ? "fade-in-lateral" : ""}
         `}
       >
@@ -56,7 +50,7 @@ export default function Skills() {
       <div
         ref={hardSkillsGridRef}
         className={`
-          flex flex-col gap-4 mb-8
+          flex flex-col gap-6 mb-8
           ${hardSkillsGridHasBeenVisible ? "fade-in" : ""}
         `}
       >
@@ -65,7 +59,7 @@ export default function Skills() {
       <h3
         ref={softSkillsTitleRef}
         className={`
-          text-xl font-bold mb-4 text-blue-600
+          text-xl font-bold mb-6 text-blue-600
           ${softSkillsTitleIsVisible ? "fade-in-lateral" : ""}
         `}
       >
@@ -74,7 +68,7 @@ export default function Skills() {
       <div
         ref={softSkillsGridRef}
         className={`
-          grid md:grid-cols-1 lg:grid-cols-2 gap-4 opacity-0
+          grid md:grid-cols-1 lg:grid-cols-2 gap-6 opacity-0
           ${softSkillsGridHasBeenVisible ? "fade-in" : ""}
         `}
       >
