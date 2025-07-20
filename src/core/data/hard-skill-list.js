@@ -4,6 +4,7 @@ import {
 } from "react-icons/fa";
 import { RiNodejsFill } from "react-icons/ri";
 import {
+  SiCss3,
   SiGnubash, SiHtml5, SiJavascript, SiMongodb, SiMysql,
   SiPhp, SiPostman, SiTailwindcss, SiTypescript
 } from "react-icons/si";
@@ -36,11 +37,18 @@ export const hardSkills = [
         backgroundColor: "#38BDF8",
       },
       {
-        key: "htmlcss",
-        name: "HTML/CSS",
+        key: "html",
+        name: "HTML",
         icon: SiHtml5,
         color: "#FFFFFF",
         backgroundColor: "#E34F26",
+      },
+      {
+        key: "css",
+        name: "CSS",
+        icon: SiCss3,
+        color: "#FFFFFF",
+        backgroundColor: "#264DE4",
       },
       {
         key: "javascript",

@@ -89,8 +89,8 @@ export const projects = [
     key: 'coffee-haven',
     name: 'Coffee Haven',
     roles: ['Frontend Developer'],
-    mainSkillsKeys: ['angular', 'typescript', 'htmlcss'],
-    secondarySkillsKeys: ['git', 'github', 'docker', 'raspi'],
+    mainSkillsKeys: ['angular', 'typescript', 'html', 'css'],
+    secondarySkillsKeys: ['docker', 'raspi'],
     repoUrls: [
       { url: 'https://github.com/Roger486/CoffeeHaven-Angular', label: 'Main Repo', destination: 'github' }
     ],
@@ -129,7 +129,7 @@ export const projects = [
     key: 'roger-portfolio',
     name: 'Personal Portfolio',
     roles: ['Frontend Developer'],
-    mainSkillsKeys: ['react', 'javascript', 'tailwind', 'htmlcss'],
+    mainSkillsKeys: ['react', 'javascript', 'tailwind', 'html', 'css'],
     secondarySkillsKeys: ['git', 'github', 'docker', 'raspi'],
     repoUrls: [
       { url: 'https://github.com/Roger486/roger-portfolio', label: 'Main Repo', destination: 'github' }
@@ -157,7 +157,7 @@ export const projects = [
     key: 'horse-race-game',
     name: 'Horse Race Game',
     roles: ['Fullstack Developer'],
-    mainSkillsKeys: ['java', 'javafx', 'mvc', 'sql'],
+    mainSkillsKeys: ['java', 'javafx','css' , 'mvc', 'sql'],
     secondarySkillsKeys: ['agile', 'git', 'github'],
     repoUrls: [
       { url: 'https://github.com/Roger486/HorseRaceGame', label: 'Main Repo', destination: 'github' }
