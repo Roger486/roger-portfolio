@@ -12,7 +12,7 @@ import { DiScrum } from "react-icons/di";
 
 export const hardSkills = [
   {
-    category: "frontend",
+    categoryKey: "frontend",
     skills: [
       {
         key: "react",
@@ -59,7 +59,7 @@ export const hardSkills = [
     ],
   },
   {
-    category: "backend",
+    categoryKey: "backend",
     skills: [
       {
         key: "php",
@@ -106,7 +106,7 @@ export const hardSkills = [
     ],
   },
   {
-    category: "databases",
+    categoryKey: "databases",
     skills: [
       {
         key: "sql",
@@ -125,7 +125,7 @@ export const hardSkills = [
     ],
   },
   {
-    category: "devops",
+    categoryKey: "devops",
     skills: [
       {
         key: "docker",
@@ -151,7 +151,7 @@ export const hardSkills = [
     ],
   },
   {
-    category: "tools",
+    categoryKey: "tools",
     skills: [
       {
         key: "git",
@@ -170,7 +170,7 @@ export const hardSkills = [
     ],
   },
   {
-    category: "architecture",
+    categoryKey: "architecture",
     skills: [
       {
         key: "mvc",

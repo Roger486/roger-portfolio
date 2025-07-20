@@ -17,7 +17,14 @@
     "title": "Habilidades",
     "title-hard": "Capacidades técnicas",
     "title-soft": "Capacidades personales",
-    "gallery-thumbnails-label": "Miniaturas del proyecto",
+    "hard-skill-categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Bases de datos",
+      "devops": "DevOps - CI/CD",
+      "tools": "Herramientas de desarrollo",
+      "architecture": "Arquitecturas y metodologías"
+    },
     "soft-skills": {
       "active-listening": {
         "name": "Escucha activa",

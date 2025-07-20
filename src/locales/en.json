@@ -17,7 +17,14 @@
     "title": "Skills",
     "title-hard": "Hard Skills",
     "title-soft": "Soft Skills",
-    "gallery-thumbnails-label": "Project thumbnails",
+    "hard-skill-categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Databases",
+      "devops": "DevOps - CI/CD",
+      "tools": "Development tools",
+      "architecture": "Architectures and methodologies"
+    },
     "soft-skills": {
       "active-listening": {
         "name": "Active listening",

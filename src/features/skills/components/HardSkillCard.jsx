@@ -1,21 +1,20 @@
 export default function HardSkillCard({ skill }) {
-
   return (
-    <div className="
-      border-2 border-blue-400 bg-gray-100/50 rounded-lg p-2 shadow-md
-      flex flex-col justify-center
-      transition duration-300
-      hover:bg-gray-100 hover:shadow-xl"
+    <div
+      className="
+        
+        flex items-center gap-3
+      "
     >
-      <div className="flex flex-row items-center gap-4">
       <span
-        className="rounded-full p-2"
-        style={{ backgroundColor: skill.backgroundColor }}
+        className="rounded-full border p-1 shrink-0"
+        style={{ backgroundColor: skill.backgroundColor, borderColor: skill.color }}
       >
-        <skill.icon size="30px" color={skill.color} />
+        <skill.icon size="20px" color={skill.color} />
       </span>
-      <h4 className="font-semibold">{skill.name}</h4>
-      </div>
+      <h4 className="font-semibold truncate">
+        {skill.name}
+      </h4>
     </div>
   );
 }

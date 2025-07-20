@@ -56,7 +56,7 @@ export default function Skills() {
       <div
         ref={hardSkillsGridRef}
         className={`
-          grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8 opacity-0
+          flex flex-col gap-4 mb-8
           ${hardSkillsGridHasBeenVisible ? "fade-in" : ""}
         `}
       >
