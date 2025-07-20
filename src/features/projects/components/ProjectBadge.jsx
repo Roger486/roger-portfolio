@@ -22,7 +22,10 @@ export default function ProjectBadge({ name, type = "default" }) {
   let color = "#FFFFFF";
   let backgroundColor = "#000000";
   let displayName = name;
-  const foundSkill = hardSkills.find((skill) => skill.key === name);
+  
+  const foundSkill = hardSkills
+    .flatMap((category) => category.skills)
+    .find((skill) => skill.key === name);
 
   if (type === "role") {
     backgroundColor = "#60A5FA";
