@@ -24,7 +24,7 @@ export default function FeaturedProjectCard({ project, onClick }) {
     >
       {/* Thumbnail + CTA */}
       <div className="col-span-3 p-2 md:mr-3">
-        <h3 className="text-2xl font-bold mb-4 md:hidden">{project.name}</h3>
+        <h3 className="text-blue-600 text-2xl font-bold mb-4 md:hidden">{project.name}</h3>
         <div className="flex justify-center mb-4">
           <img
             src={mainThumbnail}
@@ -71,7 +71,7 @@ export default function FeaturedProjectCard({ project, onClick }) {
         "
       >
         <div>
-          <h3 className="text-2xl font-bold mb-4 hidden md:block">
+          <h3 className="text-blue-600 text-2xl font-bold mb-4 hidden md:block">
             {project.name}
           </h3>
           <h4 className="font-semibold mb-2">

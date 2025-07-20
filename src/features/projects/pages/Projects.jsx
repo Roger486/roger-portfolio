@@ -47,7 +47,7 @@ export default function Projects() {
       <div 
         ref={featuredProjectsGridRef}
         className={`
-          flex flex-col gap-4 mb-4 opacity-0
+          flex flex-col gap-6 gap-y-12 mb-12 opacity-0
           ${featuredProjectssGridHasBeenVisible ? "fade-in" : ""}
         `}
       >
@@ -56,7 +56,7 @@ export default function Projects() {
       <div
         ref={projectsGridRef}
         className={`
-          grid grid-cols-1 md:grid-cols-2 gap-4 opacity-0
+          grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-12 opacity-0
           ${projectssGridHasBeenVisible ? "fade-in" : ""}
         `}
       >

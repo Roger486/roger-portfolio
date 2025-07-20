@@ -24,7 +24,7 @@ export default function ProjectCard({ project, onClick }) {
     >
       {/* Thumbnail + CTA + Roles */}
       <div className="flex flex-col xl:mr-3">
-        <h3 className="mb-3 text-center text-lg font-bold xl:hidden">
+        <h3 className="mb-3 text-blue-600 text-center text-lg font-bold xl:hidden">
           {project.name}
         </h3>
         <div className="flex justify-center mb-4">
@@ -70,7 +70,7 @@ export default function ProjectCard({ project, onClick }) {
       {/*Description + Skills */}
       <div className="flex flex-col h-full justify-between">
         <div>
-          <h3 className="mb-3 text-center font-bold text-lg hidden xl:block">
+          <h3 className="mb-3 text-blue-600 text-center font-bold text-lg hidden xl:block">
             {project.name}
           </h3>
           <p className="mb-4 text-sm">
