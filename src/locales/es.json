@@ -55,6 +55,7 @@
   "projects": {
     "title": "Proyectos",
     "viewDetails": "Ver detalles del proyecto",
+    "links": "Enlaces al proyecto",
     "demo-urls": "URLs de demostración",
     "repo-urls": "Repositorios",
     "roles": "Roles",

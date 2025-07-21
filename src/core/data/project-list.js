@@ -3,15 +3,15 @@ export const projects = [
     key: 'hostcontrol',
     name: 'HostControl',
     roles: ['Backend Developer', 'Database Design', 'Technical & API Documentation'],
-    mainSkillsKeys: ['laravel', 'php', 'api-rest', 'mvc'],
+    mainSkillsKeys: ['laravel', 'php', 'mysql', 'api-rest', 'mvc'],
     secondarySkillsKeys: ['git', 'github', 'docker', 'agile', 'raspi'],
     repoUrls: [
-      { url: 'https://github.com/Roger486/HostControl/tree/main/backend', label: 'API Repo', destination: 'github' },
-      { url: 'https://github.com/Roger486/HostControl', label: 'Main Repo', destination: 'github' }
+      { url: 'https://github.com/Roger486/HostControl/tree/main/backend', label: 'API Repository', destination: 'github' },
+      { url: 'https://github.com/Roger486/HostControl', label: 'Main Repository', destination: 'github' }
     ],
     demoUrls: [
-      { url: 'https://hostcontrol-api.rogerdev.xyz/api/accommodations', label: 'API', destination: 'default' },
-      { url: 'https://hostcontrol-vicentedev.rogerdev.xyz/', label: 'Frontend', destination: 'default' }
+      { url: 'https://hostcontrol-api.rogerdev.xyz/api/accommodations', label: 'API Demo', destination: 'default' },
+      { url: 'https://hostcontrol-vicentedev.rogerdev.xyz/', label: 'Frontend Demo', destination: 'default' }
     ],
     images: [
       {
@@ -54,7 +54,7 @@ export const projects = [
     mainSkillsKeys: ['raspi', 'docker', 'bash'],
     secondarySkillsKeys: ['git', 'github'],
     repoUrls: [
-      { url: 'https://github.com/Roger486/raspi-server', label: 'Main Repo', destination: 'github' }
+      { url: 'https://github.com/Roger486/raspi-server', label: 'Main Repository', destination: 'github' }
     ],
     demoUrls: [],
     images: [
@@ -92,10 +92,10 @@ export const projects = [
     mainSkillsKeys: ['angular', 'typescript', 'html', 'css'],
     secondarySkillsKeys: ['docker', 'raspi'],
     repoUrls: [
-      { url: 'https://github.com/Roger486/CoffeeHaven-Angular', label: 'Main Repo', destination: 'github' }
+      { url: 'https://github.com/Roger486/CoffeeHaven-Angular', label: 'Main Repository', destination: 'github' }
     ],
     demoUrls: [
-      { url: 'https://coffee-haven.rogerdev.xyz/', label: 'Frontend', destination: 'default' }
+      { url: 'https://coffee-haven.rogerdev.xyz/', label: 'Frontend Demo', destination: 'default' }
     ],
     images: [
       {
@@ -132,10 +132,10 @@ export const projects = [
     mainSkillsKeys: ['react', 'javascript', 'tailwind', 'html', 'css'],
     secondarySkillsKeys: ['git', 'github', 'docker', 'raspi'],
     repoUrls: [
-      { url: 'https://github.com/Roger486/roger-portfolio', label: 'Main Repo', destination: 'github' }
+      { url: 'https://github.com/Roger486/roger-portfolio', label: 'Main Repository', destination: 'github' }
     ],
     demoUrls: [
-      { url: 'https://roger-portfolio.rogerdev.xyz/', label: 'Frontend', destination: 'default' }
+      { url: 'https://roger-portfolio.rogerdev.xyz/', label: 'Frontend Demo', destination: 'default' }
     ],
     images: [
       {
@@ -157,13 +157,13 @@ export const projects = [
     key: 'horse-race-game',
     name: 'Horse Race Game',
     roles: ['Fullstack Developer'],
-    mainSkillsKeys: ['java', 'javafx','css' , 'mvc', 'sql'],
+    mainSkillsKeys: ['java', 'javafx','css' , 'mvc', 'mysql'],
     secondarySkillsKeys: ['agile', 'git', 'github'],
     repoUrls: [
-      { url: 'https://github.com/Roger486/HorseRaceGame', label: 'Main Repo', destination: 'github' }
+      { url: 'https://github.com/Roger486/HorseRaceGame', label: 'Main Repository', destination: 'github' }
     ],
     demoUrls: [
-      { url: 'https://www.youtube.com/watch?v=TkPmkwNKTX4', label: 'Video', destination: 'youtube' }
+      { url: 'https://www.youtube.com/watch?v=TkPmkwNKTX4', label: 'Youtube Demo', destination: 'youtube' }
     ],
     images: [
       {

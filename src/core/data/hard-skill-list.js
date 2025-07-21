@@ -123,7 +123,7 @@ export const hardSkills = [
     categoryIcon: HiOutlineDatabase,
     skills: [
       {
-        key: "sql",
+        key: "mysql",
         name: "MySQL - MariaDB",
         icon: SiMysql,
         color: "#FFFFFF",
