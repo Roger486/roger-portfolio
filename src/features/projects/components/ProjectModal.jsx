@@ -60,7 +60,7 @@ export default function ProjectModal({ project, onClose }) {
             <h3 className="font-semibold text-sm text-blue-600 mb-4">
               {t("projects.links")}
             </h3>
-            <div className="flex flex-wrap gap-2 justify-center">
+            <div className="flex flex-wrap gap-4 justify-center">
               {renderExternalLinkButtons(project.demoUrls)}
               {renderExternalLinkButtons(project.repoUrls)}
             </div>

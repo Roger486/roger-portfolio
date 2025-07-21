@@ -17,9 +17,9 @@ import { FaGithub, FaLink } from "react-icons/fa";
  */
 export default function ExternalLinkButton({ url, label, destination = "default"}) {
       const buttonStyleList = [
-        {destination: "default", iconElement: <FaLink />, styleClasses: "text-white bg-blue-700"}, 
-        {destination: "youtube", iconElement: <BsYoutube />, styleClasses: "text-white bg-blue-700"}, 
-        {destination: "github", iconElement: <FaGithub />, styleClasses: "hover:text-white"}
+        {destination: "default", iconElement: <FaLink size="20px" />, styleClasses: "text-white bg-blue-700 hover:bg-blue-400"}, 
+        {destination: "youtube", iconElement: <BsYoutube size="25px" />, styleClasses: "text-white bg-red-600 hover:bg-red-200 hover:text-red-600"}, 
+        {destination: "github", iconElement: <FaGithub size="25px" />, styleClasses: "text-gray-800 bg-white hover:bg-gray-800 hover:text-white"}
       ]
       const buttonStyle = buttonStyleList.find((buttonStyleInfo) => buttonStyleInfo.destination === destination) || buttonStyleList[0];
 
@@ -29,11 +29,11 @@ export default function ExternalLinkButton({ url, label, destination = "default"
           target="_blank"
           rel="noopener noreferrer"
           className={`
-            flex gap-1 items-center
-            text-sm rounded py-1 px-2 min-w-15
+            flex gap-2 items-center
+            text-sm rounded py-2 px-3
+            min-w-[64px] min-h-[48px]
             border border-black/20
             transition duration-300
-            hover:bg-blue-400
             ${buttonStyle.styleClasses}
           `}
         >
