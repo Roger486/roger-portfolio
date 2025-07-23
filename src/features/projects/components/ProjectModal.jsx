@@ -47,11 +47,13 @@ export default function ProjectModal({ project, onClose }) {
         <div className="mt-4 space-y-6">
           <ImageGallery images={project.images} />
 
-          <h2 className="
+          <h2
+            className="
             text-2xl font-bold mb-4 text-center text-gray-800
             after:flex after:h-1 after:bg-blue-600 after:mt-3
             before:flex before:h-1 before:bg-blue-600 before:mb-3
-            ">
+            "
+          >
             {project.name}
           </h2>
 
@@ -97,6 +99,9 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           {/* 📝 Descripción técnica */}
+          <h4 className="font-semibold mb-2 text-blue-600">
+            {t("projects.description-title")}:
+          </h4>
           <p className="text-gray-900 mb-3">
             {t(`projects.project-descriptions.${project.key}.long`)}
           </p>

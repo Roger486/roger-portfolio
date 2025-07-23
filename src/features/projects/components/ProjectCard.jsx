@@ -1,6 +1,6 @@
 import { useLanguage } from "../../../core/context/LanguageContext";
 import { renderExternalLinkButtons, renderProjectBadges } from "../utils/renderProjectElements";
-import OpenModalButton from "./OpenModalButton";
+import OpenProjectModalButton from "./OpenProjectModalButton";
 
 export default function ProjectCard({ project, onClick }) {
   const { t } = useLanguage();
@@ -41,7 +41,7 @@ export default function ProjectCard({ project, onClick }) {
         </div>
 
         <div className="mb-4 flex justify-center">
-          <OpenModalButton
+          <OpenProjectModalButton
             label={t("projects.viewDetails")}
             onClick={onClick}
           />
