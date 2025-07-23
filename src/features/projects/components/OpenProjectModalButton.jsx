@@ -10,7 +10,7 @@ export default function OpenProjectModalButton({
       onClick={onClick}
       className="
         px-4 py-2 w-full rounded shadow-lg
-        font-bold bg-blue-600 text-white text-sm
+        font-bold bg-blue-600 text-white text-sm cursor-pointer
         transition-all duration-300
         hover:bg-blue-400 hover:text-blue-900 hover:scale-105
         hover:shadow-xl

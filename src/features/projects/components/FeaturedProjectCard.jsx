@@ -37,7 +37,7 @@ export default function FeaturedProjectCard({ project, onClick }) {
         col-span-4 md:mr-3
         flex flex-col gap-6 justify-evenly
       ">
-        <h3 className="text-blue-600 text-2xl font-bold mb-4 md:hidden">
+        <h3 className="text-blue-600 text-2xl font-bold mb-4 md:hidden text-center">
           {project.name}
         </h3>
         <div className="flex justify-center">

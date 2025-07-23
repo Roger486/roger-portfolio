@@ -22,12 +22,12 @@ export default function ProjectCard({ project, onClick }) {
       border-2 rounded-xl bg-white border-blue-400 shadow-md
     "
     >
-      {/* Thumbnail + CTA + Roles */}
-      <div className="flex flex-col xl:mr-3">
+      {/* Thumbnail + CTA */}
+      <div className="flex flex-col gap-6 justify-between xl:mr-4">
         <h3 className="mb-3 text-blue-600 text-center text-lg font-bold xl:hidden">
           {project.name}
         </h3>
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center">
           <img
             src={mainThumbnail}
             alt="Thumbnail"
@@ -40,35 +40,16 @@ export default function ProjectCard({ project, onClick }) {
           />
         </div>
 
-        <div className="mb-4 flex justify-center">
+        <div className=" mx-6 mb-4 flex justify-center">
           <OpenProjectModalButton
             label={t("projects.viewDetails")}
             onClick={onClick}
           />
         </div>
-
-        {demoUrlElements.length > 0 && (
-          <div>
-            <h4 className="text-xs">{t("projects.demo-urls")}:</h4>
-            <div className="flex gap-1 justify-center">{demoUrlElements}</div>
-          </div>
-        )}
-        {repoUrlElements.length > 0 && (
-          <div>
-            <h4 className="text-xs">{t("projects.repo-urls")}:</h4>
-            <div className="flex gap-1 justify-center">{repoUrlElements}</div>
-          </div>
-        )}
-        <div>
-          <h4 className="text-xs">{t("projects.roles")}:</h4>
-          <div className="flex flex-wrap gap-1 justify-center">
-            {roleElements}
-          </div>
-        </div>
       </div>
 
-      {/*Description + Skills */}
-      <div className="flex flex-col h-full justify-between">
+      {/*Description + Main Skills */}
+      <div className="flex flex-col justify-between">
         <div>
           <h3 className="mb-3 text-blue-600 text-center font-bold text-lg hidden xl:block">
             {project.name}
@@ -77,15 +58,9 @@ export default function ProjectCard({ project, onClick }) {
             {t(`projects.project-descriptions.${project.key}.short`)}
           </p>
         </div>
-        <div>
-          <h4 className="text-xs">{t("projects.related-skills")}:</h4>
           <div className="flex flex-wrap gap-1 justify-center">
             {mainSkillElements}
           </div>
-          <div className="flex flex-wrap gap-1 justify-center">
-            {secondarySkillElements}
-          </div>
-        </div>
       </div>
     </div>
   );
