@@ -1,5 +1,5 @@
 import { useLanguage } from "../../../core/context/LanguageContext";
-import { renderExternalLinkButtons, renderProjectBadges } from "../utils/renderProjectElements";
+import { renderProjectBadges } from "../utils/renderProjectElements";
 import OpenProjectModalButton from "./OpenProjectModalButton";
 
 export default function ProjectCard({ project, onClick }) {
@@ -8,12 +8,7 @@ export default function ProjectCard({ project, onClick }) {
   const mainImage = project.images.find((image) => image.key === "img-001");
   const mainThumbnail = mainImage.thumb;
 
-  const demoUrlElements = renderExternalLinkButtons(project.demoUrls);
-  const repoUrlElements = renderExternalLinkButtons(project.repoUrls);
-
-  const roleElements = renderProjectBadges(project.roles, "role");
   const mainSkillElements = renderProjectBadges(project.mainSkillsKeys, "main-skill");
-  const secondarySkillElements = renderProjectBadges(project.secondarySkillsKeys, "secondary-skill");
 
   return (
     <div
