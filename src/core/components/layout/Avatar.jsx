@@ -3,7 +3,6 @@ import avatarImg from "/src/assets/avatar.jpg"; // import images as objects so t
 
 export default function Avatar() {
   const [scrollY, setScrollY] = useState(null);
-  const [mounted, setMounted] = useState(false);
 
   const maxSize = 220;
   const minSize = 40;
@@ -12,7 +11,6 @@ export default function Avatar() {
     const calculateScrollY = () => window.scrollY || 0;
 
     setScrollY(calculateScrollY());
-    setMounted(true); // Indicamos que el componente ya está montado
 
     const onScroll = () => {
       setScrollY(calculateScrollY());
@@ -40,7 +38,7 @@ export default function Avatar() {
         style={{
           width: size,
           height: size,
-          transition: mounted ? "width 0.2s, height 0.2s" : "none",
+          transition: "width 0.3s, height 0.3s",
         }}
       >
         <img
@@ -51,17 +49,16 @@ export default function Avatar() {
       </div>
       {/* Mostrar los dos nombres en líneas separadas */}
       {showSeparateNames && (
-        <div className="ml-2 flex flex-col font-semibold text-gray-900 transition-opacity duration-300">
-          <span className="text-blue-600" style={{ opacity: mounted ? 1 : 0 }}>Roger</span>
-          <span style={{ opacity: mounted ? 1 : 0 }}>Navarro</span>
+        <div className="ml-2 flex flex-col font-semibold text-gray-900">
+          <span className="text-blue-600">Roger</span>
+          <span>Navarro</span>
         </div>
       )}
 
       {/* Mostrar nombre completo en una línea */}
       {showCombinedName && (
         <span
-          className="ml-2 font-semibold text-gray-900 transition-opacity duration-300"
-          style={{ opacity: mounted ? 1 : 0 }}
+          className="ml-2 font-semibold text-gray-900"
         >
           <span className="text-blue-600">Roger</span> Navarro
         </span>
