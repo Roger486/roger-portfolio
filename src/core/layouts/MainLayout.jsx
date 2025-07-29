@@ -42,7 +42,7 @@ export default function MainLayout({ children }) {
 
       <Footer />
 
-      <ContactButton variant="floating" />
+      <ContactButton isMenuOpen={isMenuOpen} variant="floating" />
     </>
   );
 }

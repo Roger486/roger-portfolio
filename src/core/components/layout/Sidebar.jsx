@@ -49,8 +49,6 @@ export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
     };
   }, [isMenuOpen, onClose]);
 
-  // Mostrar los contact elements si scroll es mayor a 190
-  const showContactActions = topPosition < 190;
 
   const topStyle = isMenuOpen ? { top: "1rem" } : { top: `${topPosition}px` };
 
@@ -106,8 +104,8 @@ export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
           <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
         </a>
       </nav>
-      <div className="fixed bottom-24 left-0 w-64 flex justify-center">
-        {(showContactActions || isMenuOpen) && <ContactActions />}
+      <div className="fixed bottom-24 flex justify-center">
+        {(isMenuOpen) && <ContactActions />}
       </div>
       <div className="fixed bottom-10 left-0 w-64 flex justify-center">
         <LanguageSwitcher />

@@ -3,7 +3,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import ContactModal from "../../../features/contact/components/ContactModal";
 import { FiMail } from "react-icons/fi";
 
-export default function ContactButton({ variant = "inline" }) {
+export default function ContactButton({ isMenuOpen = false, variant = "inline" }) {
   const { t } = useLanguage();
   const [isFormModalOpen, setIsFormModalOpen] = useState(false);
 
@@ -24,7 +24,7 @@ export default function ContactButton({ variant = "inline" }) {
   };
 
   return (
-    <div>
+    <div className={isMenuOpen ? "hidden" : ""}>
       <button
         className={`${baseClass} ${hoverClasses} ${variantClasses[variant]}`}
         aria-label={t("contact.contact-me")}
