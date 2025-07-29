@@ -6,7 +6,7 @@ import useSidebarEffects from "../../hooks/useSidebarEffects";
 export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
   const { topPosition } = useSidebarEffects(onClose, isMenuOpen);
   const { t } = useLanguage();
-
+  const sections = ["about", "skills", "projects"];
 
   const topStyle = isMenuOpen ? { top: "1rem" } : { top: `${topPosition}px` };
 
@@ -28,42 +28,31 @@ export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
           isMenuOpen ? "gap-6" : "gap-4"
         }`}
       >
-        <a
-          href="#about"
-          onClick={onClose}
-          className={`relative px-2 group font-semibold transition-all duration-300 rounded-2xl w-fit
+
+        {sections.map((section) => {
+          return (
+            <a
+              key={section}
+              href={`#${section}`}
+              onClick={onClose}
+              className={`relative px-2 group font-semibold transition-all duration-300 rounded-2xl w-fit
             hover:text-blue-400 hover:bg-white/0
-            ${activeSection === "about" ? "bg-blue-400/20 font-bold text-blue-700" : ""}
+            ${
+              activeSection === section
+                ? "bg-blue-400/20 font-bold text-blue-700"
+                : ""
+            }
           `}
-        >
-          {t("side-bar.about")}
-          <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
-        </a>
-        <a
-          href="#skills"
-          onClick={onClose}
-          className={`relative px-2 group font-semibold transition-all duration-300 rounded-2xl w-fit
-            hover:text-blue-400 hover:bg-white/0
-            ${activeSection === "skills" ? "bg-blue-400/20 font-bold text-blue-700" : ""}
-          `}
-        >
-          {t("side-bar.skills")}
-          <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
-        </a>{" "}
-        <a
-          href="#projects"
-          onClick={onClose}
-          className={`relative px-2 group font-semibold transition-all duration-300 rounded-2xl w-fit
-            hover:text-blue-400 hover:bg-white/0
-            ${activeSection === "projects" ? "bg-blue-400/20 font-bold text-blue-700" : ""}
-          `}
-        >
-          {t("side-bar.projects")}
-          <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
-        </a>
+            >
+              {t(`side-bar.${section}`)}
+              <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-full"></span>
+            </a>
+          );
+        })}
+
       </nav>
       <div className="fixed bottom-24 flex justify-center">
-        {(isMenuOpen) && <ContactActions />}
+        {isMenuOpen && <ContactActions />}
       </div>
       <div className="fixed bottom-10 left-0 w-64 flex justify-center">
         <LanguageSwitcher />
