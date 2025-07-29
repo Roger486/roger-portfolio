@@ -20,7 +20,7 @@ export default function SocialIconLink({ platformKey, displayName = false }) {
       className={`
         inline-flex items-center gap-2
         transition duration-300
-        ${displayName && "border px-3 py-0.5 rounded-full shadow-sm text-sm hover:shadow-xl hover:text-blue-600 hover:bg-blue-50/50 hover:scale-110"}
+        ${displayName && "border px-3 py-2 rounded-full shadow-sm text-sm hover:shadow-xl hover:text-blue-600 hover:bg-blue-50/50 hover:scale-110"}
       `}
     >
       {displayName && <span>{platform.name}</span>}

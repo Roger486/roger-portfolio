@@ -23,7 +23,7 @@ export default function ContactModal({ onClose }) {
 
   const modalContent = (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-      <div className="relative bg-white p-8 rounded shadow-md max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div className="relative bg-white sm:p-8 rounded shadow-md max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* close button */}
         <button
           className="absolute top-4 right-4 text-gray-400 hover:text-red-700 cursor-pointer"
@@ -36,7 +36,7 @@ export default function ContactModal({ onClose }) {
             <p className="mb-3 text-blue-700">
               {t("contact.social-paragraph")}
             </p>
-            <div className="flex justify-center gap-2">{socialIconsLinks}</div>
+            <div className="flex flex-wrap justify-center gap-2">{socialIconsLinks}</div>
           </section>
           <hr className="my-4 border-blue-400" />
           <section className="text-sm text-gray-700">

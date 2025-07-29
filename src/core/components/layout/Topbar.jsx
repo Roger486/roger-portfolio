@@ -68,7 +68,7 @@ export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
         {animatedSubtitle}
       </p>
       <div className="ml-auto">
-        <ContactActions buttonClassName="hidden sm:flex" />
+        <ContactActions hideButtonOnMobile={true} />
       </div>
     </header>
   );

@@ -3,6 +3,7 @@ import Footer from "../components/layout/Footer";
 import Avatar from "../components/layout/Avatar";
 import Topbar from "../components/layout/Topbar";
 import Sidebar from "../components/layout/Sidebar";
+import ContactButton from "../components/ui/ContactButton";
 
 export default function MainLayout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,8 +37,11 @@ export default function MainLayout({ children }) {
 
       <main className="ml-0 lg:ml-64 px-4 sm:px-6 md:px-8 lg:px-0 lg:pr-8">
         {children}
-        <Footer />
       </main>
+
+      <Footer />
+
+      <ContactButton variant="floating" />
     </>
   );
 }
