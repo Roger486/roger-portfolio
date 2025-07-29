@@ -7,12 +7,12 @@ import ContactActions from "../ui/ContactActions";
 export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
   const { t, language } = useLanguage();
 
-  const animatedSubtitleWords = ["Full Stack", "Front End", "Back End", t("subtitle-2"), "Web"];
+  const animatedSubtitleWords = t("animated-subtitle");
 
   const animatedSubtitle =
     language === "es" ? (
       <>
-        {t("subtitle-1")}{" "}
+        {t("static-subtitle")}{" "}
         <span className="text-blue-600 font-semibold">
           <Typewriter
             words={animatedSubtitleWords}
@@ -38,7 +38,7 @@ export default function Topbar({ isMenuOpen, setIsMenuOpen }) {
             delaySpeed={2000}
           />
         </span>{" "}
-        {t("subtitle-1")}
+        {t("static-subtitle")}
       </>
     );
 

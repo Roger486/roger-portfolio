@@ -1,6 +1,6 @@
 {
-  "subtitle-1": "Developer",
-  "subtitle-2": "Enthusiast",
+  "static-subtitle": "Developer",
+  "animated-subtitle": ["Full Stack", "Front End", "Creative", "Back End", "Enthusiast", "Web"],
   "side-bar": {
     "about": "About",
     "skills": "Skills",
