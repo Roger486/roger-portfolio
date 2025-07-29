@@ -1,53 +1,11 @@
-import { useState, useEffect } from "react";
 import ContactActions from "../ui/ContactActions";
-import {
-  isBodyScrollLocked,
-  lockBodyScroll,
-  unlockBodyScroll,
-} from "../../utils/lockbodyscroll";
 import { useLanguage } from "../../context/LanguageContext";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
+import useSidebarEffects from "../../hooks/useSidebarEffects";
 
 export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
-  const [topPosition, setTopPosition] = useState(250); // posición inicial para espacio avatar
+  const { topPosition } = useSidebarEffects(onClose, isMenuOpen);
   const { t } = useLanguage();
-
-  useEffect(() => {
-    /**
-     * Bloque encargado de calcular el punto en el que estamos del scroll vertical
-     * y no permitir que vaya más alla de 60, de esta forma el sidebar empieza
-     * donde termina el avatar del componente <Avatar /> que mide 60
-     * y solo baja al scrollear hasta la parte superior de la ventana
-     */
-    // Establecemos topPosition correcto al montar el componente
-    const scrollY = window.scrollY;
-    setTopPosition(Math.max(250 - scrollY, 60));
-    // Función para actualizar topPosition en scroll
-    const onScroll = () => {
-      const scrollY = window.scrollY;
-      setTopPosition(Math.max(250 - scrollY, 60));
-    };
-
-    // Cerrar menú directamente al hacer resize
-    const onResize = () => {
-      onClose(); // con esto también desbloqueas el scroll si el menú era quien lo tenía bloqueado
-    };
-
-    // Bloqueo scroll solo si se abre el menú en móvil
-    if (isMenuOpen && window.innerWidth < 1024) {
-      lockBodyScroll();
-    } else {
-      unlockBodyScroll();
-    }
-
-    window.addEventListener("scroll", onScroll);
-    window.addEventListener("resize", onResize);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onResize);
-      unlockBodyScroll();
-    };
-  }, [isMenuOpen, onClose]);
 
 
   const topStyle = isMenuOpen ? { top: "1rem" } : { top: `${topPosition}px` };
