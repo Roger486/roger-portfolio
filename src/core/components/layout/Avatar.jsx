@@ -2,16 +2,16 @@ import { useState, useEffect } from "react";
 import avatarImg from "/src/assets/avatar.jpg"; // import images as objects so the production build get them correctly
 
 export default function Avatar() {
-  const [scrollY, setScrollY] = useState(null);
+  const [scrollY, setScrollY] = useState(0);
 
   const maxSize = 220;
   const minSize = 40;
 
   useEffect(() => {
     const calculateScrollY = () => window.scrollY || 0;
-
+    
     setScrollY(calculateScrollY());
-
+    
     const onScroll = () => {
       setScrollY(calculateScrollY());
     };
@@ -20,16 +20,14 @@ export default function Avatar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const currentScrollY = scrollY !== null ? scrollY : 0;
-
   const size =
-    currentScrollY < 200
-      ? maxSize - ((maxSize - minSize) * currentScrollY) / 200
+    scrollY < 200
+      ? maxSize - ((maxSize - minSize) * scrollY) / 200
       : minSize;
 
-  const showSeparateNames  = currentScrollY >= 75 && currentScrollY < 150;
+  const showSeparateNames  = scrollY >= 75 && scrollY < 150;
 
-  const showCombinedName  = currentScrollY >= 150;
+  const showCombinedName  = scrollY >= 150;
 
   return (
     <div className="fixed top-4 items-center pl-3 hidden lg:flex">
