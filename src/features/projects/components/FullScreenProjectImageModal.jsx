@@ -65,7 +65,7 @@ export default function FullScreenProjectImageModal({
         <button
           disabled={isLastImage}
           className={`
-          absolute top-[45vh] right-4 text-gray-400/50 text-4xl rounded-full p-1
+          absolute top-[45vh] right-4 text-4xl rounded-full p-1
           transition
           ${isLastImage ? "text-gray-100/50" : "cursor-pointer text-gray-400/50 hover:text-black hover:bg-blue-400/50"}
           `}
