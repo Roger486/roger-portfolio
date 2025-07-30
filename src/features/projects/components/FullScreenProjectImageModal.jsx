@@ -40,7 +40,7 @@ export default function FullScreenProjectImageModal({
 
         {/* Skip images buttons */}
         {/**
-         * We use e.stopPropagation(); i nthis case on the buttons, since doing it on the main container
+         * We use e.stopPropagation(); in this case on the buttons, since doing it on the main container
          * makes the user unable to click-to-close the image.
          */}
         <button

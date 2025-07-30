@@ -123,8 +123,8 @@
       "name-placeholder": "Tu nombre completo",
       "email-placeholder": "tu@email.com",
       "message-placeholder": "¿En qué puedo ayudarte?",
-      "succesful-submit-1": "✅ ¡Mensaje enviado correctamente!",
-      "succesful-submit-2": "📨 Te responderé lo antes posible.",
+      "successful-submit-1": "✅ ¡Mensaje enviado correctamente!",
+      "successful-submit-2": "📨 Te responderé lo antes posible.",
       "errors": {
         "required": "Este campo es obligatorio.",
         "name": "Este campo debe tener al menos 3 letras y solo puede contener letras y espacios.",

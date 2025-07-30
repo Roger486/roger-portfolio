@@ -123,8 +123,8 @@
       "name-placeholder": "Your full name",
       "email-placeholder": "your@email.com",
       "message-placeholder": "How can I help you?",
-      "succesful-submit-1": "✅ Message sent successfully!",
-      "succesful-submit-2": "📨 I'll get back to you as soon as possible.",
+      "successful-submit-1": "✅ Message sent successfully!",
+      "successful-submit-2": "📨 I'll get back to you as soon as possible.",
       "errors": {
         "required": "This field is mandatory.",
         "name": "This field must be at least 3 characters long and contain only letters and spaces.",

@@ -10,7 +10,7 @@ export default function ContactForm() {
   const [errors, setErrors] = useState({});
   const [isFormSent, setIsFormSent] = useState(false);
 
-  const testMode = false;
+  const testMode = true;
 
   const { t } = useLanguage();
 
@@ -147,10 +147,10 @@ export default function ContactForm() {
       {isFormSent && (
         <div className="bg-green-100 p-2">
           <p className="text-green-800 text-center text-lg">
-            {t("contact.form.succesful-submit-1")}
+            {t("contact.form.successful-submit-1")}
           </p>
           <p className="text-green-800 text-center text-sm">
-            {t("contact.form.succesful-submit-2")}
+            {t("contact.form.successful-submit-2")}
           </p>
         </div>
       )}
