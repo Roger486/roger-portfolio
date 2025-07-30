@@ -25,6 +25,8 @@ export default function ProjectModal({ project, onClose }) {
 
   const modalRoot = document.getElementById("modal-root");
 
+  if (!project || !modalRoot) return null;
+
   const modalContent = (
     <div
       className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
