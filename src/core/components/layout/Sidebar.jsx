@@ -25,7 +25,7 @@ export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
     >
       <nav
         className={`mt-5 flex flex-col text-black font-semibold ${
-          isMenuOpen ? "gap-6" : "gap-4"
+          isMenuOpen ? "justify-around mb-100" : "gap-4"
         }`}
       >
 
@@ -38,7 +38,7 @@ export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
               className={`relative px-2 group font-semibold transition-all duration-300 rounded-2xl w-fit
             hover:text-blue-400 hover:bg-white/0
             ${
-              activeSection === section
+              activeSection === section && !isMenuOpen
                 ? "bg-blue-400/20 font-bold text-blue-700"
                 : ""
             }

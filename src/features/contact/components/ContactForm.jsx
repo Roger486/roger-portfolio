@@ -10,7 +10,7 @@ export default function ContactForm() {
   const [errors, setErrors] = useState({});
   const [isFormSent, setIsFormSent] = useState(false);
 
-  const testMode = true;
+  const testMode = false;
 
   const { t } = useLanguage();
 
