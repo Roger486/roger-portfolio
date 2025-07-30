@@ -27,7 +27,7 @@ export default function Projects() {
       <FeaturedProjectCard
         key={project.key}
         project={project}
-        onClick={() => handleOpenProjectModal(project)}
+        onOpenModal={() => handleOpenProjectModal(project)}
       />
     ));
 
@@ -37,7 +37,7 @@ export default function Projects() {
       <ProjectCard
         key={project.key}
         project={project}
-        onClick={() => handleOpenProjectModal(project)}
+        onOpenModal={() => handleOpenProjectModal(project)}
       />
     ));
 
