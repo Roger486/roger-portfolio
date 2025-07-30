@@ -1,11 +1,7 @@
-import HardSkillCard from "../components/HardSkillCard";
-import { hardSkills } from "../../../core/data/hard-skill-list";
-import { softSkills } from "../../../core/data/soft-skill-list";
 import { useLanguage } from "../../../core/context/LanguageContext";
-import SoftSkillCard from "../components/SoftSkillCard";
 import SectionTitle from "../../../core/components/ui/SectionTitle";
 import useInView from "../../../core/hooks/useInView";
-import HardSkillCategoryCard from "../components/HardSkillCategoryCard";
+import { renderHardSkillCategoryCards, renderSoftSkillsCards } from "../utils/renderSkillCards";
 
 export default function Skills() {
   const { t } = useLanguage();
@@ -13,27 +9,8 @@ export default function Skills() {
   const { ref: hardSkillsTitleRef, isVisible: hardSkillsTitleIsVisible } = useInView();
   const { ref: softSkillsGridRef, hasBeenVisible: softSkillsGridHasBeenVisible } = useInView(0.1);
   const { ref: hardSkillsGridRef, hasBeenVisible: hardSkillsGridHasBeenVisible } = useInView(0.1);
-  const hardSkillElements = getHardSkillCategoryCards();
-  const softSkillElements = getSoftSkills();
-
-  function getHardSkillCategoryCards() {
-    return hardSkills.map(category => <HardSkillCategoryCard key={category.categoryKey} category={category} />)
-  }
-
-  function getSoftSkills() {
-    return softSkills.map((skill) => {
-      // guardamos la key de traducción de la skill de esta iteración
-      const skillKey = `skills.soft-skills.${skill.key}`;
-      // recorremos el array y gracias a la key añadimos al objeto skill las traducciones
-      const SkillWithTranslatedTexts = {
-        ...skill,
-        name: t(`${skillKey}.name`),
-        description: t(`${skillKey}.description`),
-      };
-
-      return <SoftSkillCard key={skill.key} skill={SkillWithTranslatedTexts} />;
-    });
-  }
+  const hardSkillElements = renderHardSkillCategoryCards();
+  const softSkillElements = renderSoftSkillsCards(t);
 
   return (
     <section id="skills" className="min-h-screen">
