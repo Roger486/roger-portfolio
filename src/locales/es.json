@@ -60,6 +60,9 @@
     "main-skills": "Habilidades principales",
     "secondary-skills": "Habilidades secundarias",
     "description-title": "Descripción del proyecto",
+    "close-image": "Cerrar imagen",
+    "next-image": "Imagen siguiente",
+    "previous-image": "Imagen anterior",
     "project-descriptions": {
       "hostcontrol": {
         "short": "TFG del ciclo DAW: desarrollé la API, la base de datos y parte clave de la documentación técnica de una plataforma de gestión de alojamientos.",

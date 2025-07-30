@@ -12,10 +12,13 @@ export default function FullScreenProjectImageModal({
 }) {
   const { t } = useLanguage();
   const modalRoot = document.getElementById("modal-root"); // the same used for the ProjectModal
+  const isFirstImage = currentImageIndex === 0;
+  const isLastImage = currentImageIndex === imageListLength - 1;
 
   return createPortal(
     <div
       className="fixed inset-0 bg-black/90 z-[999] flex items-center justify-center"
+      role="dialog"
       onClick={onClose}
     >
       <div className="relative w-full h-full flex items-center justify-center">
@@ -33,6 +36,7 @@ export default function FullScreenProjectImageModal({
         {/* Close Button */}
         <button
           className="absolute top-4 right-4 text-gray-400 hover:text-red-700 text-2xl cursor-pointer"
+          aria-label={t("projects.close-image")}
           onClick={onClose}
         >
           <ImCross />
@@ -44,26 +48,32 @@ export default function FullScreenProjectImageModal({
          * makes the user unable to click-to-close the image.
          */}
         <button
-          className="
-          absolute top-[45vh] left-4 text-gray-400/50 text-4xl rounded-full p-1 cursor-pointer
-          transition hover:text-black hover:bg-blue-400/50
-          "
+          disabled={isFirstImage}
+          className={`
+          absolute top-[45vh] left-4  text-4xl rounded-full p-1
+          transition 
+          ${isFirstImage ? "text-gray-100/50" : "cursor-pointer text-gray-400/50 hover:text-black hover:bg-blue-400/50"}
+          `}
           onClick={(e) => {
             e.stopPropagation();
             onImageIndexChange(Math.max(0, currentImageIndex - 1))
           }}
+          aria-label={t("projects.previous-image")}
         >
           <GrPrevious />
         </button>
         <button
-          className="
-          absolute top-[45vh] right-4 text-gray-400/50 text-4xl rounded-full p-1 cursor-pointer
-          transition hover:text-black hover:bg-blue-400/50
-          "
+          disabled={isLastImage}
+          className={`
+          absolute top-[45vh] right-4 text-gray-400/50 text-4xl rounded-full p-1
+          transition
+          ${isLastImage ? "text-gray-100/50" : "cursor-pointer text-gray-400/50 hover:text-black hover:bg-blue-400/50"}
+          `}
           onClick={(e) => {
             e.stopPropagation();
             onImageIndexChange(Math.min(currentImageIndex + 1, imageListLength - 1));
           }}
+          aria-label={t("projects.next-image")}
         >
           <GrNext />
         </button>

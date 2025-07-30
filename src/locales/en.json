@@ -60,6 +60,9 @@
     "main-skills": "Main skills",
     "secondary-skills": "Secondary skills",
     "description-title": "Project description",
+    "close-image": "Close image",
+    "next-image": " Next image",
+    "previous-image": "Previous image",
     "project-descriptions": {
       "hostcontrol": {
         "short": "Final project for the DAW program: I developed the API, database, and a large part of the technical documentation for an accommodation management platform.",
