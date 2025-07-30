@@ -34,8 +34,7 @@ export default function ContactForm() {
 
     if (value.trim() === "") {
       setErrors(prev => ({ ...prev, [name]: t("contact.form.errors.required")}))
-    }
-    if (!regEx[name].test(value)) {
+    } else if (!regEx[name].test(value)) {
       const key = `contact.form.errors.${name}`;
       setErrors(prev => ({ ...prev, [name]: t(key) }));
     }
