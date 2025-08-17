@@ -123,7 +123,7 @@
       "name-label": "Nombre",
       "email-label": "Correo electrónico",
       "message-label": "Mensaje",
-      "name-placeholder": "Tu nombre completo",
+      "name-placeholder": "Nombre completo",
       "email-placeholder": "tu@email.com",
       "message-placeholder": "¿En qué puedo ayudarte?",
       "successful-submit-1": "✅ ¡Mensaje enviado correctamente!",
