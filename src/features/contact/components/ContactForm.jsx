@@ -3,7 +3,7 @@ import { useLanguage } from "../../../core/context/LanguageContext";
 import useContactForm from "../hooks/useContactForm";
 
 export default function ContactForm() {
-  const testMode = true;
+  const testMode = false;
 
   const {
     formData,
