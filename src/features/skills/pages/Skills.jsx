@@ -13,7 +13,7 @@ export default function Skills() {
   const softSkillElements = renderSoftSkillsCards(t);
 
   return (
-    <section id="skills" className="min-h-screen">
+    <section id="skills" className="min-h-screen -scroll-mt-24">
       <SectionTitle>{t("skills.title")}</SectionTitle>
       <h3
         ref={hardSkillsTitleRef}

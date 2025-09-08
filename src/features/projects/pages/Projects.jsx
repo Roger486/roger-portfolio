@@ -42,7 +42,7 @@ export default function Projects() {
     ));
 
   return (
-    <section id="projects" className="min-h-screen">
+    <section id="projects" className="min-h-screen -scroll-mt-24">
       <SectionTitle>{t("projects.title")}</SectionTitle>
       <div 
         ref={featuredProjectsGridRef}
