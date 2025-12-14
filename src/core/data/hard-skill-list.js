@@ -6,26 +6,22 @@ import { RiNodejsFill } from "react-icons/ri";
 import {
   SiCss3,
   SiGnubash, SiHtml5, SiJavascript, SiMongodb, SiMysql,
-  SiPhp, SiPostman, SiTailwindcss, SiTypescript
+  SiPhp, SiPostman, SiTailwindcss, SiTypescript, SiSonarqube
 } from "react-icons/si";
-import { BiWindowAlt } from "react-icons/bi";
+import { BiTestTube, BiWindowAlt } from "react-icons/bi";
 import { DiScrum } from "react-icons/di";
-import { HiOutlineCube, HiOutlineDatabase, HiOutlineViewGridAdd, HiServer } from "react-icons/hi";
-import { MdSyncAlt } from "react-icons/md";
+import { HiOutlineCube, HiOutlineDatabase, HiOutlineViewGridAdd } from "react-icons/hi";
+import { MdOutlineScience, MdSyncAlt } from "react-icons/md";
 import { HiOutlineServerStack, HiOutlineWrench } from "react-icons/hi2";
+import { CgMoreR } from "react-icons/cg";
+import { GiJesterHat } from "react-icons/gi";
+import { SlLayers } from "react-icons/sl";
 
 export const hardSkills = [
   {
     categoryKey: "frontend",
     categoryIcon: HiOutlineViewGridAdd,
     skills: [
-      {
-        key: "react",
-        name: "React",
-        icon: FaReact,
-        color: "#00d8FF",
-        backgroundColor: "#222222",
-      },
       {
         key: "angular",
         name: "Angular",
@@ -34,11 +30,11 @@ export const hardSkills = [
         backgroundColor: "#eaeaea",
       },
       {
-        key: "tailwind",
-        name: "Tailwind CSS",
-        icon: SiTailwindcss,
+        key: "typescript",
+        name: "TypeScript",
+        icon: SiTypescript,
         color: "#FFFFFF",
-        backgroundColor: "#38BDF8",
+        backgroundColor: "#3178C6",
       },
       {
         key: "html",
@@ -54,40 +50,12 @@ export const hardSkills = [
         color: "#FFFFFF",
         backgroundColor: "#264DE4",
       },
-      {
-        key: "javascript",
-        name: "JavaScript",
-        icon: SiJavascript,
-        color: "#000000",
-        backgroundColor: "#F7DF1E",
-      },
-      {
-        key: "typescript",
-        name: "TypeScript",
-        icon: SiTypescript,
-        color: "#FFFFFF",
-        backgroundColor: "#3178C6",
-      },
     ],
   },
   {
     categoryKey: "backend",
     categoryIcon: HiOutlineServerStack,
     skills: [
-      {
-        key: "php",
-        name: "PHP",
-        icon: SiPhp,
-        color: "#FFFFFF",
-        backgroundColor: "#777BB4",
-      },
-      {
-        key: "laravel",
-        name: "Laravel",
-        icon: FaLaravel,
-        color: "white",
-        backgroundColor: "#f55247",
-      },
       {
         key: "nodejs",
         name: "NodeJS",
@@ -96,18 +64,11 @@ export const hardSkills = [
         backgroundColor: "white",
       },
       {
-        key: "java",
-        name: "Java",
-        icon: FaJava,
-        color: "#007396",
-        backgroundColor: "#E0F0FF",
-      },
-      {
-        key: "javafx",
-        name: "JavaFX",
-        icon: BiWindowAlt,
-        color: "#007396",
-        backgroundColor: "#E0F0FF",
+        key: "javascript",
+        name: "JavaScript",
+        icon: SiJavascript,
+        color: "#000000",
+        backgroundColor: "#F7DF1E",
       },
       {
         key: "api-rest",
@@ -124,17 +85,37 @@ export const hardSkills = [
     skills: [
       {
         key: "mysql",
-        name: "MySQL - MariaDB",
+        name: "MySQL",
         icon: SiMysql,
         color: "#FFFFFF",
         backgroundColor: "#f29111",
       },
+    ],
+  },
+  {
+    categoryKey: "testing",
+    categoryIcon: BiTestTube,
+    skills: [
       {
-        key: "mongo",
-        name: "MongoDB",
-        icon: SiMongodb,
-        color: "#00ed64",
-        backgroundColor: "#001e2b",
+        key: "sonar",
+        name: "Sonar Qube",
+        icon: SiSonarqube,
+        color: "#290042",
+        backgroundColor: "#ffffff",
+      },
+      {
+        key: "jest",
+        name: "Jest",
+        icon: GiJesterHat,
+        color: "#863C51",
+        backgroundColor: "#ffffff",
+      },
+      {
+        key: "karma",
+        name: "Karma",
+        icon: MdOutlineScience,
+        color: "#56C5A8",
+        backgroundColor: "#eaeaea",
       },
     ],
   },
@@ -190,6 +171,13 @@ export const hardSkills = [
     categoryIcon: HiOutlineCube,
     skills: [
       {
+        key: "layered",
+        name: "Layered architecture",
+        icon: SlLayers,
+        color: "#FFFFFF",
+        backgroundColor: "#2F3E46",
+      },
+      {
         key: "mvc",
         name: "MVC",
         icon: FaProjectDiagram,
@@ -205,4 +193,59 @@ export const hardSkills = [
       },
     ],
   },
+  {
+    categoryKey: "other",
+    categoryIcon: CgMoreR,
+    skills: [
+      {
+        key: "react",
+        name: "React",
+        icon: FaReact,
+        color: "#00d8FF",
+        backgroundColor: "#222222",
+      },
+      {
+        key: "tailwind",
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
+        color: "#FFFFFF",
+        backgroundColor: "#38BDF8",
+      },
+      {
+        key: "php",
+        name: "PHP",
+        icon: SiPhp,
+        color: "#FFFFFF",
+        backgroundColor: "#777BB4",
+      },
+      {
+        key: "laravel",
+        name: "Laravel",
+        icon: FaLaravel,
+        color: "white",
+        backgroundColor: "#f55247",
+      },
+      {
+        key: "java",
+        name: "Java",
+        icon: FaJava,
+        color: "#007396",
+        backgroundColor: "#E0F0FF",
+      },
+      {
+        key: "javafx",
+        name: "JavaFX",
+        icon: BiWindowAlt,
+        color: "#007396",
+        backgroundColor: "#E0F0FF",
+      },
+      {
+        key: "mongo",
+        name: "MongoDB",
+        icon: SiMongodb,
+        color: "#00ed64",
+        backgroundColor: "#001e2b",
+      },
+    ],
+  }
 ];

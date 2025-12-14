@@ -21,9 +21,11 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "databases": "Databases",
-      "devops": "DevOps - CI/CD",
+      "testing": "Testing and quality",
+      "devops": "DevOps / Deployment",
       "tools": "Development tools",
-      "architecture": "Architectures and methodologies"
+      "architecture": "Architectures and methodologies",
+      "other": "Other technologies"
     },
     "soft-skills": {
       "active-listening": {
