@@ -26,6 +26,9 @@ export default function ProjectModal({ project, onClose }) {
   const modalRoot = document.getElementById("modal-root");
 
   if (!project || !modalRoot) return null;
+  const demoUrls = project.demoUrls ?? [];
+  const repoUrls = project.repoUrls ?? [];
+  const hasVisibleLinks = demoUrls.length > 0 || repoUrls.length > 0;
 
   const modalContent = (
     <div
@@ -60,15 +63,17 @@ export default function ProjectModal({ project, onClose }) {
           </h2>
 
           {/* 🔗 Enlaces visibles rápido */}
-          <div className="mb-4">
-            <h3 className="font-semibold text-sm text-blue-600 mb-4">
-              {t("projects.links")}
-            </h3>
-            <div className="flex flex-wrap gap-4 justify-center">
-              {renderExternalLinkButtons(project.demoUrls)}
-              {renderExternalLinkButtons(project.repoUrls)}
+          {hasVisibleLinks && (
+            <div className="mb-4">
+              <h3 className="font-semibold text-sm text-blue-600 mb-4">
+                {t("projects.links")}
+              </h3>
+              <div className="flex flex-wrap gap-4 justify-center">
+                {renderExternalLinkButtons(demoUrls)}
+                {renderExternalLinkButtons(repoUrls)}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* 🏷️ Roles y skills */}
           <div className="mb-6">

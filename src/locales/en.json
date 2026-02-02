@@ -1,6 +1,13 @@
 {
   "static-subtitle": "Developer",
-  "animated-subtitle": ["Full Stack", "Front End", "Creative", "Back End", "Enthusiast", "Web"],
+  "animated-subtitle": [
+    "Full Stack",
+    "Front End",
+    "Creative",
+    "Back End",
+    "Enthusiast",
+    "Web"
+  ],
   "side-bar": {
     "about": "About",
     "skills": "Skills",
@@ -66,6 +73,11 @@
     "next-image": " Next image",
     "previous-image": "Previous image",
     "project-descriptions": {
+      "resource-agenda": {
+        "short": "Web-based scheduling and booking application developed during my professional internship, focused on daily resource planning and operational booking management.",
+        "long": "Resource Agenda is a web application developed during my professional internship as a full-stack developer. The project consists of an operational scheduling interface focused on daily resource planning, allowing users to visualize bookings in a time-based grid, manage overlapping reservations, navigate across dates and work with multiple resources simultaneously. My work covered both frontend and backend aspects, including the design of the scheduling UI, implementation of booking and rescheduling flows, and integration with a multi-tenant REST API. The application follows a layered architecture, with a clear separation between domain logic, application services and presentation, prioritizing usability and clarity in real-world operational scenarios.",
+        "extra": "The project places strong emphasis on code quality and maintainability, incorporating automated tests and continuous quality analysis with SonarQube. Due to confidentiality agreements, the source code is not public, and all screenshots use fictitious data. This experience allowed me to work on a real, evolving product, making design decisions, progressively refactoring features and developing business-oriented functionality in a professional environment."
+      },
       "hostcontrol": {
         "short": "Final project for the DAW program: I developed the API, database, and a large part of the technical documentation for an accommodation management platform.",
         "long": "HostControl is a web platform developed as the Final Project (TFG) for the DAW vocational program. The goal was to create a complete management system for tourist accommodations like campsites, rural houses or bungalows, allowing full control over bookings, services, and internal operations from a single admin panel. My main role was building the entire backend: I designed and programmed the RESTful API with Laravel, created the relational database in MariaDB, and wrote most of the technical documentation. I also implemented authentication with Laravel Sanctum, advanced validations, multi-language support via API, and log tracking. The system was deployed on Google Cloud using Terraform, Ansible and Cloud Build, with infrastructure handled by another teammate.",
@@ -108,6 +120,10 @@
       "coffee-haven-detail": "Detail page for one of the coffees in Coffee Haven",
       "roger-portfolio-home": "Screenshot of the personal portfolio homepage",
       "roger-portfolio-responsive": "Screenshots of the skills section and mobile menu, showing responsive design",
+      "resource-agenda-main": "Main view of the Resource Agenda application",
+      "resource-agenda-responsive": "Responsive layout of Resource Agenda on smaller screens",
+      "resource-agenda-form": "Form used to edit bookings in Resource Agenda",
+      "resource-agenda-confirm-dialog": "Confirmation dialog shown before saving or deleting data",
       "horse-race-game-home": "Home screen of the horse betting game",
       "horse-race-game-setup": "Setting up a new match with human players and bots",
       "horse-race-game-bets": "Screen where players place their bets on a chosen horse",

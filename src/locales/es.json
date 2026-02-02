@@ -1,6 +1,13 @@
 {
   "static-subtitle": "Desarrollador",
-  "animated-subtitle": ["Full Stack", "Front End", "Creativo", "Back End", "Entusiasta", "Web"],
+  "animated-subtitle": [
+    "Full Stack",
+    "Front End",
+    "Creativo",
+    "Back End",
+    "Entusiasta",
+    "Web"
+  ],
   "side-bar": {
     "about": "Sobre mí",
     "skills": "Habilidades",
@@ -66,6 +73,11 @@
     "next-image": "Imagen siguiente",
     "previous-image": "Imagen anterior",
     "project-descriptions": {
+      "resource-agenda": {
+        "short": "Aplicación web de agenda y reservas desarrollada durante mis prácticas profesionales, centrada en la planificación diaria de recursos y la gestión operativa de reservas.",
+        "long": "Resource Agenda es una aplicación web desarrollada durante mis prácticas profesionales como desarrollador full-stack. El proyecto consiste en una agenda operativa orientada a la planificación diaria de recursos, permitiendo visualizar reservas en un grid horario por columnas, gestionar solapamientos, navegar por fechas y trabajar con múltiples recursos de forma simultánea. Mi trabajo se centró tanto en el frontend como en el backend, participando en el diseño de la interfaz de agenda, la implementación de flujos de reserva y reprogramación, y la integración con una API REST multi-tenant. La aplicación sigue una arquitectura en capas, separando claramente la lógica de dominio, la capa de aplicación y la presentación, y prioriza la claridad visual y la usabilidad en escenarios reales de uso.",
+        "extra": "El proyecto pone especial énfasis en la calidad y mantenibilidad del código, incorporando tests automatizados y análisis de calidad con SonarQube. Aunque el código no es público por acuerdos de confidencialidad, las capturas muestran datos ficticios y reflejan fielmente la complejidad real de la aplicación. Esta experiencia me permitió trabajar en un producto real en evolución, enfrentándome a decisiones de diseño, refactorización progresiva y desarrollo de funcionalidades orientadas a negocio en un entorno profesional."
+      },
       "hostcontrol": {
         "short": "TFG del ciclo DAW: desarrollé la API, la base de datos y parte clave de la documentación técnica de una plataforma de gestión de alojamientos.",
         "long": "HostControl es una plataforma web desarrollada como Trabajo de Fin de Grado (TFG) del ciclo de DAW. El objetivo del proyecto era crear un sistema completo de gestión para complejos turísticos como campings, casas rurales o bungalows, permitiendo controlar alojamientos, reservas, servicios adicionales y administración interna desde un único panel. Mi rol principal fue el desarrollo de toda la lógica de back-end: diseñé y programé la API RESTful con Laravel, estructuré la base de datos relacional en MariaDB y elaboré gran parte de la documentación técnica del sistema. También implementé el sistema de autenticación con Laravel Sanctum, validaciones complejas, soporte multidioma desde la API y control de logs. Además, el despliegue del sistema se realizó en Google Cloud utilizando Terraform, Ansible y Cloud Build, aunque esta parte la lideró otro compañero del equipo.",
@@ -108,6 +120,10 @@
       "coffee-haven-detail": "Página de detalles de uno de los cafés en Coffee Haven",
       "roger-portfolio-home": "Captura de la página de inicio del portfolio personal",
       "roger-portfolio-responsive": "Capturas de la sección de habilidades y del menú en vista móvil, mostrando el diseño responsive",
+      "resource-agenda-main": "Vista principal de la aplicación Resource Agenda",
+      "resource-agenda-responsive": "Diseño responsive de Resource Agenda en pantallas pequeñas",
+      "resource-agenda-form": "Formulario para editar bookings en Resource Agenda",
+      "resource-agenda-confirm-dialog": "Diálogo de confirmación antes de guardar o eliminar datos",
       "horse-race-game-home": "Pantalla de inicio del juego de apuestas de caballos",
       "horse-race-game-setup": "Configuración de una nueva partida con jugadores humanos y bots",
       "horse-race-game-bets": "Pantalla donde los jugadores apuestan fichas por su caballo elegido",

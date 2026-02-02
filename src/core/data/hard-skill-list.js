@@ -1,6 +1,6 @@
 import {
   FaAngular, FaDocker, FaGitAlt, FaGithub, FaJava,
-  FaLaravel, FaProjectDiagram, FaRaspberryPi, FaReact
+  FaLaravel, FaLayerGroup, FaProjectDiagram, FaRaspberryPi, FaReact
 } from "react-icons/fa";
 import { RiNodejsFill } from "react-icons/ri";
 import {
@@ -175,7 +175,7 @@ export const hardSkills = [
         name: "Layered architecture",
         icon: SlLayers,
         color: "#FFFFFF",
-        backgroundColor: "#2F3E46",
+        backgroundColor: "#4B6EAF",
       },
       {
         key: "mvc",

@@ -1,5 +1,45 @@
 export const projects = [
   {
+    key: 'resource-agenda',
+    name: 'Resource Agenda',
+    roles: ['Full-Stack Developer'],
+    mainSkillsKeys: ['nodejs', 'angular', 'api-rest', 'layered'],
+    secondarySkillsKeys: ['sonar', 'jest', 'karma'],
+    repoUrls: [
+
+    ],
+    demoUrls: [
+
+    ],
+    images: [
+      {
+        key: 'img-001',
+        descriptionKey: 'resource-agenda-main',
+        src: '/projects/resource-agenda/resource-agenda-main.jpg',
+        thumb: '/projects/resource-agenda/resource-agenda-main-thumb.jpg'
+      },
+      {
+        key: 'img-002',
+        descriptionKey: 'resource-agenda-responsive',
+        src: '/projects/resource-agenda/resource-agenda-responsive.jpg',
+        thumb: '/projects/resource-agenda/resource-agenda-responsive-thumb.jpg'
+      },
+      {
+        key: 'img-003',
+        descriptionKey: 'resource-agenda-form',
+        src: '/projects/resource-agenda/resource-agenda-form.jpg',
+        thumb: '/projects/resource-agenda/resource-agenda-form-thumb.jpg'
+      },
+      {
+        key: 'img-004',
+        descriptionKey: 'resource-agenda-confirm-dialog',
+        src: '/projects/resource-agenda/resource-agenda-confirm-dialog.jpg',
+        thumb: '/projects/resource-agenda/resource-agenda-confirm-dialog-thumb.jpg'
+      }
+    ],
+    featured: true
+  },
+  {
     key: 'hostcontrol',
     name: 'HostControl',
     roles: ['Backend Developer', 'Database Design', 'Technical & API Documentation'],
@@ -45,7 +85,7 @@ export const projects = [
         thumb: '/projects/hostcontrol/hostcontrol-panel-thumb.jpg'
       }
     ],
-    featured: true
+    featured: false
   },
   {
     key: 'raspi-server',
