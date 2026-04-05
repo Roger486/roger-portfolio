@@ -15,7 +15,10 @@
   },
   "about": {
     "title": "Sobre mí",
-    "greeting": "Hola, soy Roger.",
+    "hero": {
+      "title": "Full-stack con foco en producto y despliegues reales",
+      "subtitle": "Mi base principal es Angular y Node.js, con experiencia en despliegues reales y arquitectura por capas."
+    },
     "paragraph1": "Soy desarrollador web con formación en DAW y experiencia práctica en el desarrollo de aplicaciones full-stack desde cero. He trabajado con Angular en el frontend y Node.js/Express en el backend, diseñando arquitecturas por capas, APIs REST, modelos de datos, validaciones y aspectos básicos de seguridad.",
     "paragraph2": "He desarrollado proyectos en entornos reales con un alto nivel de autonomía, enfrentándome a problemas prácticos y participando en decisiones técnicas que me han permitido consolidar una base sólida más allá de proyectos puramente académicos.",
     "paragraph3": "Antes de dedicarme al desarrollo, trabajé en atención al cliente en un entorno donde, además de gestionar incidencias, participaba en la revisión de reclamaciones y en la propuesta de mejoras de procesos a partir de problemas recurrentes detectados. Esta experiencia me ayuda a comprender mejor las necesidades reales de los usuarios y a aportar un enfoque práctico y orientado a la mejora continua. Actualmente me encuentro en una etapa de crecimiento profesional, con interés en seguir aprendiendo y asumiendo nuevos retos en desarrollo web."

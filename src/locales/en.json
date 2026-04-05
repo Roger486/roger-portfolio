@@ -15,7 +15,10 @@
   },
   "about": {
     "title": "About me",
-    "greeting": "Hi, I'm Roger.",
+    "hero": {
+      "title": "Full-stack with a product focus and real deployments",
+      "subtitle": "My main stack is Angular and Node.js, with experience in real deployments and layered architecture."
+    },
     "paragraph1": "I'm a web developer with a DAW background and hands-on experience building full-stack applications from scratch. I have worked with Angular on the frontend and Node.js/Express on the backend, designing layered architectures, REST APIs, data models, validations, and basic security aspects.",
     "paragraph2": "I have worked on real-world projects with a high level of autonomy, dealing with practical problems and taking part in technical decisions that helped me build a solid foundation beyond purely academic work.",
     "paragraph3": "Before moving into development, I worked in customer support in a role that also involved reviewing escalated issues and suggesting process improvements based on recurring real-world problems. This background helps me better understand user needs and bring a practical, continuous-improvement mindset to technical projects. I am currently in a stage of professional growth, interested in continuing to learn and taking on new challenges in web development."
