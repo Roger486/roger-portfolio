@@ -1,8 +1,9 @@
 import { socialLinkList } from "../../data/social-link-list";
+import { trackEvent } from "../../utils/analytics";
 
 export default function SocialIconLink({ platformKey, displayName = false }) {
   const platform = socialLinkList.find(
-    (platform) => platform.key === platformKey
+    (platform) => platform.key === platformKey,
   );
 
   if (!platform) return null;
@@ -17,6 +18,11 @@ export default function SocialIconLink({ platformKey, displayName = false }) {
       download={platform.isFile}
       aria-label={platform.label}
       title={platform.label}
+      onClick={() => {
+        trackEvent(`click_${platform.key}`, {
+          platform: platform.key,
+        });
+      }}
       className={`
         inline-flex items-center gap-2
         transition duration-300
