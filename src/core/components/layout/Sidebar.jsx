@@ -6,7 +6,7 @@ import useSidebarEffects from "../../hooks/useSidebarEffects";
 export default function Sidebar({ isMenuOpen, onClose, activeSection }) {
   const { topPosition } = useSidebarEffects(onClose, isMenuOpen);
   const { t } = useLanguage();
-  const sections = ["about", "skills", "projects"];
+  const sections = ["about", "projects", "skills"];
 
   const topStyle = isMenuOpen ? { top: "1rem" } : { top: `${topPosition}px` };
 

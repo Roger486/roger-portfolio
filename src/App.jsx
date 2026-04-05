@@ -8,8 +8,8 @@ function App() {
     <MainLayout>
 
       <About />
-      <Skills />
       <Projects />
+      <Skills />
       
     </MainLayout>
   );
