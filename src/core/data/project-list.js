@@ -6,7 +6,7 @@ export const projects = [
     mainSkillsKeys: ['nodejs', 'angular', 'api-rest', 'layered'],
     secondarySkillsKeys: ['sonar', 'jest', 'karma'],
     repoUrls: [
-
+      { url: 'https://github.com/Roger486/saas-platform-case-study', label: 'Case Study', destination: 'github' },
     ],
     demoUrls: [
 
