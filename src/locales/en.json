@@ -15,12 +15,13 @@
   "about": {
     "title": "About me",
     "hero": {
-      "title": "Full-stack with a product focus and real deployments",
-      "subtitle": "My main stack is Angular and Node.js, with experience in real deployments and layered architecture."
+      "title": "Web development focused on product, architecture, and users",
+      "subtitle": "I work primarily with Angular and TypeScript, with full-stack experience in APIs, databases, automated testing, and real-world deployments."
     },
-    "paragraph1": "I'm a web developer with a DAW background and hands-on experience building full-stack applications from scratch. I have worked with Angular on the frontend and Node.js/Express on the backend, designing layered architectures, REST APIs, data models, validations, and basic security aspects.",
-    "paragraph2": "I have worked on real-world projects with a high level of autonomy, dealing with practical problems and taking part in technical decisions that helped me build a solid foundation beyond purely academic work.",
-    "paragraph3": "Before moving into development, I worked in customer support in a role that also involved reviewing escalated issues and suggesting process improvements based on recurring real-world problems. This background helps me better understand user needs and bring a practical, continuous-improvement mindset to technical projects. I am currently in a stage of professional growth, interested in continuing to learn and taking on new challenges in web development."
+    "paragraph1": "I build web applications focused on solving concrete problems: from organizing bookings and preventing scheduling conflicts to supporting everyday routines. I work primarily with Angular and TypeScript. I have also designed and developed REST APIs with Node.js/Express and PHP/Laravel, including database integration, authentication, validation, and automated testing.",
+    "paragraph2": "During my internship, I worked as a full-stack developer on a booking and resource management application. I also develop CogFi, a PWA born from a real-world need, where I apply hexagonal architecture principles and separation of concerns to build maintainable software designed to evolve.",
+    "paragraph3": "I hold a Higher Technician diploma in Web Application Development and am currently pursuing a degree in Computer Engineering. My previous experience in customer support has given me a perspective focused on understanding user needs, identifying recurring problems, and proposing improvements.",
+    "paragraph4": "I am looking to join a development team where I can continue growing, learn from other professionals, and contribute to building useful, well-designed solutions."
   },
   "skills": {
     "title": "Skills",
@@ -75,6 +76,11 @@
     "next-image": " Next image",
     "previous-image": "Previous image",
     "project-descriptions": {
+      "cogfi": {
+        "short": "PWA designed to help children with executive function challenges follow daily routines through one clear instruction at a time and visual guidance.",
+        "long": "CogFi is a personal project born from a real-world need: helping children with executive function challenges complete daily routines without having to process several instructions at once. The child-facing experience presents one task at a time, with visual guidance through images or emojis, timers, progress indicators, and an option to request help. A separate management mode allows adults to create and organize routines, configure each step, protect access with a PIN, and review execution history. Built with Angular, TypeScript, and CSS, CogFi works as a Progressive Web App and includes internationalization. Its modular architecture applies ports and adapters to decouple domain logic from persistence; it currently uses local storage and IndexedDB for images, and supports data backup and restoration.",
+        "extra": "CogFi follows an adaptable engineering process that combines hands-on development with AI agent-assisted workflows. Explicit requirements, modular architecture, separation of concerns, and automated tests make it possible to incorporate agents as support for analysis, implementation, refactoring, and verification without tying the project to any particular tool or model. I remain responsible for product and architecture decisions, code review, and functional validation. This approach uses AI to increase delivery capacity without sacrificing technical control, maintainability, or a traditional development workflow. CogFi continues to evolve through real-world use. Learn more at cogfi.app. To request access and try the application, contact cogfi.app@gmail.com."
+      },
       "resource-agenda": {
         "short": "Web-based scheduling and booking application developed during my professional internship, focused on daily resource planning and operational booking management.",
         "long": "Resource Agenda is a web application developed during my professional internship as a full-stack developer. The project consists of an operational scheduling interface focused on daily resource planning, allowing users to visualize bookings in a time-based grid, manage overlapping reservations, navigate across dates and work with multiple resources simultaneously. My work covered both frontend and backend aspects, including the design of the scheduling UI, implementation of booking and rescheduling flows, and integration with a multi-tenant REST API. The application follows a layered architecture, with a clear separation between domain logic, application services and presentation, prioritizing usability and clarity in real-world operational scenarios.",
@@ -107,6 +113,10 @@
       }
     },
     "image-descriptions": {
+      "cogfi-child": "Child experience: completing a task with visual guidance, a timer, progress indicator, and an option to request help.",
+      "cogfi-routines": "Routine selection in child mode, featuring a simple, predictable interface that helps users identify their next activity.",
+      "cogfi-home-settings-history": "Management mode: home screen, application settings, backups, and detailed history of completed routines.",
+      "cogfi-rutines-steps-management": "Routine and step management: organization, visibility, and individual configuration of instructions, images, timers, and help requests.",
       "hostcontrol-stack": "Technical diagram of the technology stack used in HostControl",
       "hostcontrol-relational": "Relational diagram of the HostControl database",
       "hostcontrol-postman": "Screenshot of an HTTP response from the HostControl API in Postman",

@@ -112,7 +112,7 @@ export default function ProjectModal({ project, onClose }) {
           <p className="text-gray-900 mb-3">
             {t(`projects.project-descriptions.${project.key}.long`)}
           </p>
-          <p className="text-gray-600 italic">
+          <p className="text-gray-900">
             {t(`projects.project-descriptions.${project.key}.extra`)}
           </p>
         </div>

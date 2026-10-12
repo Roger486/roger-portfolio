@@ -1,10 +1,48 @@
 export const projects = [
   {
+    key: 'cogfi',
+    name: 'CogFi',
+    roles: ['Frontend Developer', 'Software Architect', 'Product Designer'],
+    mainSkillsKeys: ['angular', 'typescript', 'pwa', 'ports-adapters'],
+    secondarySkillsKeys: ['css', 'indexeddb', 'i18n', 'unit-testing', 'ai-assisted-development'],
+    repoUrls: [],
+    demoUrls: [
+      { url: 'https://cogfi.app/', label: 'Project Website', destination: 'default' }
+    ],
+    images: [
+      {
+        key: 'img-001',
+        descriptionKey: 'cogfi-child',
+        src: '/projects/cogfi/cogfi-child.jpg',
+        thumb: '/projects/cogfi/cogfi-child-thumb.jpg'
+      },
+      {
+        key: 'img-002',
+        descriptionKey: 'cogfi-routines',
+        src: '/projects/cogfi/cogfi-routines.jpg',
+        thumb: '/projects/cogfi/cogfi-routines-thumb.jpg'
+      },
+      {
+        key: 'img-003',
+        descriptionKey: 'cogfi-home-settings-history',
+        src: '/projects/cogfi/home-settings-history.jpg',
+        thumb: '/projects/cogfi/home-settings-history-thumb.jpg'
+      },
+      {
+        key: 'img-004',
+        descriptionKey: 'cogfi-rutines-steps-management',
+        src: '/projects/cogfi/rutines-steps-management.jpg',
+        thumb: '/projects/cogfi/rutines-steps-management-thumb.jpg'
+      }
+    ],
+    featured: true
+  },
+  {
     key: 'resource-agenda',
     name: 'Resource Agenda',
     roles: ['Full-Stack Developer'],
     mainSkillsKeys: ['nodejs', 'angular', 'api-rest', 'layered'],
-    secondarySkillsKeys: ['sonar', 'jest', 'karma'],
+    secondarySkillsKeys: ['sonar', 'jest', 'unit-testing'],
     repoUrls: [
       { url: 'https://github.com/Roger486/saas-platform-case-study', label: 'Case Study', destination: 'github' },
     ],

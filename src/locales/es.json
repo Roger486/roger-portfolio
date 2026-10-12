@@ -15,12 +15,13 @@
   "about": {
     "title": "Sobre mí",
     "hero": {
-      "title": "Full-stack con foco en producto y despliegues reales",
-      "subtitle": "Mi base principal es Angular y Node.js, con experiencia en despliegues reales y arquitectura por capas."
+      "title": "Desarrollo web con foco en producto, arquitectura y usuarios",
+      "subtitle": "Trabajo principalmente con Angular y TypeScript, con experiencia full-stack en APIs, bases de datos, pruebas automatizadas y despliegues reales."
     },
-    "paragraph1": "Soy desarrollador web con formación en DAW y experiencia práctica en el desarrollo de aplicaciones full-stack desde cero. He trabajado con Angular en el frontend y Node.js/Express en el backend, diseñando arquitecturas por capas, APIs REST, modelos de datos, validaciones y aspectos básicos de seguridad.",
-    "paragraph2": "He desarrollado proyectos en entornos reales con un alto nivel de autonomía, enfrentándome a problemas prácticos y participando en decisiones técnicas que me han permitido consolidar una base sólida más allá de proyectos puramente académicos.",
-    "paragraph3": "Antes de dedicarme al desarrollo, trabajé en atención al cliente en un entorno donde, además de gestionar incidencias, participaba en la revisión de reclamaciones y en la propuesta de mejoras de procesos a partir de problemas recurrentes detectados. Esta experiencia me ayuda a comprender mejor las necesidades reales de los usuarios y a aportar un enfoque práctico y orientado a la mejora continua. Actualmente me encuentro en una etapa de crecimiento profesional, con interés en seguir aprendiendo y asumiendo nuevos retos en desarrollo web."
+    "paragraph1": "Desarrollo aplicaciones web orientadas a resolver problemas concretos: desde organizar reservas y evitar solapamientos hasta facilitar rutinas cotidianas. Trabajo principalmente con Angular y TypeScript. También he diseñado y desarrollado APIs REST con Node.js/Express y PHP/Laravel, integradas con bases de datos y sistemas de autenticación, validación y pruebas automatizadas.",
+    "paragraph2": "Durante mis prácticas trabajé como desarrollador full-stack en una aplicación de gestión de reservas y recursos. También desarrollo CogFi, una PWA nacida de una necesidad real, donde aplico principios de arquitectura hexagonal y separación de responsabilidades para construir software mantenible y preparado para evolucionar.",
+    "paragraph3": "Soy Técnico Superior en Desarrollo de Aplicaciones Web y continúo mi formación en Ingeniería Informática. Mi trayectoria anterior en atención al cliente me ha aportado una perspectiva orientada a comprender las necesidades de los usuarios, identificar problemas recurrentes y proponer mejoras.",
+    "paragraph4": "Busco incorporarme a un equipo de desarrollo donde seguir creciendo, aprender de otros profesionales y contribuir a construir soluciones útiles y bien diseñadas."
   },
   "skills": {
     "title": "Habilidades",
@@ -75,6 +76,11 @@
     "next-image": "Imagen siguiente",
     "previous-image": "Imagen anterior",
     "project-descriptions": {
+      "cogfi": {
+        "short": "PWA diseñada para ayudar a niños con dificultades en las funciones ejecutivas a seguir sus rutinas diarias mediante una única instrucción cada vez y apoyo visual.",
+        "long": "CogFi es un proyecto personal nacido de una necesidad real: ayudar a niños con dificultades en las funciones ejecutivas a completar sus rutinas diarias sin enfrentarse a varias instrucciones simultáneamente. La experiencia infantil muestra una única tarea cada vez y ofrece apoyo visual mediante imágenes o emojis, temporizadores, indicadores de progreso y la posibilidad de solicitar ayuda. Por su parte, el modo de gestión permite crear y organizar rutinas, configurar cada paso, proteger el acceso mediante PIN y consultar el historial de ejecuciones. Desarrollada con Angular, TypeScript y CSS, CogFi funciona como aplicación web progresiva e incorpora internacionalización. Su arquitectura modular aplica puertos y adaptadores para desacoplar la lógica de dominio de la persistencia; actualmente utiliza almacenamiento local e IndexedDB para las imágenes, e incluye copias de seguridad y restauración de datos.",
+        "extra": "El desarrollo de CogFi sigue un proceso de ingeniería adaptable que combina trabajo directo con flujos asistidos por agentes de IA. La definición explícita de requisitos, la arquitectura modular, la separación de responsabilidades y las pruebas automatizadas permiten incorporar agentes como apoyo en tareas de análisis, implementación, refactorización y verificación sin vincular el proyecto a una herramienta o modelo concreto. Mantengo bajo mi responsabilidad las decisiones de producto y arquitectura, la revisión del código y la validación funcional. Este enfoque aprovecha la IA para aumentar la capacidad de entrega sin renunciar al control técnico, la mantenibilidad ni a un flujo de desarrollo tradicional. CogFi continúa evolucionando a partir de su uso en un contexto real. Puedes conocerlo en cogfi.app. Si quieres probar la aplicación, solicita acceso escribiendo a cogfi.app@gmail.com."
+      },
       "resource-agenda": {
         "short": "Aplicación web de agenda y reservas desarrollada durante mis prácticas profesionales, centrada en la planificación diaria de recursos y la gestión operativa de reservas.",
         "long": "Resource Agenda es una aplicación web desarrollada durante mis prácticas profesionales como desarrollador full-stack. El proyecto consiste en una agenda operativa orientada a la planificación diaria de recursos, permitiendo visualizar reservas en un grid horario por columnas, gestionar solapamientos, navegar por fechas y trabajar con múltiples recursos de forma simultánea. Mi trabajo se centró tanto en el frontend como en el backend, participando en el diseño de la interfaz de agenda, la implementación de flujos de reserva y reprogramación, y la integración con una API REST multi-tenant. La aplicación sigue una arquitectura en capas, separando claramente la lógica de dominio, la capa de aplicación y la presentación, y prioriza la claridad visual y la usabilidad en escenarios reales de uso.",
@@ -107,6 +113,10 @@
       }
     },
     "image-descriptions": {
+      "cogfi-child": "Experiencia infantil: ejecución de una tarea con apoyo visual, temporizador, indicador de progreso y opción de solicitar ayuda.",
+      "cogfi-routines": "Selección de rutinas en el modo infantil, con una interfaz sencilla y predecible que facilita identificar qué actividad realizar.",
+      "cogfi-home-settings-history": "Modo de gestión: pantalla principal, configuración de la aplicación, copias de seguridad e historial detallado de las rutinas completadas.",
+      "cogfi-rutines-steps-management": "Gestión de rutinas y pasos: organización, visibilidad y configuración individual de instrucciones, imágenes, temporizadores y solicitudes de ayuda.",
       "hostcontrol-stack": "Diagrama técnico del stack de tecnologías usado en HostControl",
       "hostcontrol-relational": "Diagrama relacional de la base de datos de HostControl",
       "hostcontrol-postman": "Captura de una respuesta HTTP de la API de HostControl mostrada en Postman",

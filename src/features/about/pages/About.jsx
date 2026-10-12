@@ -38,12 +38,12 @@ export default function About() {
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <ProjectBadge name="angular" type="main-skill" />
-              <ProjectBadge name="nodejs" type="main-skill" />
-              <ProjectBadge name="mysql" type="main-skill" />
-              <ProjectBadge name="docker" type="main-skill" />
               <ProjectBadge name="api-rest" type="main-skill" />
-              <ProjectBadge name="jest" type="main-skill" />
-              <ProjectBadge name="layered" type="main-skill" />
+              <ProjectBadge name="ai-assisted-development" type="main-skill" />
+              <ProjectBadge name="ports-adapters" type="main-skill" />
+              <ProjectBadge name="nodejs" type="main-skill" />
+              <ProjectBadge name="laravel" type="main-skill" />
+              <ProjectBadge name="mysql" type="main-skill" />
             </div>
           </div>
           <div
@@ -56,7 +56,8 @@ export default function About() {
           >
             <p className="mb-6">{t("about.paragraph1")}</p>
             <p className="mb-6">{t("about.paragraph2")}</p>
-            <p>{t("about.paragraph3")}</p>
+            <p className="mb-6">{t("about.paragraph3")}</p>
+            <p>{t("about.paragraph4")}</p>
           </div>
         </div>
       </div>

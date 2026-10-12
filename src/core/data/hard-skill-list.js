@@ -2,7 +2,7 @@ import {
   FaAngular, FaDocker, FaGitAlt, FaGithub, FaJava,
   FaLaravel, FaLayerGroup, FaProjectDiagram, FaRaspberryPi, FaReact
 } from "react-icons/fa";
-import { RiNodejsFill } from "react-icons/ri";
+import { RiNodejsFill, RiRobot2Line } from "react-icons/ri";
 import {
   SiCss3,
   SiGnubash, SiHtml5, SiJavascript, SiMongodb, SiMysql,
@@ -11,11 +11,12 @@ import {
 import { BiTestTube, BiWindowAlt } from "react-icons/bi";
 import { DiScrum } from "react-icons/di";
 import { HiOutlineCube, HiOutlineDatabase, HiOutlineViewGridAdd } from "react-icons/hi";
-import { MdOutlineScience, MdSyncAlt } from "react-icons/md";
+import { MdInstallMobile, MdSyncAlt, MdTranslate } from "react-icons/md";
 import { HiOutlineServerStack, HiOutlineWrench } from "react-icons/hi2";
 import { CgMoreR } from "react-icons/cg";
 import { GiJesterHat } from "react-icons/gi";
 import { SlLayers } from "react-icons/sl";
+import { TbPlugConnected } from "react-icons/tb";
 
 export const hardSkills = [
   {
@@ -49,6 +50,20 @@ export const hardSkills = [
         icon: SiCss3,
         color: "#FFFFFF",
         backgroundColor: "#264DE4",
+      },
+      {
+        key: "pwa",
+        name: "PWA",
+        icon: MdInstallMobile,
+        color: "#FFFFFF",
+        backgroundColor: "#5A0FC8",
+      },
+      {
+        key: "i18n",
+        name: "Internationalization",
+        icon: MdTranslate,
+        color: "#FFFFFF",
+        backgroundColor: "#2563EB",
       },
     ],
   },
@@ -90,6 +105,13 @@ export const hardSkills = [
         color: "#FFFFFF",
         backgroundColor: "#f29111",
       },
+      {
+        key: "indexeddb",
+        name: "IndexedDB",
+        icon: HiOutlineDatabase,
+        color: "#FFFFFF",
+        backgroundColor: "#2563EB",
+      },
     ],
   },
   {
@@ -111,11 +133,11 @@ export const hardSkills = [
         backgroundColor: "#ffffff",
       },
       {
-        key: "karma",
-        name: "Karma",
-        icon: MdOutlineScience,
-        color: "#56C5A8",
-        backgroundColor: "#eaeaea",
+        key: "unit-testing",
+        name: "Unit Testing",
+        icon: BiTestTube,
+        color: "#FFFFFF",
+        backgroundColor: "#0F766E",
       },
     ],
   },
@@ -164,6 +186,13 @@ export const hardSkills = [
         color: "#333333",
         backgroundColor: "white",
       },
+      {
+        key: "ai-assisted-development",
+        name: "AI-Assisted Dev",
+        icon: RiRobot2Line,
+        color: "#FFFFFF",
+        backgroundColor: "#6D28D9",
+      },
     ],
   },
   {
@@ -190,6 +219,13 @@ export const hardSkills = [
         icon: DiScrum,
         color: "#3B82F6",
         backgroundColor: "#FDBA74",
+      },
+      {
+        key: "ports-adapters",
+        name: "Ports & Adapters",
+        icon: TbPlugConnected,
+        color: "#FFFFFF",
+        backgroundColor: "#334155",
       },
     ],
   },
